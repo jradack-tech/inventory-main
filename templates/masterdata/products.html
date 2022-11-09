@@ -1,0 +1,416 @@
+{% extends 'layout/base.html' %}
+{% load i18n %}
+
+{% block title %} {% trans "Product" %} {% endblock title %}
+
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+	<div class="content-wrapper">
+
+		<!-- Page header -->
+		<div class="page-header">
+			<div class="page-header-content">
+				<div class="page-title">
+					<h4>
+						<i class="icon-arrow-left52 position-left"></i>
+						<span class="text-semibold">{% trans "Master data" %}</span> - {% trans "Product" %}
+					</h4>
+				</div>
+			</div>
+
+			<div class="breadcrumb-line breadcrumb-line-component">
+				<ul class="breadcrumb">
+					<li><a><i class="icon-stack2 position-left"></i>{% trans "Master data" %}</a></li>
+					<li class="active">{% trans "Product" %}</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /page header -->
+
+		<!-- Content area -->
+		<div class="content">
+
+			<div class="panel panel-flat">
+				<div class="panel-heading border-bottom">
+					<h2 class="panel-title">{% trans "Product" %}</h2>
+				</div>
+
+				<div class="panel-body" style="padding-bottom: 0"></div>
+
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="form-group d-flex row master-filter px-5">
+							<form method="get" class="master-search-form">
+								<div class="form-group d-flex row">
+									<div class="col-12 d-flex align-items-center">
+										<label class="control-label col-1 mt-auto">{% trans "Keyword search" %}</label>
+										<div class="col-4">
+											{{ product_filter.form.name }}
+										</div>
+										<button type="submit" class="btn btn-primary ml-4">
+											<i class="icon-search4 position-left"></i>{% trans "Search" %}</button>
+										<a href="{% url 'masterdata:product-list' %}" class="btn btn-warning ml-4">
+											<i class="icon-undo position-left"></i>{% trans "Clear" %}</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="table-responsive">
+					<table class="table table-master-inventory table-hover border-top">
+						<thead>
+							<tr>
+								<th>{% trans "No" %}</th>
+								<th>{% trans "Product name" %}</th>
+								<th>{% trans "Type" %}</th>
+								<th>{% trans "Maker" %}</th>
+								<!-- <th>{% trans "Purchase date" %}</th>
+								<th>{% trans "Supplier" %}</th>
+								<th>{% trans "Person in charge" %}</th>
+								<th>{% trans "Price" %}</th>
+								<th>{% trans "Stock" %}</th>
+								<th>{% trans "Total price" %}</th> -->
+								<th>{% trans "Action" %}</th>
+							</tr>
+						</thead>
+						<tbody>
+	
+							{% for product in products %}
+								<tr>
+									<td>{{ forloop.counter0|add:page_obj.start_index }}</td>
+									<td>{{ product.name }}</td>
+									<td>{{ product.get_type_display }}</td>
+									<td>{{ product.maker }}</td>
+									<!-- <td>{{ product.purchase_date|default_if_none:"" }}</td>
+									<td>{{ product.supplier|default_if_none:"" }}</td>
+									<td>{{ product.person_in_charge|default_if_none:"" }}</td>
+									<td>{{ product.price|default_if_none:"" }}</td>
+									<td>{{ product.quantity|default_if_none:"" }}</td>
+									<td>{{ product.amount|default_if_none:"" }}</td> -->
+									<td>
+										<a href="#" data-id="{{product.id}}" class="edit-action"><i class="icon-pencil5 color-primary"></i></a>
+										<a href="#" data-id="{{product.id}}" class="remove-action"><i class="icon-minus-circle2 ml-3 color-danger"></i></a>
+									</td>
+								</tr>
+							{% endfor %}
+						</tbody>
+					</table>
+				</div>
+
+				<div class="panel panel-body border-top-teal text-center border-left-0 border-right-0">
+					<ul class="pagination pagination-separated pagination-rounded" id="pagination">
+					</ul>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mb-5-s text-center">
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_add_new_data">
+								<i class="icon-plus2 position-left"></i>{% trans "Add product" %}</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Disabled backdrop Add New Master Data Modal -->
+			<div id="modal_add_new_data" class="modal fade" data-backdrop="false" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h5 class="modal-title">{% trans "Add product" %}</h5>
+						</div>
+
+						<div class="modal-body">
+							<hr/>
+
+							<form class="form-horizontal" action="" method="POST">
+								{% csrf_token %}
+								<fieldset class="content-group">
+
+									<div class="form-group">
+										<label class="control-label col-lg-3">{% trans "Model name" %}:</label>
+										<div class="col-lg-9">
+											<input type="text" name="name" class="form-control" placeholder="{% trans 'Enter model name' %}..." required>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-lg-3">{% trans "Type" %}:</label>
+										<div class="col-lg-9">
+											<select name="type" class="selectbox" required>
+												<option value="P">{% trans 'Pachinko' %}</option>
+												<option value="S">{% trans 'Slot' %}</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-lg-3">{% trans "Maker" %}:</label>
+										<div class="col-lg-9">
+											<input type="text" name="maker" class="form-control" placeholder="{% trans 'Enter maker' %}..." required>
+										</div>
+									</div>
+<!-- 
+									<div class="form-group">
+										<label class="control-label col-lg-3">{% trans "Purchase date" %}:</label>
+										<div class="col-lg-9">
+											<div class="input-group">
+												<input type="text" name="purchase_date" class="form-control daterange-single">
+												<span class="input-group-addon"><i class="icon-calendar22"></i></span>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-lg-3">{% trans "Supplier" %}:</label>
+										<div class="col-lg-9">
+											<input type="text" name="supplier" class="form-control" placeholder="{% trans 'Supplier' %}...">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-lg-3">{% trans "Person in charge" %}:</label>
+										<div class="col-lg-9">
+											<select name="person_in_charge" class="selectbox">
+												<option value="">{% trans 'Select person in charge' %}...</option>
+												{% for person in people %}
+												<option value="{{ person.name }}">{{  person.name }}</option>
+												{% endfor %}
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-lg-3">{% trans "Price" %}:</label>
+										<div class="col-lg-9">
+											<input type="text" name="price" class="form-control" placeholder="{% trans 'Price' %}...">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-lg-3">{% trans "Stock" %}:</label>
+										<div class="col-lg-9">
+											<input type="text" name="quantity" class="form-control" placeholder="{% trans 'Stock' %}...">
+										</div>
+									</div> -->
+
+								</fieldset>
+								<div class="modal-footer">
+									<button type="submit" class="btn btn-primary">{% trans "Add" %}</button>
+									<button type="button" class="btn btn-link" data-dismiss="modal">{% trans "Close" %}</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /disabled backdrop -->
+
+			<!-- Disabled backdrop edit Master Data Modal -->
+			<div id="modal_edit_data" class="modal fade" data-backdrop="false" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h5 class="modal-title">{% trans "Edit product" %}</h5>
+						</div>
+
+						<div class="modal-body">
+							<hr/>
+							<form class="form-horizontal" method="POST" action="{% url 'masterdata:product-update' %}">
+								{% csrf_token %}
+								<fieldset class="content-group">
+									<input type="hidden" name="id">
+									
+									<div class="form-group">
+										<label class="control-label col-lg-3">{% trans "Model name" %}:</label>
+										<div class="col-lg-9">
+											<input type="text" name="name" class="form-control" placeholder="{% trans 'Enter model name' %}..." required>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-lg-3">{% trans "Type" %}:</label>
+										<div class="col-lg-9">
+											<select name="type" class="selectbox" required>
+												<option value="P">{% trans 'Pachinko' %}</option>
+												<option value="S">{% trans 'Slot' %}</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-lg-3">{% trans "Maker" %}:</label>
+										<div class="col-lg-9">
+											<input type="text" name="maker" class="form-control" placeholder="{% trans 'Enter maker' %}..." required>
+										</div>
+									</div>
+
+									<!-- <div class="form-group">
+										<label class="control-label col-lg-3">{% trans "Purchase date" %}:</label>
+										<div class="col-lg-9">
+											<div class="input-group">
+												<input type="text" name="purchase_date" class="form-control daterange-single">
+												<span class="input-group-addon"><i class="icon-calendar22"></i></span>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-lg-3">{% trans "Supplier" %}:</label>
+										<div class="col-lg-9">
+											<input type="text" name="supplier" class="form-control" placeholder="{% trans 'Supplier' %}...">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-lg-3">{% trans "Person in charge" %}:</label>
+										<div class="col-lg-9">
+											<select name="person_in_charge" class="selectbox">
+												<option value="">{% trans 'Select person in charge' %}...</option>
+												{% for person in people %}
+												<option value="{{ person.name }}">{{ person.name }}</option>
+												{% endfor %}
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-lg-3">{% trans "Price" %}:</label>
+										<div class="col-lg-9">
+											<input type="text" name="price" class="form-control" placeholder="{% trans 'Price' %}...">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-lg-3">{% trans "Stock" %}:</label>
+										<div class="col-lg-9">
+											<input type="text" name="quantity" class="form-control" placeholder="{% trans 'Stock' %}...">
+										</div>
+									</div> -->
+
+									<!-- <div class="form-group">
+										<label class="control-label col-lg-3">{% trans "Stock" %}:</label>
+										<div class="col-lg-9">
+											<input type="text" name="stock" class="form-control" placeholder="{% trans 'Stock' %}..." required>
+										</div>
+									</div> -->
+
+								</fieldset>
+								<div class="modal-footer">
+									<button type="submit" class="btn btn-primary">{% trans "Save" %}</button>
+									<button type="button" class="btn btn-link" data-dismiss="modal">{% trans "Close" %}</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /disabled backdrop -->
+
+			<!-- Disabled backdrop delete master data modal -->
+			<div id="modal_delete_data" class="modal fade" data-backdrop="false" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header bg-danger">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h5 class="text-center modal-title">{% trans "Delete product" %}</h5>
+						</div>
+
+						<div class="modal-body">
+							<h6 class="text-center mb-delete">{% trans "Are you sure you want to remove this data?" %}</h6>
+							<hr/>
+							<form class="form-horizontal" method="POST" action="{% url 'masterdata:product-delete' %}">
+								{% csrf_token %}
+								<input type="hidden" name="id">
+								<div class="modal-footer">
+									<button type="submit" class="btn btn-danger">{% trans "Delete" %}</button>
+									<button type="button" class="btn btn-link" data-dismiss="modal">{% trans "Close" %}</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /disabled backdrop -->
+
+		</div>
+		<!-- /content area -->
+
+		<script>
+			$(function () {
+				// Pagination customization
+				if ($('#pagination').length) {
+					var startPage = parseInt("{{ page_obj.number }}");
+					$('#pagination').twbsPagination({
+						totalPages: "{{ page_obj.paginator.num_pages }}",
+						visiblePages: 5,
+						startPage: startPage,
+						hideOnlyOnePage:true,
+						first:'&laquo;',
+						prev:'&lsaquo;',
+						next:'&rsaquo;',
+						last:'&raquo;',
+					}).on('page', function (event, page) {
+						var url = location.href;
+						var urlRegex = RegExp('page=\\d+', 'g');
+						if (urlRegex.test(url)) {
+							url = url.replace(urlRegex, `page=${page}`);
+						} else {
+							if (url.indexOf('?') == -1)
+								url += `?page=${page}`;
+							else
+								url += `&page=${page}`;
+						}
+						location.href = url;
+					});
+				}
+
+				$('a.edit-action').click( function (e) {
+					e.preventDefault();
+					var $this = $(this);
+					var id = $this.data('id');
+					$('#modal_edit_data input[name="id"]').val(id);
+					$.ajax({
+						type: 'POST',
+						url: "{% url 'masterdata:product-detail' %}",
+						data: {
+							id: id,
+						},
+						beforeSend: function(request) {
+							request.setRequestHeader('X-CSRFToken', csrftoken);
+						},
+						success: function (result) {
+							$('#modal_edit_data input[name="name"]').val(result.name);
+							$('#modal_edit_data select[name="type"]').selectBoxIt('selectOption', result.type);
+							$('#modal_edit_data input[name="maker"]').val(result.maker);
+							$('#modal_edit_data input[name="purchase_date"]').val(result.purchase_date);
+							$('#modal_edit_data input[name="supplier"]').val(result.supplier);
+							$('#modal_edit_data select[name="person_in_charge"]').selectBoxIt('selectOption', result.person_in_charge);
+							$('#modal_edit_data input[name="quantity"]').val(result.quantity);
+							$('#modal_edit_data input[name="price"]').val(result.price);
+							$('#modal_edit_data input[name="purchase_date"]').daterangepicker({
+								singleDatePicker: true
+							});
+							$('#modal_edit_data').modal('toggle');
+						}
+					});
+					
+				});
+
+				$('a.remove-action').click( function (e) {
+					e.preventDefault();
+					var $this = $(this);
+					var id = $this.data('id');
+					$('#modal_delete_data input[name="id"]').val(id);
+					$('#modal_delete_data').modal('toggle');
+				});
+			});
+		</script>
+
+	</div>
+{% endblock %}

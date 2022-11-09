@@ -1,0 +1,397 @@
+{% extends 'layout/base.html' %}
+{% load i18n %}
+
+{% block title %} {% trans "Purchases" %} {% endblock title %}
+
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="content-wrapper link-back">
+
+  <!-- Page header -->
+  <div class="page-header">
+    <div class="page-header-content">
+      <div class="page-title">
+        <h4>
+          <i class="icon-arrow-left52 position-left"></i>
+          <span class="text-semibold">{% trans "LinkView" %}</span> - {% trans "LinkView" %}
+        </h4>
+      </div>
+    </div>
+
+    <div class="breadcrumb-line breadcrumb-line-component">
+      <ul class="breadcrumb">
+        <li><a><i class="icon-cart2 position-left"></i>{% trans "List" %}</a></li>
+        <li class="active">{% trans "LinkView" %}</li>
+      </ul>
+    </div>
+  </div>
+  <!-- /page header -->
+
+  <!-- Content area -->
+  <div class="content">
+
+    <div class="panel panel-flat">
+      <div class="panel-heading border-bottom">
+        <h2 class="panel-title">{% trans "LinkView" %}</h2>
+      </div>
+
+      <div class="panel-body" style="padding-top: 20px">
+        <form action="" method="GET">
+          {% csrf_token %}
+          <div class="row">
+            <div class="col-md-2">
+              <div class="form-group">
+                <label>{% trans "Contract ID" %}:</label>
+                <input type="text" class="form-control" name="contract_id" value="{{ contract_id }}"
+                  placeholder="{% trans 'Contract ID' %}">
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <div class="form-group">
+                <label>{% trans "Person in charge" %}</label>
+                <input type="text" class="form-control" name="person_in_charge" value="{{ person_in_charge }}"
+                  placeholder="{% trans 'Person in charge' %}">
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="form-group">
+                <label>{% trans "Created date" %}:</label>
+                
+                <div class="d-flex">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="icon-calendar22"></i></span>
+                    <input type="text" class="form-control datepicker-nullable" name="created_at"
+                      value="{{ created_at }}">
+                  </div>
+                  <div style="margin-top: auto; margin-bottom: auto; margin-left: 10px; margin-right: 10px;">~</div>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="icon-calendar22"></i></span>
+                    <input type="text" class="form-control datepicker-nullable" name="created_at_to"
+                      value="{{ created_at_to }}">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="form-group">
+                <label>{% trans "Date of shipment" %}:</label>
+                
+                <div class="d-flex">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="icon-calendar22"></i></span>
+                    <input type="text" class="form-control datepicker-nullable" name="shipping_date_from"
+                      value="{{ shipping_date_from }}">
+                  </div>
+                  <div style="margin-top: auto; margin-bottom: auto; margin-left: 10px; margin-right: 10px;">~</div>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="icon-calendar22"></i></span>
+                    <input type="text" class="form-control datepicker-nullable" name="shipping_date_to"
+                      value="{{ shipping_date_to }}">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-1">
+              <div class="form-group">
+                <label>{% trans "Report Date" %}:</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="icon-calendar22"></i></span>
+                  <input type="text" class="form-control datepicker-nullable" name="report_date"
+                    value="{{ report_date }}">
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-md-1">
+              <div class="form-group">
+                <label>{% trans "Inventory status" %}:</label>
+                <select name="inventory_status" class="selectbox">
+                  <option value="" selected="selected">{% trans "All" %}</option>
+                  <option value="Done">{% trans "Done" %}</option>
+                  <option value="Pending">{% trans "Pending" %}</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="mb-3 text-right">
+                <button type="submit" class="btn btn-primary"><i class="icon-search4 position-left"></i>{% trans "Search" %}</button>
+                <a href="{% url 'listing:link-list-show' %}" class="btn btn-warning ml-3">
+                  <i class="icon-undo position-left"></i>{% trans "Clear" %}
+                </a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-link table-bordered table-hover table-framed">
+          <thead>
+            <tr>
+              <th>{% trans "Unlink" %}</th>
+              <th>{% trans "Contract ID" %}</th>
+              <th>{% trans "Contract date" %}</th>
+              <th class="w-10">{% trans "Customer" %}</th>
+              <th class="w-10">{% trans "Delivered place" %}</th>
+              <th>{% trans "Person in charge" %}</th>
+              <th>{% trans "Payment date" %}</th>
+              <th class="w-18-5">{% trans "Product name" %}</th>
+              <th>{% trans "Amount" %}</th>
+              <th class="w-5">{% trans "Inventory status" %}</th>
+              <th>{% trans "Report Date" %}</th>
+              <th>{% trans "Action" %}</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            {% for link in links %}
+            <tr>
+              <td rowspan="2" class="text-center">
+                <i class="icon-unlink2" id="btn-unlink" data-p-id="{{link.p.id}}" data-s-id="{{link.s.id}}"
+                  data-p-same-order="{{link.p.same_order}}" data-s-same-order="{{link.s.same_order}}"></i>
+              </td>
+              <td>{{ link.p.contract_id }}</td>
+              <td>{{ link.p.created_at }}</td>
+              <td>{{ link.p.customer_name }}</td>
+              <td>{{ link.p.hall_name }}</td>
+              <td>{{ link.p.person_in_charge }}</td>
+              <td>{{ link.p.shipping_date }}</td>
+              <td>{{ link.p.product_name|truncatechars:20 }}</td>
+              <td>{{ link.p.amount }}</td>
+              <td>{{ link.p.status_display }}</td>
+              <td class="text-center">{{link.p.report_date}}</td>
+              <td>
+                <a href="#" data-id="{{link.p.id}}" class="edit-action"><i class="icon-pencil5 color-primary"></i></a>
+                <a href="#" data-object-id="{{link.p.object_id}}" data-class-id="{{link.p.class_id}}"
+                  class="edit-contract"><i class="icon-stack-text ml-3 color-danger"></i></a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>{{ link.s.contract_id }}</td>
+              <td>{{ link.s.created_at }}</td>
+              <td>{{ link.s.customer_name }}</td>
+              <td>{{ link.s.hall_name }}</td>
+              <td>{{ link.s.person_in_charge }}</td>
+              <td>{{ link.s.shipping_date }}</td>
+              <td>{{ link.s.product_name|truncatechars:20 }}</td>
+              <td>{{ link.s.amount }}</td>
+              <td>{{ link.s.status_display }}</td>
+              <td class="text-center">{{link.s.report_date}}</td>
+              <td>
+                <a href="#" data-id="{{link.s.id}}" class="edit-action"><i class="icon-pencil5 color-primary"></i></a>
+                <a href="#" data-object-id="{{link.s.object_id}}" data-class-id="{{link.s.class_id}}"
+                  class="edit-contract"><i class="icon-stack-text ml-3 color-danger"></i></a>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="panel panel-body border-top-teal text-center">
+        <ul class="pagination pagination-separated pagination-rounded" id="pagination">
+        </ul>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="my-5-s text-center">
+            <form action="" method="post">
+              {% csrf_token %}
+              <button type="submit" class="btn btn-primary"><i class="icon-exit3 position-left"></i>
+                {% trans "Export to excel" %}</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Disabled backdrop edit product data -->
+    <div id="modal_edit_data" class="modal fade" data-backdrop="false" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h5 class="modal-title">{% trans "Edit" %}</h5>
+          </div>
+
+          <div class="modal-body">
+            <hr />
+
+            <form class="form-horizontal" method="POST" action="{% url 'listing:purchases-product-update' %}">
+              {% csrf_token %}
+
+              <fieldset class="content-group">
+                <input type="hidden" name="id">
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "Contract ID" %}:</label>
+                  <div class="col-lg-9">
+                    <input type="text" name="contract_id" class="form-control"
+                      placeholder="{% trans 'Contract ID' %}..." disabled>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "Product name" %}:</label>
+                  <div class="col-lg-9">
+                    <input type="text" name="product_name" class="form-control"
+                      placeholder="{% trans 'Product name' %}..." disabled>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "Inventory status" %}:</label>
+                  <div class="col-lg-9">
+                    <select name="status" class="selectbox" required>
+                      <option value="D">{% trans 'Done' %}</option>
+                      <option value="P">{% trans 'Pending' %}</option>
+                    </select>
+                  </div>
+                </div>
+
+                <input type="text" hidden name="origin" value="linkshow">
+
+              </fieldset>
+
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">{% trans "Save" %}</button>
+                <button type="button" class="btn btn-link" data-dismiss="modal">{% trans "Close" %}</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /disabled backdrop -->
+
+  </div>
+  <!-- /content area -->
+
+  <script>
+    $(function () {
+      // Pagination customization
+      if ($('#pagination').length) {
+        var startPage = parseInt("{{ page_obj.number }}");
+        $('#pagination').twbsPagination({
+          totalPages: "{{ page_obj.paginator.num_pages }}",
+          visiblePages: 5,
+          startPage: startPage,
+          hideOnlyOnePage: true,
+          first: '&laquo;',
+          prev: '&lsaquo;',
+          next: '&rsaquo;',
+          last: '&raquo;',
+        }).on('page', function (event, page) {
+          var url = location.href;
+          var urlRegex = RegExp('page=\\d+', 'g');
+          if (urlRegex.test(url)) {
+            url = url.replace(urlRegex, `page=${page}`);
+          } else {
+            if (url.indexOf('?') == -1)
+              url += `?page=${page}`;
+            else
+              url += `&page=${page}`;
+          }
+          location.href = url;
+        });
+      }
+
+      $('i#btn-unlink').click(function (e) {
+        e.preventDefault();
+        if (!confirm('{% trans "Are you going to unlink these items?" %}')) return;
+        // console.log($(this).data('p-id'), $(this).data('s-id'))
+        // let cd = $(this).data('report-date');
+        // matches = cd.match(/[0-9]+/g);
+        // if(matches.length == 3) {
+        //   cd =  matches[1] + '/' + matches[2] + '/' + matches[0];
+        // } else {
+        //   cd = new Date(cd);
+        //   cd = (cd.getMonth() + 1) + '/' + cd.getDate() + '/' + cd.getFullYear();
+        // }
+
+        $.ajax({
+          type: 'DELETE',
+          url: "{% url 'listing:link-list-ajax' %}",
+          data: {
+            p_id: $(this).data('p-id'),
+            s_id: $(this).data('s-id'),
+            p_same_order: $(this).data('p-same-order'),
+            s_same_order: $(this).data('s-same-order')
+          },
+          beforeSend: function (request) {
+            request.setRequestHeader('X-CSRFToken', csrftoken);
+          },
+          success: function (result) {
+            // location.reload();
+            location.href = location.protocol + '//' + location.host + location.pathname;
+          }
+        })
+      });
+
+      $('a.edit-action').click(function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        var id = $this.data('id');
+        $('#modal_edit_data input[name="id"]').val(id);
+        $.ajax({
+          type: 'POST',
+          url: "{% url 'listing:purchases-product-detail' %}",
+          data: {
+            id: id,
+          },
+          beforeSend: function (request) {
+            request.setRequestHeader('X-CSRFToken', csrftoken);
+          },
+          success: function (result) {
+            $('#modal_edit_data input[name="contract_id"]').val(result.contract_id);
+            $('#modal_edit_data input[name="product_name"]').val(result.product_name);
+            $('#modal_edit_data select[name="status"]').selectBoxIt('selectOption', result.status);
+            $('#modal_edit_data').modal('toggle');
+          }
+        });
+      });
+
+      $('a.edit-contract').click(function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        var objID = $this.data('object-id');
+        var classID = $this.data('class-id');
+
+        console.log(objID, classID)
+        $.ajax({
+          type: 'POST',
+          url: "{% url 'contract:contract-update-path' %}",
+          data: {
+            object_id: objID,
+            class_id: classID
+          },
+          beforeSend: function (request) {
+            request.setRequestHeader('X-CSRFToken', csrftoken);
+          },
+          success: function (result) {
+            location.href = result.url;
+          }
+        });
+      });
+
+      var status = "{{ inventory_status }}";
+      if (status) {
+        $('select[name="inventory_status"]').selectBoxIt('selectOption', status);
+      }
+    });
+  </script>
+
+</div>
+{% endblock %}

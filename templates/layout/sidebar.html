@@ -1,0 +1,78 @@
+{% load static %}
+{% load i18n %}
+{% load sidebar_tags %}
+
+<!-- Main sidebar -->
+<div class="sidebar sidebar-main">
+    <div class="sidebar-content">
+
+        <!-- User menu -->
+        <div class="sidebar-user">
+            <div class="category-content">
+                <div class="media">
+                    <a href="{% url 'dashboard' %}" class="media-left"><img src="{% static 'images/user.jpg' %}" class="img-circle img-sm" alt=""></a>
+                    <div class="media-body">
+                        <span class="media-heading text-semibold user-name">{{ request.user }}</span>
+                        <div class="text-size-mini text-muted">
+                            <i class="icon-pin text-size-small"></i><span class="user-location">日本, 東京</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /user menu -->
+
+        <!-- Main navigation -->
+        <div class="sidebar-category sidebar-category-visible">
+            <div class="category-content no-padding">
+                <ul class="navigation navigation-main navigation-accordion">
+
+                    <li>
+                        <a href="#"><i class="icon-stack2"></i> <span>{% trans "Master data" %}</span></a>
+                        <ul>
+                            <li class="{% active 'masterdata:customer-list' %}"><a href="{% url 'masterdata:customer-list' %}">{% trans "Customer master" %}</a></li>
+                            <li class="{% active 'masterdata:hall-list' %}"><a href="{% url 'masterdata:hall-list' %}">{% trans "Hall" %}</a></li>
+                            <li class="{% active 'masterdata:product-list' %}"><a href="{% url 'masterdata:product-list' %}">{% trans "Product" %}</a></li>
+                            <li class="{% active 'masterdata:document-list' %}"><a href="{% url 'masterdata:document-list' %}">{% trans "Other" %}</a></li>
+                            <li class="{% active 'masterdata:people-list' %}"><a href="{% url 'masterdata:people-list' %}">{% trans "Person in charge" %}</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="icon-cart2"></i> <span>{% trans "Contract" %}</span></a>
+                        <ul>
+                            <li class="{% active 'contract:trader-sales' %}"><a href="{% url 'contract:trader-sales' %}">{% trans "Trader sales" %}</a></li>
+                            <li class="{% active 'contract:trader-purchases' %}"><a href="{% url 'contract:trader-purchases' %}">{% trans "Trader purchases" %}</a></li>
+                            <li class="{% active 'contract:hall-sales' %}"><a href="{% url 'contract:hall-sales' %}">{% trans "Hall sales" %}</a></li>
+                            <li class="{% active 'contract:hall-purchases' %}"><a href="{% url 'contract:hall-purchases' %}">{% trans "Hall purchases" %}</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a href="#"><i class="icon-list"></i> <span>{% trans "List" %}</span></a>
+                        <ul>
+                            <li class="{% active 'listing:sales-list' %}"><a href="{% url 'listing:sales-list' %}">{% trans "Sales" %}</a></li>
+                            <li class="{% active 'listing:purchases-list' %}"><a href="{% url 'listing:purchases-list' %}">{% trans "Purchases" %}</a></li>
+                            <li class="{% active 'listing:link-list' %}"><a href="{% url 'listing:link-list' %}">{% trans "Link" %}</a></li>
+                            <li class="{% active 'listing:link-list-show' %}"><a href="{% url 'listing:link-list-show' %}">{% trans "LinkView" %}</a></li>
+														<li class="{% active 'listing:history-list' %}"><a href="{% url 'listing:history-list' %}">{% trans "Export history" %}</a></li>
+														<li class="{% active 'listing:deleted-list' %}"><a href="{% url 'listing:deleted-list' %}">{% trans "Deleted" %}</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="icon-exit3"></i> <span>{% trans "Accounting software CSV" %}</span></a>
+                        <ul>
+                            <li class="{% active 'accounting:sales-list' %}"><a href="{% url 'accounting:sales-list' %}">{% trans "Sale" %}</a></li>
+                            <li class="{% active 'accounting:purchases-list' %}"><a href="{% url 'accounting:purchases-list' %}">{% trans "Purchase" %}</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- /main navigation -->
+
+    </div>
+</div>
+<!-- /main sidebar -->

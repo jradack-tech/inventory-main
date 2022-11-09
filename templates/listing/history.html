@@ -1,0 +1,108 @@
+{% extends 'layout/base.html' %}
+{% load i18n %}
+
+{% block title %} {% trans "Inventory" %} {% endblock title %}
+
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+	<div class="content-wrapper">
+
+		<!-- Page header -->
+		<div class="page-header">
+			<div class="page-header-content">
+				<div class="page-title">
+					<h4>
+						<i class="icon-arrow-left52 position-left"></i>
+						<span class="text-semibold">{% trans "List" %}</span> - {% trans "Export history" %}
+					</h4>
+				</div>
+			</div>
+
+			<div class="breadcrumb-line breadcrumb-line-component">
+				<ul class="breadcrumb">
+					<li><a><i class="icon-cart2 position-left"></i>{% trans "List" %}</a></li>
+					<li class="active">{% trans "Export history" %}</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /page header -->
+
+		<!-- Content area -->
+		<div class="content">
+
+			<div class="panel panel-flat">
+				<div class="panel-heading border-bottom">
+					<h2 class="panel-title">{% trans "Export history" %}</h2>
+				</div>
+
+				<div class="table-responsive">
+                    <p style="padding: 10px 20px; font-size: 16px;"></p>
+					<table class="table table-inventory table-bordered table-hover table-framed">
+						<thead>
+							<tr>
+								<th>{% trans "No" %}</th>
+								<th>{% trans "Username" %}</th>
+								<th>{% trans "Export" %}</th>
+								<th>{% trans "Exported at" %}</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							{% for object in objects %}
+							<tr>
+								<td>{{ forloop.counter0|add:page_obj.start_index }}</td>
+								<td>{{ object.user.username }}</td>
+								<td>{{ object.export }}</td>
+								<td>{{ object.exported_at }}</td>
+							</tr>
+							{% endfor %}
+						</tbody>
+					</table>
+				</div>
+
+				<div class="panel panel-body border-top-teal text-center">
+					<ul class="pagination pagination-separated pagination-rounded" id="pagination">
+					</ul>
+				</div>
+				
+			</div>
+
+		</div>
+		<!-- /content area -->
+
+		<script>
+			$(function () {
+				// Pagination customization
+				if ($('#pagination').length) {
+					var startPage = parseInt("{{ page_obj.number }}");
+					$('#pagination').twbsPagination({
+						totalPages: "{{ page_obj.paginator.num_pages }}",
+						visiblePages: 5,
+						startPage: startPage,
+						hideOnlyOnePage:true,
+						first:'&laquo;',
+						prev:'&lsaquo;',
+						next:'&rsaquo;',
+						last:'&raquo;',
+					}).on('page', function (event, page) {
+						var url = location.href;
+						var urlRegex = RegExp('page=\\d+', 'g');
+						if (urlRegex.test(url)) {
+							url = url.replace(urlRegex, `page=${page}`);
+						} else {
+							if (url.indexOf('?') == -1)
+								url += `?page=${page}`;
+							else
+								url += `&page=${page}`;
+						}
+						location.href = url;
+					});
+				}
+			});
+
+		</script>
+
+	</div>
+	{% endblock %}

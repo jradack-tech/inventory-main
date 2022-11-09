@@ -1,0 +1,1791 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-27 14:22+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: accounting/views.py:126 accounting/views.py:144 accounting/views.py:301
+#: accounting/views.py:316 templates/accounting/purchases.html:18
+#: templates/accounting/purchases.html:25 templates/accounting/sales.html:18
+#: templates/accounting/sales.html:25 templates/layout/sidebar.html:64
+msgid "Accounting software CSV"
+msgstr ""
+
+#: accounting/views.py:126 accounting/views.py:144
+#: templates/accounting/sales.html:4 templates/accounting/sales.html:18
+#: templates/accounting/sales.html:26 templates/accounting/sales.html:37
+#: templates/layout/sidebar.html:66
+msgid "Sale"
+msgstr ""
+
+#: accounting/views.py:155 accounting/views.py:327
+#: templates/listing/history.html:45 templates/listing/inventory.html:104
+#: templates/masterdata/customers.html:65
+#: templates/masterdata/documents.html:44 templates/masterdata/halls.html:66
+#: templates/masterdata/people_in_charge.html:44
+#: templates/masterdata/products.html:66 templates/masterdata/senders.html:66
+msgid "No"
+msgstr ""
+
+#: accounting/views.py:156 accounting/views.py:328 listing/views.py:120
+#: listing/views.py:269 listing/views.py:585 listing/views.py:1014
+#: templates/accounting/purchases.html:45
+#: templates/accounting/purchases.html:47
+#: templates/accounting/purchases.html:110 templates/accounting/sales.html:45
+#: templates/accounting/sales.html:47 templates/accounting/sales.html:110
+#: templates/listing/deleted.html:45 templates/listing/deleted.html:47
+#: templates/listing/deleted.html:126 templates/listing/deleted.html:218
+#: templates/listing/deleted.html:221 templates/listing/link.html:124
+#: templates/listing/link.html:126 templates/listing/link.html:210
+#: templates/listing/link.html:295 templates/listing/link.html:298
+#: templates/listing/link.html:390 templates/listing/link.html:392
+#: templates/listing/link.html:472 templates/listing/link.html:568
+#: templates/listing/link.html:571 templates/listing/linkshow.html:46
+#: templates/listing/linkshow.html:48 templates/listing/linkshow.html:122
+#: templates/listing/linkshow.html:219 templates/listing/linkshow.html:222
+#: templates/listing/purchases.html:45 templates/listing/purchases.html:47
+#: templates/listing/purchases.html:127 templates/listing/purchases.html:218
+#: templates/listing/purchases.html:221 templates/listing/sales.html:45
+#: templates/listing/sales.html:47 templates/listing/sales.html:126
+#: templates/listing/sales.html:220 templates/listing/sales.html:223
+msgid "Contract ID"
+msgstr ""
+
+#: accounting/views.py:157 accounting/views.py:329 listing/views.py:121
+#: listing/views.py:270 listing/views.py:586 listing/views.py:1015
+#: templates/accounting/purchases.html:111 templates/accounting/sales.html:111
+#: templates/listing/deleted.html:127 templates/listing/link.html:211
+#: templates/listing/link.html:473 templates/listing/linkshow.html:123
+#: templates/listing/purchases.html:128 templates/listing/sales.html:127
+msgid "Contract date"
+msgstr ""
+
+#: accounting/views.py:158 accounting/views.py:330
+#: templates/accounting/purchases.html:112 templates/accounting/sales.html:112
+#: templates/masterdata/products.html:68 templates/masterdata/products.html:142
+#: templates/masterdata/products.html:237
+msgid "Type"
+msgstr ""
+
+#: accounting/views.py:159 accounting/views.py:331
+#: templates/accounting/purchases.html:113 templates/accounting/sales.html:113
+#: templates/masterdata/documents.html:47
+#: templates/masterdata/documents.html:110
+#: templates/masterdata/documents.html:160
+msgid "Taxation"
+msgstr ""
+
+#: accounting/views.py:160 accounting/views.py:332 listing/views.py:128
+#: listing/views.py:277 listing/views.py:593 listing/views.py:1022
+#: templates/accounting/purchases.html:114 templates/accounting/sales.html:114
+#: templates/contracts/hall_purchases.html:186
+#: templates/contracts/hall_purchases.html:372
+#: templates/contracts/hall_purchases.html:529
+#: templates/contracts/hall_sales.html:187
+#: templates/contracts/hall_sales.html:348
+#: templates/contracts/hall_sales.html:488
+#: templates/contracts/trader_purchases.html:221
+#: templates/contracts/trader_purchases.html:383
+#: templates/contracts/trader_sales.html:215
+#: templates/contracts/trader_sales.html:401 templates/listing/deleted.html:134
+#: templates/listing/link.html:218 templates/listing/link.html:480
+#: templates/listing/linkshow.html:129 templates/listing/purchases.html:135
+#: templates/listing/sales.html:134
+msgid "Amount"
+msgstr ""
+
+#: accounting/views.py:161 accounting/views.py:333 listing/views.py:122
+#: listing/views.py:271 listing/views.py:587 listing/views.py:1016
+#: templates/accounting/purchases.html:72
+#: templates/accounting/purchases.html:74
+#: templates/accounting/purchases.html:115 templates/accounting/sales.html:72
+#: templates/accounting/sales.html:74 templates/accounting/sales.html:115
+#: templates/listing/deleted.html:72 templates/listing/deleted.html:74
+#: templates/listing/deleted.html:128 templates/listing/link.html:151
+#: templates/listing/link.html:153 templates/listing/link.html:212
+#: templates/listing/link.html:416 templates/listing/link.html:418
+#: templates/listing/link.html:474 templates/listing/linkshow.html:124
+#: templates/listing/purchases.html:73 templates/listing/purchases.html:75
+#: templates/listing/purchases.html:129 templates/listing/sales.html:72
+#: templates/listing/sales.html:74 templates/listing/sales.html:128
+#: templates/masterdata/halls.html:67
+msgid "Customer"
+msgstr ""
+
+#: accounting/views.py:189 templates/accounting/purchases.html:126
+#: templates/accounting/sales.html:126
+msgid "Income"
+msgstr ""
+
+#: accounting/views.py:301 accounting/views.py:316
+#: templates/accounting/purchases.html:4 templates/accounting/purchases.html:18
+#: templates/accounting/purchases.html:26
+#: templates/accounting/purchases.html:37 templates/layout/sidebar.html:67
+msgid "Purchase"
+msgstr ""
+
+#: accounting/views.py:359
+msgid "Expense"
+msgstr ""
+
+#: contracts/invoice_views.py:128 contracts/invoice_views.py:518
+#: contracts/invoice_views.py:1056 contracts/invoice_views.py:1077
+#: contracts/invoice_views.py:1539 templates/contracts/hall_purchases.html:56
+#: templates/contracts/hall_sales.html:56
+msgid "Sales contract"
+msgstr ""
+
+#: contracts/invoice_views.py:128 contracts/invoice_views.py:518
+#: contracts/invoice_views.py:1056 templates/contracts/trader_sales.html:6
+#: templates/contracts/trader_sales.html:21
+#: templates/contracts/trader_sales.html:29 templates/layout/sidebar.html:44
+msgid "Trader sales"
+msgstr ""
+
+#: contracts/invoice_views.py:184 contracts/invoice_views.py:567
+#: contracts/invoice_views.py:1104 templates/contracts/trader_purchases.html:97
+#: templates/contracts/trader_sales.html:95
+msgid "CO."
+msgstr ""
+
+#: contracts/invoice_views.py:384 contracts/invoice_views.py:578
+#: contracts/invoice_views.py:1115
+#: templates/contracts/trader_purchases.html:169
+#: templates/contracts/trader_sales.html:166
+msgid "Member ID"
+msgstr ""
+
+#: contracts/invoice_views.py:574 contracts/invoice_views.py:1111
+#: templates/contracts/trader_purchases.html:107
+#: templates/contracts/trader_sales.html:105
+msgid "Mr."
+msgstr ""
+
+#: contracts/invoice_views.py:1077 templates/contracts/trader_purchases.html:5
+#: templates/contracts/trader_purchases.html:20
+#: templates/contracts/trader_purchases.html:28
+#: templates/layout/sidebar.html:45
+msgid "Trader purchases"
+msgstr ""
+
+#: contracts/invoice_views.py:1539 templates/contracts/hall_sales.html:5
+#: templates/contracts/hall_sales.html:20
+#: templates/contracts/hall_sales.html:28 templates/layout/sidebar.html:46
+msgid "Hall sales"
+msgstr ""
+
+#: contracts/invoice_views.py:1996
+msgid "Purchase contract"
+msgstr ""
+
+#: contracts/invoice_views.py:1996
+msgid "Hall purchase"
+msgstr ""
+
+#: contracts/utilities.py:37
+msgid "Receipt date"
+msgstr ""
+
+#: contracts/utilities.py:39
+msgid "ID Change date"
+msgstr ""
+
+#: contracts/utilities.py:40 templates/contracts/trader_purchases.html:511
+#: templates/contracts/trader_sales.html:539
+msgid "Delivery date"
+msgstr ""
+
+#: listing/views.py:103 listing/views.py:108 listing/views.py:251
+#: listing/views.py:257 listing/views.py:567 listing/views.py:573
+#: listing/views.py:990 listing/views.py:1002 templates/layout/sidebar.html:52
+#: templates/listing/deleted.html:18 templates/listing/deleted.html:25
+#: templates/listing/history.html:18 templates/listing/history.html:25
+#: templates/listing/inventory.html:18 templates/listing/inventory.html:25
+#: templates/listing/link.html:18 templates/listing/linkshow.html:25
+#: templates/listing/purchases.html:18 templates/listing/purchases.html:25
+#: templates/listing/sales.html:18 templates/listing/sales.html:25
+msgid "List"
+msgstr ""
+
+#: listing/views.py:103 listing/views.py:108 templates/layout/sidebar.html:54
+#: templates/listing/sales.html:4
+msgid "Sales"
+msgstr ""
+
+#: listing/views.py:123 listing/views.py:272 listing/views.py:588
+#: listing/views.py:1017 templates/listing/deleted.html:129
+#: templates/listing/link.html:213 templates/listing/link.html:475
+#: templates/listing/linkshow.html:125 templates/listing/purchases.html:130
+#: templates/listing/sales.html:129
+msgid "Delivered place"
+msgstr ""
+
+#: listing/views.py:124 listing/views.py:273 listing/views.py:589
+#: listing/views.py:1018 templates/contracts/hall_purchases.html:812
+#: templates/contracts/hall_sales.html:756
+#: templates/contracts/trader_purchases.html:178
+#: templates/contracts/trader_sales.html:174 templates/layout/sidebar.html:37
+#: templates/listing/deleted.html:90 templates/listing/deleted.html:92
+#: templates/listing/deleted.html:130 templates/listing/inventory.html:73
+#: templates/listing/inventory.html:109 templates/listing/inventory.html:212
+#: templates/listing/inventory.html:214 templates/listing/inventory.html:309
+#: templates/listing/inventory.html:311 templates/listing/link.html:56
+#: templates/listing/link.html:58 templates/listing/link.html:167
+#: templates/listing/link.html:169 templates/listing/link.html:214
+#: templates/listing/link.html:430 templates/listing/link.html:432
+#: templates/listing/link.html:476 templates/listing/linkshow.html:54
+#: templates/listing/linkshow.html:56 templates/listing/linkshow.html:126
+#: templates/listing/purchases.html:91 templates/listing/purchases.html:93
+#: templates/listing/purchases.html:131 templates/listing/sales.html:90
+#: templates/listing/sales.html:92 templates/listing/sales.html:130
+#: templates/masterdata/people_in_charge.html:4
+#: templates/masterdata/people_in_charge.html:17
+#: templates/masterdata/people_in_charge.html:25
+#: templates/masterdata/people_in_charge.html:36
+#: templates/masterdata/products.html:72 templates/masterdata/products.html:176
+#: templates/masterdata/products.html:271
+msgid "Person in charge"
+msgstr ""
+
+#: listing/views.py:125 listing/views.py:274 listing/views.py:590
+#: listing/views.py:1019 templates/listing/deleted.html:131
+#: templates/listing/linkshow.html:127 templates/listing/purchases.html:132
+#: templates/listing/sales.html:131
+msgid "Payment date"
+msgstr ""
+
+#: listing/views.py:126 listing/views.py:275 listing/views.py:591
+#: listing/views.py:1020 templates/listing/deleted.html:82
+#: templates/listing/deleted.html:84 templates/listing/deleted.html:132
+#: templates/listing/deleted.html:226 templates/listing/deleted.html:229
+#: templates/listing/inventory.html:45 templates/listing/inventory.html:46
+#: templates/listing/inventory.html:105 templates/listing/inventory.html:181
+#: templates/listing/inventory.html:183 templates/listing/inventory.html:278
+#: templates/listing/inventory.html:280 templates/listing/link.html:48
+#: templates/listing/link.html:50 templates/listing/link.html:159
+#: templates/listing/link.html:161 templates/listing/link.html:216
+#: templates/listing/link.html:303 templates/listing/link.html:306
+#: templates/listing/link.html:423 templates/listing/link.html:425
+#: templates/listing/link.html:478 templates/listing/link.html:576
+#: templates/listing/link.html:579 templates/listing/linkshow.html:128
+#: templates/listing/linkshow.html:227 templates/listing/linkshow.html:230
+#: templates/listing/purchases.html:83 templates/listing/purchases.html:85
+#: templates/listing/purchases.html:133 templates/listing/purchases.html:226
+#: templates/listing/purchases.html:229 templates/listing/sales.html:82
+#: templates/listing/sales.html:84 templates/listing/sales.html:132
+#: templates/listing/sales.html:228 templates/listing/sales.html:231
+#: templates/masterdata/products.html:67
+msgid "Product name"
+msgstr ""
+
+#: listing/views.py:127 listing/views.py:276 listing/views.py:592
+#: listing/views.py:1021 templates/contracts/hall_purchases.html:528
+#: templates/contracts/hall_sales.html:487 templates/listing/deleted.html:133
+#: templates/listing/inventory.html:110 templates/listing/inventory.html:219
+#: templates/listing/inventory.html:221 templates/listing/inventory.html:316
+#: templates/listing/inventory.html:318 templates/listing/link.html:217
+#: templates/listing/link.html:479 templates/listing/purchases.html:134
+#: templates/listing/sales.html:133
+msgid "Unit count"
+msgstr ""
+
+#: listing/views.py:129 listing/views.py:278 listing/views.py:594
+#: listing/views.py:1023 templates/listing/deleted.html:98
+#: templates/listing/deleted.html:135 templates/listing/deleted.html:234
+#: templates/listing/link.html:64 templates/listing/link.html:175
+#: templates/listing/link.html:219 templates/listing/link.html:311
+#: templates/listing/link.html:437 templates/listing/link.html:481
+#: templates/listing/link.html:584 templates/listing/linkshow.html:94
+#: templates/listing/linkshow.html:130 templates/listing/linkshow.html:235
+#: templates/listing/purchases.html:99 templates/listing/purchases.html:136
+#: templates/listing/purchases.html:234 templates/listing/sales.html:98
+#: templates/listing/sales.html:135 templates/listing/sales.html:236
+msgid "Inventory status"
+msgstr ""
+
+#: listing/views.py:251 listing/views.py:257 templates/layout/sidebar.html:55
+#: templates/listing/linkshow.html:4 templates/listing/purchases.html:4
+msgid "Purchases"
+msgstr ""
+
+#: listing/views.py:567 listing/views.py:573 listing/views.py:990
+#: listing/views.py:1002
+msgid "Links"
+msgstr ""
+
+#: listing/views.py:595 listing/views.py:1024 templates/listing/link.html:220
+#: templates/listing/link.html:482 templates/listing/linkshow.html:82
+#: templates/listing/linkshow.html:131
+msgid "Report Date"
+msgstr ""
+
+#: masterdata/models.py:23
+msgid "Delivery"
+msgstr ""
+
+#: masterdata/models.py:24 templates/contracts/trader_purchases.html:550
+msgid "Receipt"
+msgstr ""
+
+#: masterdata/models.py:25
+msgid "ID Change"
+msgstr ""
+
+#: masterdata/models.py:26
+msgid "* Blank"
+msgstr ""
+
+#: masterdata/models.py:30
+msgid "Transfer"
+msgstr ""
+
+#: masterdata/models.py:31
+msgid "Check"
+msgstr ""
+
+#: masterdata/models.py:32
+msgid "Bill"
+msgstr ""
+
+#: masterdata/models.py:33
+msgid "Cash"
+msgstr ""
+
+#: masterdata/models.py:37 templates/contracts/hall_purchases.html:289
+#: templates/contracts/hall_sales.html:277
+#: templates/contracts/trader_purchases.html:312
+#: templates/contracts/trader_sales.html:318
+msgid "Main body"
+msgstr ""
+
+#: masterdata/models.py:38 templates/contracts/hall_purchases.html:290
+#: templates/contracts/hall_sales.html:278
+#: templates/contracts/trader_purchases.html:313
+#: templates/contracts/trader_sales.html:319
+msgid "Frame"
+msgstr ""
+
+#: masterdata/models.py:39 templates/contracts/hall_purchases.html:291
+#: templates/contracts/hall_sales.html:279
+#: templates/contracts/trader_purchases.html:314
+#: templates/contracts/trader_sales.html:320
+msgid "Cell"
+msgstr ""
+
+#: masterdata/models.py:40 templates/contracts/hall_purchases.html:292
+#: templates/contracts/hall_sales.html:280
+#: templates/contracts/trader_purchases.html:315
+#: templates/contracts/trader_sales.html:321
+msgid "Nail sheet"
+msgstr ""
+
+#: masterdata/models.py:44 templates/contracts/hall_purchases.html:167
+#: templates/contracts/hall_sales.html:168
+#: templates/contracts/trader_purchases.html:201
+#: templates/contracts/trader_sales.html:196 templates/layout/sidebar.html:35
+#: templates/masterdata/products.html:4 templates/masterdata/products.html:17
+#: templates/masterdata/products.html:25 templates/masterdata/products.html:36
+msgid "Product"
+msgstr ""
+
+#: masterdata/models.py:45 templates/contracts/hall_purchases.html:369
+#: templates/contracts/hall_sales.html:345
+#: templates/contracts/trader_purchases.html:380
+#: templates/contracts/trader_sales.html:398
+msgid "Document"
+msgstr ""
+
+#: masterdata/models.py:49 templates/listing/deleted.html:101
+#: templates/listing/deleted.html:237 templates/listing/link.html:67
+#: templates/listing/link.html:178 templates/listing/link.html:314
+#: templates/listing/link.html:441 templates/listing/link.html:587
+#: templates/listing/linkshow.html:97 templates/listing/linkshow.html:238
+#: templates/listing/purchases.html:102 templates/listing/purchases.html:237
+#: templates/listing/sales.html:101 templates/listing/sales.html:239
+msgid "Done"
+msgstr ""
+
+#: masterdata/models.py:50 templates/listing/deleted.html:102
+#: templates/listing/deleted.html:238 templates/listing/link.html:69
+#: templates/listing/link.html:180 templates/listing/link.html:315
+#: templates/listing/link.html:443 templates/listing/link.html:588
+#: templates/listing/linkshow.html:98 templates/listing/linkshow.html:239
+#: templates/listing/purchases.html:103 templates/listing/purchases.html:238
+#: templates/listing/sales.html:102 templates/listing/sales.html:240
+msgid "Pending"
+msgstr ""
+
+#: masterdata/models.py:54 templates/masterdata/products.html:145
+#: templates/masterdata/products.html:240
+msgid "Pachinko"
+msgstr ""
+
+#: masterdata/models.py:55 templates/masterdata/products.html:146
+#: templates/masterdata/products.html:241
+msgid "Slot"
+msgstr ""
+
+#: templates/accounting/purchases.html:53 templates/accounting/sales.html:53
+#: templates/contracts/trader_purchases.html:61
+#: templates/contracts/trader_sales.html:61 templates/listing/deleted.html:53
+#: templates/listing/link.html:132 templates/listing/link.html:397
+#: templates/listing/linkshow.html:62 templates/listing/purchases.html:53
+#: templates/listing/sales.html:53
+msgid "Created date"
+msgstr ""
+
+#: templates/accounting/purchases.html:80
+#: templates/accounting/purchases.html:116 templates/accounting/sales.html:80
+#: templates/accounting/sales.html:116
+msgid "Last Excel Output Date"
+msgstr ""
+
+#: templates/accounting/purchases.html:82 templates/accounting/sales.html:82
+#: templates/listing/deleted.html:100 templates/listing/link.html:66
+#: templates/listing/link.html:177 templates/listing/link.html:440
+#: templates/listing/linkshow.html:96 templates/listing/purchases.html:101
+#: templates/listing/sales.html:100
+msgid "All"
+msgstr ""
+
+#: templates/accounting/purchases.html:83 templates/accounting/sales.html:83
+msgid "Enable"
+msgstr ""
+
+#: templates/accounting/purchases.html:85 templates/accounting/sales.html:84
+msgid "Disable"
+msgstr ""
+
+#: templates/accounting/purchases.html:95 templates/accounting/sales.html:95
+#: templates/listing/deleted.html:112 templates/listing/inventory.html:89
+#: templates/listing/link.html:79 templates/listing/link.html:193
+#: templates/listing/link.html:456 templates/listing/linkshow.html:107
+#: templates/listing/purchases.html:113 templates/listing/sales.html:112
+#: templates/masterdata/customers.html:51 templates/masterdata/halls.html:52
+#: templates/masterdata/products.html:52 templates/masterdata/senders.html:52
+msgid "Search"
+msgstr ""
+
+#: templates/accounting/purchases.html:97 templates/accounting/sales.html:97
+#: templates/listing/deleted.html:114 templates/listing/inventory.html:91
+#: templates/listing/link.html:88 templates/listing/link.html:195
+#: templates/listing/link.html:458 templates/listing/linkshow.html:109
+#: templates/listing/purchases.html:115 templates/listing/sales.html:114
+#: templates/masterdata/customers.html:53 templates/masterdata/halls.html:54
+#: templates/masterdata/products.html:54 templates/masterdata/senders.html:54
+msgid "Clear"
+msgstr ""
+
+#: templates/accounting/purchases.html:105 templates/accounting/sales.html:105
+#: templates/listing/inventory.html:100
+msgid "Search results"
+msgstr ""
+
+#: templates/accounting/purchases.html:162 templates/accounting/sales.html:160
+#: templates/contracts/hall_purchases.html:849
+#: templates/contracts/hall_sales.html:785
+#: templates/contracts/trader_purchases.html:872
+#: templates/contracts/trader_sales.html:785 templates/listing/deleted.html:192
+#: templates/listing/inventory.html:155 templates/listing/link.html:543
+#: templates/listing/linkshow.html:193 templates/listing/purchases.html:192
+#: templates/listing/sales.html:194
+msgid "Export to excel"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:5
+#: templates/contracts/hall_purchases.html:20
+#: templates/contracts/hall_purchases.html:28 templates/layout/sidebar.html:47
+msgid "Hall purchases"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:20
+#: templates/contracts/hall_purchases.html:27
+#: templates/contracts/hall_sales.html:20
+#: templates/contracts/hall_sales.html:27
+#: templates/contracts/trader_purchases.html:20
+#: templates/contracts/trader_purchases.html:27
+#: templates/contracts/trader_sales.html:21
+#: templates/contracts/trader_sales.html:28 templates/layout/sidebar.html:42
+msgid "Contract"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:75
+#: templates/contracts/hall_sales.html:75
+#: templates/contracts/trader_purchases.html:731
+msgid "Buyer"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:75
+#: templates/contracts/hall_sales.html:75
+msgid "A"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:79
+#: templates/contracts/hall_sales.html:79
+#: templates/masterdata/customers.html:46 templates/masterdata/halls.html:47
+#: templates/masterdata/products.html:47 templates/masterdata/senders.html:47
+msgid "Keyword search"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:82
+#: templates/contracts/hall_sales.html:82
+#: templates/contracts/trader_purchases.html:92
+#: templates/contracts/trader_sales.html:91
+msgid "Search by customer, frigana, tel or fax"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:91
+#: templates/contracts/hall_sales.html:91
+#: templates/contracts/trader_purchases.html:751
+msgid "Seller"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:91
+#: templates/contracts/hall_sales.html:91
+msgid "B"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:95
+#: templates/contracts/hall_sales.html:96
+#: templates/contracts/trader_purchases.html:88
+#: templates/contracts/trader_purchases.html:629
+#: templates/contracts/trader_purchases.html:679
+#: templates/contracts/trader_sales.html:88
+#: templates/contracts/trader_sales.html:647
+#: templates/contracts/trader_sales.html:690
+msgid "Company"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:101
+#: templates/contracts/hall_purchases.html:140
+#: templates/contracts/hall_sales.html:102
+#: templates/contracts/hall_sales.html:141
+#: templates/contracts/trader_purchases.html:137
+#: templates/contracts/trader_purchases.html:636
+#: templates/contracts/trader_purchases.html:686
+#: templates/contracts/trader_sales.html:135
+#: templates/contracts/trader_sales.html:655
+#: templates/contracts/trader_sales.html:697
+#: templates/masterdata/customers.html:69
+#: templates/masterdata/customers.html:151
+#: templates/masterdata/customers.html:231 templates/masterdata/halls.html:72
+#: templates/masterdata/halls.html:175 templates/masterdata/halls.html:275
+#: templates/masterdata/senders.html:70 templates/masterdata/senders.html:150
+#: templates/masterdata/senders.html:221
+msgid "Address"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:108
+#: templates/contracts/hall_purchases.html:148
+#: templates/contracts/hall_sales.html:109
+#: templates/contracts/hall_sales.html:149
+#: templates/contracts/trader_purchases.html:148
+#: templates/contracts/trader_purchases.html:645
+#: templates/contracts/trader_purchases.html:695
+#: templates/contracts/trader_sales.html:146
+#: templates/contracts/trader_sales.html:661
+#: templates/contracts/trader_sales.html:703
+#: templates/masterdata/customers.html:70
+#: templates/masterdata/customers.html:158
+#: templates/masterdata/customers.html:238 templates/masterdata/halls.html:73
+#: templates/masterdata/halls.html:183 templates/masterdata/halls.html:283
+#: templates/masterdata/senders.html:71 templates/masterdata/senders.html:157
+#: templates/masterdata/senders.html:228
+msgid "TEL"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:114
+#: templates/contracts/hall_sales.html:115
+#: templates/contracts/trader_purchases.html:156
+#: templates/contracts/trader_sales.html:154
+#: templates/contracts/trader_sales.html:670
+#: templates/contracts/trader_sales.html:712
+#: templates/contracts/trader_sales.html:770
+#: templates/masterdata/customers.html:71
+#: templates/masterdata/customers.html:165
+#: templates/masterdata/customers.html:245 templates/masterdata/halls.html:74
+#: templates/masterdata/halls.html:190 templates/masterdata/halls.html:290
+#: templates/masterdata/senders.html:72 templates/masterdata/senders.html:164
+#: templates/masterdata/senders.html:235
+msgid "FAX"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:125
+#: templates/contracts/hall_sales.html:126
+msgid "Installation location"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:131
+#: templates/contracts/hall_sales.html:132 templates/masterdata/halls.html:69
+#: templates/masterdata/halls.html:151 templates/masterdata/halls.html:251
+msgid "Hall name"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:135
+#: templates/contracts/hall_sales.html:136
+msgid "Search by name, frigana, tel or fax"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:156
+#: templates/contracts/hall_sales.html:157
+msgid ""
+"The buyer (hereinafter referred to as A) and the seller (hereinafter "
+"referred to as B) have entered into a sales contract including the "
+"transaction contract stated on the back of the following products "
+"(hereinafter referred to as properties)."
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:170
+#: templates/contracts/hall_sales.html:171
+#: templates/contracts/trader_purchases.html:204
+#: templates/contracts/trader_sales.html:199
+msgid "Search by model name"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:173
+#: templates/contracts/hall_purchases.html:360
+#: templates/contracts/hall_purchases.html:517
+#: templates/contracts/hall_sales.html:174
+#: templates/contracts/hall_sales.html:336
+#: templates/contracts/hall_sales.html:476
+#: templates/contracts/trader_purchases.html:208
+#: templates/contracts/trader_purchases.html:371
+#: templates/contracts/trader_sales.html:202
+#: templates/contracts/trader_sales.html:389
+#: templates/listing/inventory.html:249 templates/masterdata/customers.html:181
+#: templates/masterdata/documents.html:118 templates/masterdata/halls.html:207
+#: templates/masterdata/people_in_charge.html:101
+#: templates/masterdata/products.html:203 templates/masterdata/senders.html:172
+msgid "Add"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:182
+#: templates/contracts/hall_sales.html:183
+#: templates/contracts/trader_purchases.html:217
+#: templates/contracts/trader_sales.html:211
+#: templates/masterdata/products.html:135
+#: templates/masterdata/products.html:230
+msgid "Model name"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:183
+#: templates/contracts/hall_purchases.html:526
+#: templates/contracts/hall_sales.html:184
+#: templates/contracts/hall_sales.html:485
+#: templates/contracts/trader_purchases.html:218
+#: templates/contracts/trader_sales.html:212
+msgid "Product type"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:184
+#: templates/contracts/hall_purchases.html:370
+#: templates/contracts/hall_sales.html:185
+#: templates/contracts/hall_sales.html:346
+#: templates/contracts/trader_purchases.html:219
+#: templates/contracts/trader_purchases.html:381
+#: templates/contracts/trader_sales.html:213
+#: templates/contracts/trader_sales.html:399
+msgid "Quantity"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:185
+#: templates/contracts/hall_purchases.html:371
+#: templates/contracts/hall_sales.html:186
+#: templates/contracts/hall_sales.html:347
+#: templates/contracts/trader_purchases.html:220
+#: templates/contracts/trader_purchases.html:382
+#: templates/contracts/trader_sales.html:214
+#: templates/contracts/trader_sales.html:400
+#: templates/listing/inventory.html:111 templates/listing/inventory.html:226
+#: templates/listing/inventory.html:228 templates/listing/inventory.html:323
+#: templates/listing/inventory.html:325 templates/masterdata/products.html:73
+#: templates/masterdata/products.html:188
+#: templates/masterdata/products.html:190
+#: templates/masterdata/products.html:283
+#: templates/masterdata/products.html:285
+msgid "Price"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:187
+#: templates/contracts/hall_purchases.html:373
+#: templates/contracts/hall_purchases.html:530
+#: templates/contracts/hall_sales.html:188
+#: templates/contracts/hall_sales.html:349
+#: templates/contracts/hall_sales.html:489
+#: templates/contracts/trader_purchases.html:222
+#: templates/contracts/trader_purchases.html:384
+#: templates/contracts/trader_sales.html:216
+#: templates/contracts/trader_sales.html:402 templates/listing/deleted.html:136
+#: templates/listing/inventory.html:114 templates/listing/link.html:221
+#: templates/listing/link.html:483 templates/listing/linkshow.html:132
+#: templates/listing/purchases.html:137 templates/listing/sales.html:136
+#: templates/masterdata/customers.html:73
+#: templates/masterdata/documents.html:48 templates/masterdata/halls.html:76
+#: templates/masterdata/people_in_charge.html:46
+#: templates/masterdata/products.html:76 templates/masterdata/senders.html:73
+msgid "Action"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:250
+#: templates/contracts/hall_sales.html:251
+#: templates/contracts/trader_purchases.html:286
+#: templates/contracts/trader_sales.html:279
+msgid "No product has been added."
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:351
+#: templates/contracts/hall_sales.html:327
+#: templates/contracts/trader_purchases.html:362
+#: templates/contracts/trader_sales.html:380 templates/layout/sidebar.html:36
+#: templates/masterdata/documents.html:4 templates/masterdata/documents.html:17
+#: templates/masterdata/documents.html:25
+#: templates/masterdata/documents.html:36
+msgid "Other"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:354
+#: templates/contracts/hall_sales.html:330
+#: templates/contracts/trader_purchases.html:365
+#: templates/contracts/trader_sales.html:383
+msgid "Select document"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:428
+#: templates/contracts/hall_sales.html:404
+#: templates/contracts/trader_purchases.html:440
+#: templates/contracts/trader_sales.html:457
+msgid "No document has been added."
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:508
+#: templates/contracts/hall_sales.html:467
+msgid "Document fee"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:511
+#: templates/contracts/hall_sales.html:470
+msgid "Select document fee"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:527
+#: templates/contracts/hall_sales.html:486
+msgid "Model count"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:585
+#: templates/contracts/hall_sales.html:544
+msgid "No document fee has been added."
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:674
+#: templates/contracts/hall_purchases.html:838
+#: templates/contracts/hall_sales.html:613
+#: templates/contracts/trader_purchases.html:569
+#: templates/contracts/trader_purchases.html:667
+#: templates/contracts/trader_purchases.html:717
+#: templates/contracts/trader_sales.html:553
+msgid "Remarks"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:682
+#: templates/contracts/hall_sales.html:621
+#: templates/contracts/trader_purchases.html:581
+#: templates/contracts/trader_sales.html:564
+msgid "Sum"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:686
+#: templates/contracts/hall_sales.html:625
+#: templates/contracts/trader_purchases.html:585
+#: templates/contracts/trader_sales.html:568
+msgid "Consumption tax"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:694
+#: templates/contracts/hall_sales.html:633
+#: templates/contracts/trader_purchases.html:593
+#: templates/contracts/trader_sales.html:576
+msgid "Insurance fee"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:694
+#: templates/contracts/hall_sales.html:633
+#: templates/contracts/trader_purchases.html:593
+#: templates/contracts/trader_sales.html:576
+msgid "No tax"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:703
+#: templates/contracts/hall_sales.html:642
+msgid "Total amount"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:714
+#: templates/contracts/hall_sales.html:653
+msgid "We will charge you as follows."
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:723
+#: templates/contracts/hall_sales.html:662
+msgid "Shipping date"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:734
+#: templates/contracts/hall_sales.html:673
+msgid "Opening date"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:746
+#: templates/contracts/hall_sales.html:685
+#: templates/contracts/trader_sales.html:603
+msgid "Payment method"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:757
+#: templates/contracts/hall_sales.html:696
+msgid "Payment breakdown"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:806
+#: templates/contracts/hall_sales.html:749
+#: templates/contracts/trader_purchases.html:800
+#: templates/contracts/trader_sales.html:765
+msgid "Transfer account"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:815
+#: templates/contracts/hall_sales.html:759
+#: templates/contracts/trader_purchases.html:181
+#: templates/contracts/trader_sales.html:177
+#: templates/masterdata/products.html:179
+#: templates/masterdata/products.html:274
+msgid "Select person in charge"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:828
+#: templates/contracts/hall_sales.html:772
+msgid "Confirmor"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:848
+#: templates/contracts/hall_sales.html:783
+#: templates/contracts/trader_purchases.html:869
+#: templates/contracts/trader_sales.html:784 templates/listing/deleted.html:246
+#: templates/listing/inventory.html:346 templates/listing/link.html:323
+#: templates/listing/link.html:598 templates/listing/linkshow.html:249
+#: templates/listing/purchases.html:246 templates/listing/sales.html:248
+#: templates/masterdata/customers.html:261
+#: templates/masterdata/documents.html:168 templates/masterdata/halls.html:307
+#: templates/masterdata/people_in_charge.html:138
+#: templates/masterdata/products.html:305 templates/masterdata/senders.html:243
+msgid "Save"
+msgstr ""
+
+#: templates/contracts/hall_purchases.html:868
+#: templates/contracts/hall_sales.html:803
+#: templates/contracts/trader_purchases.html:891
+#: templates/contracts/trader_sales.html:806
+msgid "You can not save without one or more products"
+msgstr ""
+
+#: templates/contracts/hall_sales.html:743
+msgid "Please bear the transfer fee at your expense."
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:56
+#: templates/contracts/trader_sales.html:57
+msgid "Contract and invoice"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:70
+#: templates/contracts/trader_sales.html:70
+msgid "Updated date"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:115
+#: templates/contracts/trader_sales.html:113
+#: templates/masterdata/customers.html:67
+#: templates/masterdata/customers.html:137
+#: templates/masterdata/customers.html:217 templates/masterdata/halls.html:70
+#: templates/masterdata/halls.html:159 templates/masterdata/halls.html:259
+#: templates/masterdata/senders.html:68 templates/masterdata/senders.html:136
+#: templates/masterdata/senders.html:207
+msgid "Frigana"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:126
+#: templates/contracts/trader_sales.html:124
+#: templates/masterdata/customers.html:68
+#: templates/masterdata/customers.html:144
+#: templates/masterdata/customers.html:224 templates/masterdata/halls.html:71
+#: templates/masterdata/halls.html:167 templates/masterdata/halls.html:267
+#: templates/masterdata/senders.html:69 templates/masterdata/senders.html:143
+#: templates/masterdata/senders.html:214
+msgid "Postal code"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:505
+msgid "Removal date"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:524
+msgid "Frame color"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:531
+#: templates/listing/link.html:215 templates/listing/link.html:477
+msgid "Date of shipment"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:542
+#: templates/contracts/trader_sales.html:597
+msgid "Shipping method"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:556
+#: templates/contracts/trader_sales.html:617
+msgid "Payment due date"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:602
+#: templates/contracts/trader_sales.html:585
+msgid "Total"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:614
+msgid ""
+"It is assumed that the contract has been concluded with the arrival of our "
+"certificate of sale."
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:617
+#, python-format
+msgid ""
+"If you cancel after sending the proof of purchase, you will be compensated "
+"for 100%% of the closing price."
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:620
+msgid ""
+"We will notify you of any missing items or damage within 3 days after the "
+"item arrives. No further returns or exchanges will be accepted."
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:627
+#: templates/contracts/trader_sales.html:645
+msgid "Product sender"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:631
+#: templates/contracts/trader_sales.html:649
+msgid "Select product sender"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:651
+#: templates/contracts/trader_purchases.html:701
+msgid "Desired arrival date"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:661
+#: templates/contracts/trader_purchases.html:711
+msgid "Shipping company"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:677
+#: templates/contracts/trader_sales.html:688
+msgid "Document sender"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:681
+#: templates/contracts/trader_sales.html:692
+msgid "Select document sender"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:726
+msgid "Please check the contents, seal it, and fax it to us."
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:727
+msgid "Return address"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:783
+msgid "Transfer deadline"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:805
+msgid "Bank name"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:815
+msgid "Account number"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:830
+msgid "Original invoice"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:833
+#: templates/contracts/trader_sales.html:772
+msgid "Required"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:835
+#: templates/contracts/trader_sales.html:772
+msgid "Not required"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:840
+msgid "Branch name"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:850
+msgid "Account holder"
+msgstr ""
+
+#: templates/contracts/trader_purchases.html:862
+msgid "Please describe the transfer destination."
+msgstr ""
+
+#: templates/contracts/trader_sales.html:611
+msgid "Billing amount"
+msgstr ""
+
+#: templates/contracts/trader_sales.html:631
+msgid ""
+"The contract will be effective when both seller and buyer sign and seal."
+msgstr ""
+
+#: templates/contracts/trader_sales.html:632
+msgid "As a general rule, the contract cannot be canceled once signed."
+msgstr ""
+
+#: templates/contracts/trader_sales.html:633
+msgid ""
+"3 days warranty after delivery will be provided just in case of defects or "
+"malfunctions in the products."
+msgstr ""
+
+#: templates/contracts/trader_sales.html:634
+msgid ""
+"The seller will keep the ownership of the products until the buyer makes the "
+"full payment."
+msgstr ""
+
+#: templates/contracts/trader_sales.html:635
+msgid ""
+"The Ownership of the products shall be transferred to the buyer when product "
+"delivery is completed and full payment is made."
+msgstr ""
+
+#: templates/contracts/trader_sales.html:636
+msgid ""
+"In the following cases, the seller may, without any procedure, request the "
+"immediate payment of the remaining balance, or cancel the contract and take "
+"back the products."
+msgstr ""
+
+#: templates/contracts/trader_sales.html:637
+msgid "When the buyer fail to make the payment even once."
+msgstr ""
+
+#: templates/contracts/trader_sales.html:638
+msgid ""
+"When the products were forfeited or disposed temporarily, or the request for "
+"arrangement, reconciliation, damage etc is received."
+msgstr ""
+
+#: templates/contracts/trader_sales.html:676
+#: templates/contracts/trader_sales.html:718
+msgid "Expected arrival date"
+msgstr ""
+
+#: templates/contracts/trader_sales.html:731
+msgid "Buyer seal"
+msgstr ""
+
+#: templates/contracts/trader_sales.html:746
+msgid "Seller seal"
+msgstr ""
+
+#: templates/contracts/trader_sales.html:763
+msgid "Please be noted that the transfer fee will be at your company expense."
+msgstr ""
+
+#: templates/contracts/trader_sales.html:769
+msgid "Please check the contents. After seal, kindly revert back to us."
+msgstr ""
+
+#: templates/contracts/trader_sales.html:772
+msgid ""
+"If you need the original invoice, please make sure to tick the checkbox."
+msgstr ""
+
+#: templates/contracts/trader_sales.html:776
+msgid "Memo"
+msgstr ""
+
+#: templates/contracts/trader_sales.html:786
+msgid "Export Invoice to excel"
+msgstr ""
+
+#: templates/error/404.html:13 templates/error/500.html:13
+#: templates/layout/error_modal.html:8 templates/layout/error_modal.html:35
+#: templates/layout/error_modal.html:68 templates/layout/error_modal.html:100
+#: templates/layout/error_modal.html:132 templates/layout/error_modal.html:147
+#: templates/layout/error_modal.html:162
+msgid "Error"
+msgstr ""
+
+#: templates/error/404.html:17
+msgid "Page not found"
+msgstr ""
+
+#: templates/error/404.html:17 templates/error/500.html:17
+msgid "Home"
+msgstr ""
+
+#: templates/error/500.html:13
+msgid "Oups!"
+msgstr ""
+
+#: templates/error/500.html:17
+msgid "Server error, please contact support"
+msgstr ""
+
+#: templates/layout/base.html:11 templates/layout/base_not_logged.html:10
+#: templates/layout/base_not_logged.html:42 templates/layout/navbar.html:6
+msgid "Inventory System"
+msgstr ""
+
+#: templates/layout/error_modal.html:13
+msgid "Customer must be selected."
+msgstr ""
+
+#: templates/layout/error_modal.html:14 templates/layout/error_modal.html:41
+#: templates/layout/error_modal.html:83 templates/layout/error_modal.html:115
+msgid "Person in charge field must be provided."
+msgstr ""
+
+#: templates/layout/error_modal.html:15 templates/layout/error_modal.html:42
+#: templates/layout/error_modal.html:75 templates/layout/error_modal.html:107
+msgid "At least one product must be added."
+msgstr ""
+
+#: templates/layout/error_modal.html:16 templates/layout/error_modal.html:43
+#: templates/layout/error_modal.html:76 templates/layout/error_modal.html:108
+msgid "Price and quantity for each product must be positive integer."
+msgstr ""
+
+#: templates/layout/error_modal.html:17 templates/layout/error_modal.html:44
+#: templates/layout/error_modal.html:77 templates/layout/error_modal.html:109
+msgid "At least one document must be added."
+msgstr ""
+
+#: templates/layout/error_modal.html:18 templates/layout/error_modal.html:45
+#: templates/layout/error_modal.html:78 templates/layout/error_modal.html:110
+msgid "Price and quantity for each document must be positive integer."
+msgstr ""
+
+#: templates/layout/error_modal.html:19
+msgid ""
+"When the shipping method is delivery, product sender and document sender "
+"must be selected."
+msgstr ""
+
+#: templates/layout/error_modal.html:24 templates/layout/error_modal.html:57
+#: templates/layout/error_modal.html:89 templates/layout/error_modal.html:121
+#: templates/listing/deleted.html:247 templates/listing/inventory.html:250
+#: templates/listing/inventory.html:347 templates/listing/inventory.html:373
+#: templates/listing/link.html:324 templates/listing/link.html:599
+#: templates/listing/linkshow.html:250 templates/listing/purchases.html:247
+#: templates/listing/sales.html:249 templates/masterdata/customers.html:182
+#: templates/masterdata/customers.html:262
+#: templates/masterdata/customers.html:288
+#: templates/masterdata/documents.html:119
+#: templates/masterdata/documents.html:169
+#: templates/masterdata/documents.html:195 templates/masterdata/halls.html:208
+#: templates/masterdata/halls.html:308 templates/masterdata/halls.html:335
+#: templates/masterdata/people_in_charge.html:102
+#: templates/masterdata/people_in_charge.html:139
+#: templates/masterdata/people_in_charge.html:165
+#: templates/masterdata/products.html:204
+#: templates/masterdata/products.html:306
+#: templates/masterdata/products.html:332 templates/masterdata/senders.html:173
+#: templates/masterdata/senders.html:244 templates/masterdata/senders.html:270
+msgid "Close"
+msgstr ""
+
+#: templates/layout/error_modal.html:40 templates/layout/error_modal.html:73
+#: templates/layout/error_modal.html:105
+msgid "Customer field must be selected."
+msgstr ""
+
+#: templates/layout/error_modal.html:46
+msgid ""
+"Sender and shipping company for product sender and document sender forms "
+"must be given."
+msgstr ""
+
+#: templates/layout/error_modal.html:47
+msgid "Frame color field must be selected."
+msgstr ""
+
+#: templates/layout/error_modal.html:48
+msgid "Receipt field must be selected."
+msgstr ""
+
+#: templates/layout/error_modal.html:49
+msgid "Bank name field must be selected."
+msgstr ""
+
+#: templates/layout/error_modal.html:50
+msgid "Account number field must be selected."
+msgstr ""
+
+#: templates/layout/error_modal.html:51
+msgid "Branch name field must be selected."
+msgstr ""
+
+#: templates/layout/error_modal.html:52
+msgid "Account holder field must be selected."
+msgstr ""
+
+#: templates/layout/error_modal.html:74 templates/layout/error_modal.html:106
+msgid "Hall field must be selected."
+msgstr ""
+
+#: templates/layout/error_modal.html:79 templates/layout/error_modal.html:111
+msgid "At least one document fee must be added."
+msgstr ""
+
+#: templates/layout/error_modal.html:80 templates/layout/error_modal.html:112
+msgid ""
+"Model count and quantity for each document fee must be positive integer."
+msgstr ""
+
+#: templates/layout/error_modal.html:81 templates/layout/error_modal.html:113
+msgid "At least one milestone must be added."
+msgstr ""
+
+#: templates/layout/error_modal.html:82 templates/layout/error_modal.html:114
+msgid "Transfer account field must be provided."
+msgstr ""
+
+#: templates/layout/error_modal.html:84 templates/layout/error_modal.html:116
+msgid "Confirmor field must be provided."
+msgstr ""
+
+#: templates/layout/error_modal.html:136
+msgid "Select the product before adding to the table."
+msgstr ""
+
+#: templates/layout/error_modal.html:151
+msgid "Select the document before adding to the table."
+msgstr ""
+
+#: templates/layout/error_modal.html:166
+msgid "Select the document fee before adding to the table."
+msgstr ""
+
+#: templates/layout/navbar.html:48
+msgid "My profile"
+msgstr ""
+
+#: templates/layout/navbar.html:49
+msgid "Logout"
+msgstr ""
+
+#: templates/layout/sidebar.html:31 templates/masterdata/customers.html:17
+#: templates/masterdata/customers.html:24
+#: templates/masterdata/documents.html:17
+#: templates/masterdata/documents.html:24 templates/masterdata/halls.html:17
+#: templates/masterdata/halls.html:24
+#: templates/masterdata/people_in_charge.html:17
+#: templates/masterdata/people_in_charge.html:24
+#: templates/masterdata/products.html:17 templates/masterdata/products.html:24
+#: templates/masterdata/senders.html:17 templates/masterdata/senders.html:24
+msgid "Master data"
+msgstr ""
+
+#: templates/layout/sidebar.html:33 templates/masterdata/customers.html:4
+#: templates/masterdata/customers.html:17
+#: templates/masterdata/customers.html:25
+#: templates/masterdata/customers.html:36
+msgid "Customer master"
+msgstr ""
+
+#: templates/layout/sidebar.html:34 templates/masterdata/halls.html:4
+#: templates/masterdata/halls.html:17 templates/masterdata/halls.html:25
+#: templates/masterdata/halls.html:36
+msgid "Hall"
+msgstr ""
+
+#: templates/layout/sidebar.html:56 templates/listing/link.html:11
+#: templates/listing/link.html:209 templates/listing/link.html:471
+msgid "Link"
+msgstr ""
+
+#: templates/layout/sidebar.html:57 templates/listing/linkshow.html:18
+#: templates/listing/linkshow.html:26 templates/listing/linkshow.html:37
+msgid "LinkView"
+msgstr ""
+
+#: templates/layout/sidebar.html:58 templates/listing/history.html:18
+#: templates/listing/history.html:26 templates/listing/history.html:37
+msgid "Export history"
+msgstr ""
+
+#: templates/layout/sidebar.html:59 templates/listing/deleted.html:4
+msgid "Deleted"
+msgstr ""
+
+#: templates/listing/deleted.html:18 templates/listing/deleted.html:26
+#: templates/listing/deleted.html:37
+msgid "Deleted (contract)"
+msgstr ""
+
+#: templates/listing/deleted.html:205 templates/listing/link.html:281
+#: templates/listing/link.html:555 templates/listing/linkshow.html:206
+#: templates/listing/purchases.html:205 templates/listing/sales.html:207
+msgid "Edit"
+msgstr ""
+
+#: templates/listing/deleted.html:313 templates/listing/deleted.html:358
+#: templates/listing/inventory.html:366 templates/listing/purchases.html:313
+#: templates/listing/sales.html:315 templates/masterdata/customers.html:281
+#: templates/masterdata/documents.html:188 templates/masterdata/halls.html:327
+#: templates/masterdata/people_in_charge.html:158
+#: templates/masterdata/products.html:325 templates/masterdata/senders.html:263
+msgid "Are you sure you want to remove this data?"
+msgstr ""
+
+#: templates/listing/history.html:4 templates/listing/inventory.html:4
+#: templates/listing/inventory.html:18 templates/listing/inventory.html:26
+#: templates/listing/inventory.html:37
+msgid "Inventory"
+msgstr ""
+
+#: templates/listing/history.html:46 templates/registration/login.html:17
+msgid "Username"
+msgstr ""
+
+#: templates/listing/history.html:47
+msgid "Export"
+msgstr ""
+
+#: templates/listing/history.html:48
+msgid "Exported at"
+msgstr ""
+
+#: templates/listing/inventory.html:53 templates/listing/inventory.html:107
+#: templates/listing/inventory.html:195 templates/listing/inventory.html:292
+#: templates/masterdata/products.html:70 templates/masterdata/products.html:159
+#: templates/masterdata/products.html:254
+msgid "Purchase date"
+msgstr ""
+
+#: templates/listing/inventory.html:64 templates/listing/inventory.html:108
+#: templates/listing/inventory.html:205 templates/listing/inventory.html:207
+#: templates/listing/inventory.html:302 templates/listing/inventory.html:304
+#: templates/masterdata/products.html:71 templates/masterdata/products.html:169
+#: templates/masterdata/products.html:171
+#: templates/masterdata/products.html:264
+#: templates/masterdata/products.html:266
+msgid "Supplier"
+msgstr ""
+
+#: templates/listing/inventory.html:80 templates/listing/inventory.html:112
+#: templates/listing/inventory.html:233 templates/listing/inventory.html:235
+#: templates/listing/inventory.html:330 templates/listing/inventory.html:332
+#: templates/masterdata/products.html:74 templates/masterdata/products.html:195
+#: templates/masterdata/products.html:197
+#: templates/masterdata/products.html:290
+#: templates/masterdata/products.html:292
+#: templates/masterdata/products.html:297
+#: templates/masterdata/products.html:299
+msgid "Stock"
+msgstr ""
+
+#: templates/listing/inventory.html:106 templates/listing/inventory.html:188
+#: templates/listing/inventory.html:190 templates/listing/inventory.html:285
+#: templates/listing/inventory.html:287
+msgid "Control number"
+msgstr ""
+
+#: templates/listing/inventory.html:113 templates/listing/inventory.html:240
+#: templates/listing/inventory.html:242 templates/listing/inventory.html:337
+#: templates/listing/inventory.html:339 templates/masterdata/products.html:75
+msgid "Total price"
+msgstr ""
+
+#: templates/listing/inventory.html:152
+msgid "New product"
+msgstr ""
+
+#: templates/listing/inventory.html:169 templates/masterdata/products.html:112
+#: templates/masterdata/products.html:124
+msgid "Add product"
+msgstr ""
+
+#: templates/listing/inventory.html:265 templates/masterdata/products.html:219
+msgid "Edit product"
+msgstr ""
+
+#: templates/listing/inventory.html:362 templates/masterdata/products.html:321
+msgid "Delete product"
+msgstr ""
+
+#: templates/listing/inventory.html:372 templates/masterdata/customers.html:287
+#: templates/masterdata/documents.html:194 templates/masterdata/halls.html:334
+#: templates/masterdata/people_in_charge.html:164
+#: templates/masterdata/products.html:331 templates/masterdata/senders.html:269
+msgid "Delete"
+msgstr ""
+
+#: templates/listing/link.html:1
+msgid "Link List"
+msgstr ""
+
+#: templates/listing/link.html:11
+msgid "Links (contract)"
+msgstr ""
+
+#: templates/listing/link.html:19 templates/listing/link.html:102
+#: templates/listing/purchases.html:18 templates/listing/purchases.html:26
+#: templates/listing/purchases.html:37
+msgid "Purchases (contract)"
+msgstr ""
+
+#: templates/listing/link.html:339
+msgid "Purchase Select"
+msgstr ""
+
+#: templates/listing/link.html:348
+msgid "Sales Select"
+msgstr ""
+
+#: templates/listing/link.html:358
+msgid "Make Link"
+msgstr ""
+
+#: templates/listing/link.html:369 templates/listing/sales.html:18
+#: templates/listing/sales.html:26 templates/listing/sales.html:37
+msgid "Sales (contract)"
+msgstr ""
+
+#: templates/listing/link.html:913
+msgid "Please Fill the Fields!"
+msgstr ""
+
+#: templates/listing/link.html:916
+msgid "Are you going to link these inventories?"
+msgstr ""
+
+#: templates/listing/linkshow.html:121
+msgid "Unlink"
+msgstr ""
+
+#: templates/listing/linkshow.html:293
+msgid "Are you going to unlink these items?"
+msgstr ""
+
+#: templates/masterdata/customers.html:66
+#: templates/masterdata/customers.html:130
+#: templates/masterdata/customers.html:210 templates/masterdata/halls.html:135
+#: templates/masterdata/halls.html:235 templates/masterdata/halls.html:238
+msgid "Customer name"
+msgstr ""
+
+#: templates/masterdata/customers.html:72
+#: templates/masterdata/customers.html:172
+#: templates/masterdata/customers.html:252
+msgid "Excel"
+msgstr ""
+
+#: templates/masterdata/customers.html:106
+#: templates/masterdata/customers.html:118
+msgid "Add customer"
+msgstr ""
+
+#: templates/masterdata/customers.html:132
+#: templates/masterdata/customers.html:212 templates/masterdata/halls.html:138
+msgid "Enter customer name"
+msgstr ""
+
+#: templates/masterdata/customers.html:139
+#: templates/masterdata/customers.html:219 templates/masterdata/halls.html:161
+#: templates/masterdata/halls.html:261 templates/masterdata/senders.html:138
+#: templates/masterdata/senders.html:209
+msgid "Enter frigana"
+msgstr ""
+
+#: templates/masterdata/customers.html:146
+#: templates/masterdata/customers.html:226 templates/masterdata/halls.html:170
+#: templates/masterdata/halls.html:270 templates/masterdata/senders.html:145
+#: templates/masterdata/senders.html:216
+msgid "Enter postal code"
+msgstr ""
+
+#: templates/masterdata/customers.html:153
+#: templates/masterdata/customers.html:233 templates/masterdata/halls.html:177
+#: templates/masterdata/halls.html:277 templates/masterdata/senders.html:152
+#: templates/masterdata/senders.html:223
+msgid "Enter address"
+msgstr ""
+
+#: templates/masterdata/customers.html:160
+#: templates/masterdata/customers.html:240 templates/masterdata/halls.html:185
+#: templates/masterdata/halls.html:285 templates/masterdata/senders.html:159
+#: templates/masterdata/senders.html:230
+msgid "Enter TEL"
+msgstr ""
+
+#: templates/masterdata/customers.html:167
+#: templates/masterdata/customers.html:247 templates/masterdata/halls.html:192
+#: templates/masterdata/halls.html:292 templates/masterdata/senders.html:166
+#: templates/masterdata/senders.html:237
+msgid "Enter FAX"
+msgstr ""
+
+#: templates/masterdata/customers.html:174
+#: templates/masterdata/customers.html:254
+msgid "Enter excel"
+msgstr ""
+
+#: templates/masterdata/customers.html:197
+msgid "Edit customer"
+msgstr ""
+
+#: templates/masterdata/customers.html:277
+msgid "Delete customer"
+msgstr ""
+
+#: templates/masterdata/documents.html:45
+#: templates/masterdata/documents.html:96
+#: templates/masterdata/documents.html:146
+#: templates/masterdata/people_in_charge.html:45
+#: templates/masterdata/people_in_charge.html:92
+#: templates/masterdata/people_in_charge.html:129
+msgid "Name"
+msgstr ""
+
+#: templates/masterdata/documents.html:46
+#: templates/masterdata/documents.html:103
+#: templates/masterdata/documents.html:153
+msgid "Term"
+msgstr ""
+
+#: templates/masterdata/documents.html:73
+#: templates/masterdata/documents.html:85
+msgid "Add other"
+msgstr ""
+
+#: templates/masterdata/documents.html:98
+#: templates/masterdata/documents.html:148
+#: templates/masterdata/people_in_charge.html:94
+#: templates/masterdata/people_in_charge.html:131
+msgid "Enter name"
+msgstr ""
+
+#: templates/masterdata/documents.html:105
+#: templates/masterdata/documents.html:155
+msgid "Enter term"
+msgstr ""
+
+#: templates/masterdata/documents.html:112
+#: templates/masterdata/documents.html:162
+msgid "Enter taxation"
+msgstr ""
+
+#: templates/masterdata/documents.html:134
+msgid "Edit other"
+msgstr ""
+
+#: templates/masterdata/documents.html:184
+msgid "Delete other"
+msgstr ""
+
+#: templates/masterdata/halls.html:68 templates/masterdata/halls.html:143
+#: templates/masterdata/halls.html:146 templates/masterdata/halls.html:243
+#: templates/masterdata/halls.html:246
+msgid "Customer frigana"
+msgstr ""
+
+#: templates/masterdata/halls.html:75 templates/masterdata/halls.html:197
+#: templates/masterdata/halls.html:297
+msgid "Payee"
+msgstr ""
+
+#: templates/masterdata/halls.html:112 templates/masterdata/halls.html:124
+msgid "Add hall"
+msgstr ""
+
+#: templates/masterdata/halls.html:153 templates/masterdata/halls.html:253
+msgid "Enter hall name"
+msgstr ""
+
+#: templates/masterdata/halls.html:199 templates/masterdata/halls.html:299
+msgid "Enter payee"
+msgstr ""
+
+#: templates/masterdata/halls.html:223
+msgid "Edit hall"
+msgstr ""
+
+#: templates/masterdata/halls.html:323
+msgid "Delete hall"
+msgstr ""
+
+#: templates/masterdata/halls.html:328
+msgid ""
+"Because this data already output in contract document, can't remove. Please "
+"remove contract document first."
+msgstr ""
+
+#: templates/masterdata/people_in_charge.html:69
+#: templates/masterdata/people_in_charge.html:81
+msgid "Add person"
+msgstr ""
+
+#: templates/masterdata/people_in_charge.html:117
+msgid "Edit person"
+msgstr ""
+
+#: templates/masterdata/people_in_charge.html:154
+msgid "Delete person"
+msgstr ""
+
+#: templates/masterdata/products.html:69 templates/masterdata/products.html:152
+#: templates/masterdata/products.html:247
+msgid "Maker"
+msgstr ""
+
+#: templates/masterdata/products.html:137
+#: templates/masterdata/products.html:232
+msgid "Enter model name"
+msgstr ""
+
+#: templates/masterdata/products.html:154
+#: templates/masterdata/products.html:249
+msgid "Enter maker"
+msgstr ""
+
+#: templates/masterdata/senders.html:4 templates/masterdata/senders.html:17
+#: templates/masterdata/senders.html:25 templates/masterdata/senders.html:36
+msgid "Sender"
+msgstr ""
+
+#: templates/masterdata/senders.html:67 templates/masterdata/senders.html:129
+#: templates/masterdata/senders.html:200
+msgid "Sender name"
+msgstr ""
+
+#: templates/masterdata/senders.html:106 templates/masterdata/senders.html:118
+msgid "Add sender"
+msgstr ""
+
+#: templates/masterdata/senders.html:131 templates/masterdata/senders.html:202
+msgid "Enter sender name"
+msgstr ""
+
+#: templates/masterdata/senders.html:188
+msgid "Edit sender"
+msgstr ""
+
+#: templates/masterdata/senders.html:259
+msgid "Delete sender"
+msgstr ""
+
+#: templates/registration/login.html:13
+msgid "Login to your account"
+msgstr ""
+
+#: templates/registration/login.html:13
+msgid "Enter your username and password below"
+msgstr ""
+
+#: templates/registration/login.html:24
+msgid "Password"
+msgstr ""
+
+#: templates/registration/login.html:37
+#: templates/registration/password_reset_complete.html:11
+msgid "Sign in"
+msgstr ""
+
+#: templates/registration/login.html:41
+msgid "Forgot password"
+msgstr ""
+
+#: templates/registration/password_reset_complete.html:8
+msgid "Your password has been set. You may go ahead and sign in now."
+msgstr ""
+
+#: templates/registration/password_reset_confirm.html:13
+#: templates/registration/password_reset_confirm.html:37
+msgid "Change password"
+msgstr ""
+
+#: templates/registration/password_reset_confirm.html:17
+msgid "New password"
+msgstr ""
+
+#: templates/registration/password_reset_confirm.html:24
+msgid "New password confirmation"
+msgstr ""
+
+#: templates/registration/password_reset_confirm.html:44
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used."
+msgstr ""
+
+#: templates/registration/password_reset_confirm.html:45
+msgid "Please request a new password reset."
+msgstr ""
+
+#: templates/registration/password_reset_done.html:8
+msgid ""
+"We've emailed you instructions for setting your password, if an account "
+"exists with the email you entered."
+msgstr ""
+
+#: templates/registration/password_reset_done.html:9
+msgid "You should receive them shortly."
+msgstr ""
+
+#: templates/registration/password_reset_done.html:12
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you registered with, and check your spam folder."
+msgstr ""
+
+#: templates/registration/password_reset_form.html:13
+msgid "Password recovery"
+msgstr ""
+
+#: templates/registration/password_reset_form.html:13
+msgid "We'll send you instructions in email"
+msgstr ""
+
+#: templates/registration/password_reset_form.html:17
+msgid "Your email"
+msgstr ""
+
+#: templates/registration/password_reset_form.html:23
+msgid "Reset password"
+msgstr ""

@@ -1,0 +1,98 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{% trans 'Inventory System' %}</title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/core/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/core/core.min.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/core/components.min.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/core/colors.min.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/icons/icomoon/styles.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="{% static 'js/core/libraries/jquery.min.js' %}"></script>
+	<script src="{% static 'js/core/libraries/bootstrap.min.js' %}"></script>
+	<!-- /core JS files -->
+
+	<script src="{% static 'js/customs/template.js' %}"></script>
+	<script src="{% static 'js/customs/app.js' %}"></script>
+
+	{% csrf_token %}
+	<script>
+		const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+	</script>
+
+</head>
+
+<body class="login-container">
+	
+	<!-- Main navbar -->
+	<div class="navbar navbar-inverse">
+		<div class="navbar-header" style="width: 100%;">
+			<a class="navbar-brand" href="{% url 'dashboard' %}"><span>{% trans 'Inventory System' %}</span></a>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown language-switch">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						{% get_current_language as LANGUAGE_CODE %}
+						{% if LANGUAGE_CODE == 'en' %}
+							<img src="{% static 'images/flags/gb.png' %}" class="position-left" alt="">
+							English
+							<span class="caret"></span>
+						{% else %}
+						<img src="{% static 'images/flags/ja.png' %}" class="position-left" alt="">
+							日本語
+						<span class="caret"></span>
+						{% endif %}
+					</a>
+					<ul class="dropdown-menu">
+						<li><a data-lang="ja" class="languge"><img src="{% static 'images/flags/ja.png' %}" alt="">日本語</a></li>
+						<li><a data-lang="en" class="languge"><img src="{% static 'images/flags/gb.png' %}" alt="">English</a></li>
+					</ul>
+				</li>
+			</ul>
+			
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Content area -->
+				<div class="content">
+
+					{% block content %}
+                    {% endblock %}
+
+				</div>
+				<!-- /content area -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+</body>
+</html>

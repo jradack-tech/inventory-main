@@ -1,0 +1,25 @@
+{% extends 'layout/base_not_logged.html' %}
+
+{% load i18n %}
+
+{% block content %}
+
+    <!-- Simple login form -->
+    <div class="panel panel-body login-form">
+        <div class="card bg-secondary shadow border-0">
+            <div class="card-header bg-transparent pb-5">
+
+                <div class="text-muted text-center mt-2 mb-3">
+                    <h1>{% trans "Oups!" %} {%trans "Error" %} 500</h1>
+                </div>
+
+                <div class="text-center mb-4">
+                    {% trans "Server error, please contact support" %} - <a href="{% url 'dashboard' %}">{% trans "Home" %}</a>.
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /simple login form -->
+
+{% endblock %}

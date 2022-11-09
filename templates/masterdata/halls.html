@@ -1,0 +1,442 @@
+{% extends 'layout/base.html' %}
+{% load i18n %}
+
+{% block title %} {% trans "Hall" %} {% endblock title %}
+
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+<div class="content-wrapper">
+
+  <!-- Page header -->
+  <div class="page-header">
+    <div class="page-header-content">
+      <div class="page-title">
+        <h4>
+          <i class="icon-arrow-left52 position-left"></i>
+          <span class="text-semibold">{% trans "Master data" %}</span> - {% trans "Hall" %}
+        </h4>
+      </div>
+    </div>
+
+    <div class="breadcrumb-line breadcrumb-line-component">
+      <ul class="breadcrumb">
+        <li><a><i class="icon-stack2 position-left"></i>{% trans "Master data" %}</a></li>
+        <li class="active">{% trans "Hall" %}</li>
+      </ul>
+    </div>
+  </div>
+  <!-- /page header -->
+
+  <!-- Content area -->
+  <div class="content">
+
+    <div class="panel panel-flat">
+      <div class="panel-heading border-bottom">
+        <h2 class="panel-title">{% trans "Hall" %}</h2>
+      </div>
+
+      <div class="panel-body" style="padding-bottom: 0"></div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="form-group d-flex row master-filter px-5">
+            <form method="get" class="master-search-form">
+              <div class="form-group d-flex row">
+                <div class="col-12 d-flex align-items-center">
+                  <label class="control-label col-1 mt-auto">{% trans "Keyword search" %}</label>
+                  <div class="col-4">
+                    {{ hall_filter.form.keyword }}
+                  </div>
+                  <button type="submit" class="btn btn-primary ml-4">
+                    <i class="icon-search4 position-left"></i>{% trans "Search" %}</button>
+                  <a href="{% url 'masterdata:hall-list' %}" class="btn btn-warning ml-4">
+                    <i class="icon-undo position-left"></i>{% trans "Clear" %}</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-inventory table-hover border-top">
+          <thead>
+            <tr>
+              <th>{% trans "No" %}</th>
+              <th class="w-15">{% trans "Customer" %}</th>
+              <th class="w-15">{% trans "Customer frigana" %}</th>
+              <th class="w-15">{% trans "Hall name" %}</th>
+              <th class="w-15">{% trans "Frigana" %}</th>
+              <th>{% trans "Postal code" %}</th>
+              <th class="w-18-5">{% trans "Address" %}</th>
+              <th>{% trans "TEL" %}</th>
+              <th>{% trans "FAX" %}</th>
+              <th class="w-12-5">{% trans "Payee" %}</th>
+              <th>{% trans "Action" %}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for hall in halls %}
+            <tr>
+              <td>{{ forloop.counter0|add:page_obj.start_index }}</td>
+              <td>{{ hall.customer_name|default_if_none:'' }}</td>
+              <td>{{ hall.customer_frigana|default_if_none:'' }}</td>
+              <td>{{ hall.name }}</td>
+              <td>{{ hall.frigana }}</td>
+              <td>{{ hall.postal_code|default_if_none:"" }}</td>
+              <td>{{ hall.address }}</td>
+              <td>{{ hall.tel|default_if_none:"" }}</td>
+              <td>{{ hall.fax|default_if_none:"" }}</td>
+              <td>{{ hall.payee }}</td>
+              <td>
+                <a href="#" data-id="{{hall.id}}" class="edit-action"><i class="icon-pencil5 color-primary"></i></a>
+                <a href="#" data-id="{{hall.id}}" class="remove-action"><i
+                    class="icon-minus-circle2 ml-3 color-danger"></i></a>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="panel panel-body border-top-teal text-center border-left-0 border-right-0">
+        <ul class="pagination pagination-separated pagination-rounded" id="pagination">
+        </ul>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mb-5-s text-center">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_add_new_data">
+              <i class="icon-plus2 position-left"></i>{% trans "Add hall" %}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Disabled backdrop Add New Master Data Modal -->
+    <div id="modal_add_new_data" class="modal fade" data-backdrop="false">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h5 class="modal-title">{% trans "Add hall" %}</h5>
+          </div>
+
+          <div class="modal-body">
+            <hr />
+
+            <form class="form-horizontal" action="" method="POST">
+              {% csrf_token %}
+              <fieldset class="content-group">
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "Customer name" %}:</label>
+                  <div class="col-lg-9">
+                    <input type="text" name="customer_name" class="form-control"
+                      placeholder="{% trans 'Enter customer name' %}..." required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "Customer frigana" %}:</label>
+                  <div class="col-lg-9">
+                    <input type="text" name="customer_frigana" class="form-control"
+                      placeholder="{% trans 'Customer frigana' %}..." required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "Hall name" %}:</label>
+                  <div class="col-lg-9">
+                    <input type="text" name="name" class="form-control" placeholder="{% trans 'Enter hall name' %}..."
+                      required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "Frigana" %}:</label>
+                  <div class="col-lg-9">
+                    <input type="text" name="frigana" class="form-control" placeholder="{% trans 'Enter frigana' %}..."
+                      required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "Postal code" %}:</label>
+                  <div class="col-lg-9">
+                    <input type="text" name="postal_code" class="form-control"
+                      placeholder="{% trans 'Enter postal code' %}...">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "Address" %}:</label>
+                  <div class="col-lg-9">
+                    <input type="text" name="address" class="form-control" placeholder="{% trans 'Enter address' %}..."
+                      required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "TEL" %}:</label>
+                  <div class="col-lg-9">
+                    <input type="text" name="tel" class="form-control" placeholder="{% trans 'Enter TEL' %}...">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "FAX" %}:</label>
+                  <div class="col-lg-9">
+                    <input type="text" name="fax" class="form-control" placeholder="{% trans 'Enter FAX' %}...">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "Payee" %}:</label>
+                  <div class="col-lg-9">
+                    <input type="text" name="payee" class="form-control" placeholder="{% trans 'Enter payee' %} ..."
+                      required>
+                  </div>
+                </div>
+
+              </fieldset>
+
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">{% trans "Add" %}</button>
+                <button type="button" class="btn btn-link" data-dismiss="modal">{% trans "Close" %}</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /disabled backdrop -->
+
+    <!-- Disabled backdrop edit Master Data Modal -->
+    <div id="modal_edit_data" class="modal fade" data-backdrop="false" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h5 class="modal-title">{% trans "Edit hall" %}</h5>
+          </div>
+
+          <div class="modal-body">
+            <hr />
+
+            <form class="form-horizontal" method="POST" action="{% url 'masterdata:hall-update' %}">
+              {% csrf_token %}
+              <fieldset class="content-group">
+                <input type="hidden" name="id">
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "Customer name" %}:</label>
+                  <div class="col-lg-9">
+                    <input type="text" name="customer_name" class="form-control"
+                      placeholder="{% trans 'Customer name' %}..." required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "Customer frigana" %}:</label>
+                  <div class="col-lg-9">
+                    <input type="text" name="customer_frigana" class="form-control"
+                      placeholder="{% trans 'Customer frigana' %}..." required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "Hall name" %}:</label>
+                  <div class="col-lg-9">
+                    <input type="text" name="name" class="form-control" placeholder="{% trans 'Enter hall name' %}..."
+                      required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "Frigana" %}:</label>
+                  <div class="col-lg-9">
+                    <input type="text" name="frigana" class="form-control" placeholder="{% trans 'Enter frigana' %}..."
+                      required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "Postal code" %}:</label>
+                  <div class="col-lg-9">
+                    <input type="text" name="postal_code" class="form-control"
+                      placeholder="{% trans 'Enter postal code' %}...">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "Address" %}:</label>
+                  <div class="col-lg-9">
+                    <input type="text" name="address" class="form-control" placeholder="{% trans 'Enter address' %}..."
+                      required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "TEL" %}:</label>
+                  <div class="col-lg-9">
+                    <input type="text" name="tel" class="form-control" placeholder="{% trans 'Enter TEL' %}...">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "FAX" %}:</label>
+                  <div class="col-lg-9">
+                    <input type="text" name="fax" class="form-control" placeholder="{% trans 'Enter FAX' %}...">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-lg-3">{% trans "Payee" %}:</label>
+                  <div class="col-lg-9">
+                    <input type="text" name="payee" class="form-control" placeholder="{% trans 'Enter payee' %} ..."
+                      required>
+                  </div>
+                </div>
+
+              </fieldset>
+
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">{% trans "Save" %}</button>
+                <button type="button" class="btn btn-link" data-dismiss="modal">{% trans "Close" %}</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /disabled backdrop -->
+
+    <!-- Disabled backdrop delete master data modal -->
+    <div id="modal_delete_data" class="modal fade" data-backdrop="false" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-danger">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h5 class="text-center modal-title">{% trans "Delete hall" %}</h5>
+          </div>
+
+          <div class="modal-body">
+            <h6 class="text-center mb-delete del-confirm">{% trans "Are you sure you want to remove this data?" %}</h6>
+            <h6 class="text-center mb-delete del-deny">{% trans "Because this data already output in contract document, can't remove. Please remove contract document first." %}</h6>
+            <hr />
+            <form class="form-horizontal" method="POST" action="{% url 'masterdata:hall-delete' %}">
+              {% csrf_token %}
+              <input type="hidden" name="id">
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-danger btn-delete">{% trans "Delete" %}</button>
+                <button type="button" class="btn btn-link" data-dismiss="modal">{% trans "Close" %}</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /disabled backdrop -->
+
+  </div>
+  <!-- /content area -->
+
+  <script>
+    $(function () {
+      // Pagination customization
+      if ($('#pagination').length) {
+        var startPage = parseInt("{{ page_obj.number }}");
+        $('#pagination').twbsPagination({
+          totalPages: "{{ page_obj.paginator.num_pages }}",
+          visiblePages: 5,
+          startPage: startPage,
+          hideOnlyOnePage: true,
+          first: '&laquo;',
+          prev: '&lsaquo;',
+          next: '&rsaquo;',
+          last: '&raquo;',
+        }).on('page', function (event, page) {
+          var url = location.href;
+          var urlRegex = RegExp('page=\\d+', 'g');
+          if (urlRegex.test(url)) {
+            url = url.replace(urlRegex, `page=${page}`);
+          } else {
+            if (url.indexOf('?') == -1)
+              url += `?page=${page}`;
+            else
+              url += `&page=${page}`;
+          }
+          location.href = url;
+        });
+      }
+
+      $('a.edit-action').click(function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        var id = $this.data('id');
+        $('#modal_edit_data input[name="id"]').val(id);
+        $.ajax({
+          type: 'POST',
+          url: "{% url 'masterdata:hall-detail' %}",
+          data: {
+            id: id,
+          },
+          beforeSend: function (request) {
+            request.setRequestHeader('X-CSRFToken', csrftoken);
+          },
+          success: function (result) {
+            $('#modal_edit_data input[name="customer_name"]').val(result.customer_name);
+            $('#modal_edit_data input[name="customer_frigana"]').val(result.customer_frigana);
+            $('#modal_edit_data input[name="name"]').val(result.name);
+            $('#modal_edit_data input[name="frigana"]').val(result.frigana);
+            $('#modal_edit_data input[name="postal_code"]').val(result.postal_code);
+            $('#modal_edit_data input[name="address"]').val(result.address);
+            $('#modal_edit_data input[name="tel"]').val(result.tel);
+            $('#modal_edit_data input[name="fax"]').val(result.fax);
+            $('#modal_edit_data input[name="payee"]').val(result.payee);
+            $('#modal_edit_data').modal('toggle');
+          }
+        });
+
+      });
+
+      $('a.remove-action').click(function (e) {
+        e.preventDefault();
+        var $this = $(this);
+        var id = $this.data('id');
+        // $('#modal_delete_data input[name="id"]').val(id);
+        // $('#modal_delete_data').modal('toggle');
+
+        $.ajax({
+          type: 'POST',
+          url: "{% url 'masterdata:hall-del-evaluate' %}",
+          data: {
+            id: id,
+          },
+          beforeSend: function (request) {
+            request.setRequestHeader('X-CSRFToken', csrftoken);
+          },
+          success: function (result) {
+            
+            $('#modal_delete_data input[name="id"]').val(id);
+            $('#modal_delete_data').modal('toggle');
+            if(result.is_exist == true) {
+              $('.del-confirm').hide();
+              $('.del-deny').show();
+              $('.btn-delete').hide();
+            } else if(result.is_exist == false){
+              $('.del-confirm').show();
+              $('.del-deny').hide();
+              $('.btn-delete').show();
+            }
+          }
+        });
+      });
+    });
+  </script>
+
+</div>
+{% endblock %}

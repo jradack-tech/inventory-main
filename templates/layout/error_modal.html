@@ -1,0 +1,170 @@
+{% load i18n %}
+
+<div id="modal_trader_sales_error" class="modal modal_error fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-danger">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h6 class="modal-title text-center">{% trans "Error" %}</h6>
+            </div>
+
+            <div class="modal-body alert-danger mb-5-s">
+                <ul>
+                    <li>{% trans "Customer must be selected." %}</li>
+                    <li>{% trans "Person in charge field must be provided." %}</li>
+                    <li>{% trans "At least one product must be added." %}</li>
+                    <li>{% trans "Price and quantity for each product must be positive integer." %}</li>
+                    <li>{% trans "At least one document must be added." %}</li>
+                    <li>{% trans "Price and quantity for each document must be positive integer." %}</li>
+                    <li>{% trans "When the shipping method is delivery, product sender and document sender must be selected." %}</li>
+                </ul>
+            </div>
+
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-danger px-5" data-dismiss="modal">{% trans "Close" %}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal_trader_purchases_error" class="modal modal_error fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-danger">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h6 class="modal-title text-center">{% trans "Error" %}</h6>
+            </div>
+
+            <div class="modal-body alert-danger mb-5-s">
+                <ul>
+                    <li>{% trans "Customer field must be selected." %}</li>
+                    <li>{% trans "Person in charge field must be provided." %}</li>
+                    <li>{% trans "At least one product must be added." %}</li>
+                    <li>{% trans "Price and quantity for each product must be positive integer." %}</li>
+                    <li>{% trans "At least one document must be added." %}</li>
+                    <li>{% trans "Price and quantity for each document must be positive integer." %}</li>
+                    <li>{% trans "Sender and shipping company for product sender and document sender forms must be given." %}</li>
+                    <li>{% trans "Frame color field must be selected." %}</li>
+                    <li>{% trans "Receipt field must be selected." %}</li>
+                    <li>{% trans "Bank name field must be selected." %}</li>
+                    <li>{% trans "Account number field must be selected." %}</li>
+                    <li>{% trans "Branch name field must be selected." %}</li>
+                    <li>{% trans "Account holder field must be selected." %}</li>
+                </ul>
+            </div>
+
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-danger px-5" data-dismiss="modal">{% trans "Close" %}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal_hall_sales_error" class="modal modal_error fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-danger">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h6 class="modal-title text-center">{% trans "Error" %}</h6>
+            </div>
+
+            <div class="modal-body alert-danger mb-5-s">
+                <ul>
+                    <li>{% trans "Customer field must be selected." %}</li>
+                    <li>{% trans "Hall field must be selected." %}</li>
+                    <li>{% trans "At least one product must be added." %}</li>
+                    <li>{% trans "Price and quantity for each product must be positive integer." %}</li>
+                    <li>{% trans "At least one document must be added." %}</li>
+                    <li>{% trans "Price and quantity for each document must be positive integer." %}</li>
+                    <li>{% trans "At least one document fee must be added." %}</li>
+                    <li>{% trans "Model count and quantity for each document fee must be positive integer." %}</li>
+                    <li>{% trans "At least one milestone must be added." %}</li>
+                    <li>{% trans "Transfer account field must be provided." %}</li>
+                    <li>{% trans "Person in charge field must be provided." %}</li>
+                    <li>{% trans "Confirmor field must be provided." %}</li>
+                </ul>
+            </div>
+
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-danger px-5" data-dismiss="modal">{% trans "Close" %}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal_hall_purchases_error" class="modal modal_error fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-danger">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h6 class="modal-title text-center">{% trans "Error" %}</h6>
+            </div>
+
+            <div class="modal-body alert-danger mb-5-s">
+                <ul>
+                    <li>{% trans "Customer field must be selected." %}</li>
+                    <li>{% trans "Hall field must be selected." %}</li>
+                    <li>{% trans "At least one product must be added." %}</li>
+                    <li>{% trans "Price and quantity for each product must be positive integer." %}</li>
+                    <li>{% trans "At least one document must be added." %}</li>
+                    <li>{% trans "Price and quantity for each document must be positive integer." %}</li>
+                    <li>{% trans "At least one document fee must be added." %}</li>
+                    <li>{% trans "Model count and quantity for each document fee must be positive integer." %}</li>
+                    <li>{% trans "At least one milestone must be added." %}</li>
+                    <li>{% trans "Transfer account field must be provided." %}</li>
+                    <li>{% trans "Person in charge field must be provided." %}</li>
+                    <li>{% trans "Confirmor field must be provided." %}</li>
+                </ul>
+            </div>
+
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-danger px-5" data-dismiss="modal">{% trans "Close" %}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal_product_error" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-danger">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h6 class="modal-title text-center">{% trans "Error" %}</h6>
+            </div>
+
+            <div class="modal-body alert-danger text-center">
+                <p>{% trans "Select the product before adding to the table." %}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal_document_error" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-danger">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h6 class="modal-title text-center">{% trans "Error" %}</h6>
+            </div>
+
+            <div class="modal-body alert-danger text-center">
+                <p>{% trans "Select the document before adding to the table." %}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal_document_fee_error" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-danger">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h6 class="modal-title text-center">{% trans "Error" %}</h6>
+            </div>
+
+            <div class="modal-body alert-danger text-center">
+                <p>{% trans "Select the document fee before adding to the table." %}</p>
+            </div>
+        </div>
+    </div>
+</div>

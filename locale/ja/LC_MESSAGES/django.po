@@ -1,0 +1,1981 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-28 08:56+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\accounting\views.py:138 .\accounting\views.py:156
+#: .\accounting\views.py:322 .\accounting\views.py:337
+#: .\templates\accounting\purchases.html:18
+#: .\templates\accounting\purchases.html:25
+#: .\templates\accounting\sales.html:18 .\templates\accounting\sales.html:25
+#: .\templates\layout\sidebar.html:64
+msgid "Accounting software CSV"
+msgstr "会計ソフト出力"
+
+#: .\accounting\views.py:138 .\accounting\views.py:156
+#: .\templates\accounting\sales.html:4 .\templates\accounting\sales.html:18
+#: .\templates\accounting\sales.html:26 .\templates\accounting\sales.html:37
+#: .\templates\layout\sidebar.html:66
+msgid "Sale"
+msgstr "売却"
+
+#: .\accounting\views.py:167 .\accounting\views.py:348
+#: .\templates\listing\history.html:45 .\templates\listing\inventory.html:104
+#: .\templates\masterdata\customers.html:65
+#: .\templates\masterdata\documents.html:44
+#: .\templates\masterdata\halls.html:66
+#: .\templates\masterdata\people_in_charge.html:44
+#: .\templates\masterdata\products.html:66
+#: .\templates\masterdata\senders.html:66
+msgid "No"
+msgstr "No"
+
+#: .\accounting\views.py:168 .\accounting\views.py:349 .\listing\views.py:141
+#: .\listing\views.py:305 .\listing\views.py:661 .\listing\views.py:1134
+#: .\templates\accounting\purchases.html:45
+#: .\templates\accounting\purchases.html:47
+#: .\templates\accounting\purchases.html:110
+#: .\templates\accounting\sales.html:45 .\templates\accounting\sales.html:47
+#: .\templates\accounting\sales.html:110 .\templates\listing\deleted.html:45
+#: .\templates\listing\deleted.html:47 .\templates\listing\deleted.html:145
+#: .\templates\listing\deleted.html:237 .\templates\listing\deleted.html:240
+#: .\templates\listing\link.html:130 .\templates\listing\link.html:132
+#: .\templates\listing\link.html:235 .\templates\listing\link.html:320
+#: .\templates\listing\link.html:323 .\templates\listing\link.html:417
+#: .\templates\listing\link.html:419 .\templates\listing\link.html:518
+#: .\templates\listing\link.html:614 .\templates\listing\link.html:617
+#: .\templates\listing\linkshow.html:46 .\templates\listing\linkshow.html:48
+#: .\templates\listing\linkshow.html:142 .\templates\listing\linkshow.html:239
+#: .\templates\listing\linkshow.html:242 .\templates\listing\purchases.html:45
+#: .\templates\listing\purchases.html:47 .\templates\listing\purchases.html:146
+#: .\templates\listing\purchases.html:237
+#: .\templates\listing\purchases.html:240 .\templates\listing\sales.html:45
+#: .\templates\listing\sales.html:47 .\templates\listing\sales.html:146
+#: .\templates\listing\sales.html:239 .\templates\listing\sales.html:242
+msgid "Contract ID"
+msgstr "取引ID"
+
+#: .\accounting\views.py:169 .\accounting\views.py:350 .\listing\views.py:142
+#: .\listing\views.py:306 .\listing\views.py:662 .\listing\views.py:1135
+#: .\templates\accounting\purchases.html:111
+#: .\templates\accounting\sales.html:111 .\templates\listing\deleted.html:146
+#: .\templates\listing\link.html:236 .\templates\listing\link.html:519
+#: .\templates\listing\linkshow.html:143 .\templates\listing\purchases.html:147
+#: .\templates\listing\sales.html:147
+msgid "Contract date"
+msgstr "契約日"
+
+#: .\accounting\views.py:170 .\accounting\views.py:351
+#: .\templates\accounting\purchases.html:112
+#: .\templates\accounting\sales.html:112
+#: .\templates\masterdata\products.html:68
+#: .\templates\masterdata\products.html:142
+#: .\templates\masterdata\products.html:237
+msgid "Type"
+msgstr "分類"
+
+#: .\accounting\views.py:171 .\accounting\views.py:352
+#: .\templates\accounting\purchases.html:113
+#: .\templates\accounting\sales.html:113
+#: .\templates\masterdata\documents.html:47
+#: .\templates\masterdata\documents.html:110
+#: .\templates\masterdata\documents.html:160
+msgid "Taxation"
+msgstr "税区分"
+
+#: .\accounting\views.py:172 .\accounting\views.py:353 .\listing\views.py:149
+#: .\listing\views.py:313 .\listing\views.py:669 .\listing\views.py:1142
+#: .\templates\accounting\purchases.html:114
+#: .\templates\accounting\sales.html:114
+#: .\templates\contracts\hall_purchases.html:186
+#: .\templates\contracts\hall_purchases.html:372
+#: .\templates\contracts\hall_purchases.html:529
+#: .\templates\contracts\hall_sales.html:187
+#: .\templates\contracts\hall_sales.html:348
+#: .\templates\contracts\hall_sales.html:488
+#: .\templates\contracts\trader_purchases.html:220
+#: .\templates\contracts\trader_purchases.html:382
+#: .\templates\contracts\trader_sales.html:215
+#: .\templates\contracts\trader_sales.html:401
+#: .\templates\listing\deleted.html:153 .\templates\listing\linkshow.html:149
+msgid "Amount"
+msgstr "金額"
+
+#: .\accounting\views.py:173 .\accounting\views.py:354 .\listing\views.py:143
+#: .\listing\views.py:307 .\listing\views.py:663 .\listing\views.py:1136
+#: .\templates\accounting\purchases.html:72
+#: .\templates\accounting\purchases.html:74
+#: .\templates\accounting\purchases.html:115
+#: .\templates\accounting\sales.html:72 .\templates\accounting\sales.html:74
+#: .\templates\accounting\sales.html:115 .\templates\listing\deleted.html:72
+#: .\templates\listing\deleted.html:74 .\templates\listing\deleted.html:147
+#: .\templates\listing\link.html:176 .\templates\listing\link.html:178
+#: .\templates\listing\link.html:237 .\templates\listing\link.html:462
+#: .\templates\listing\link.html:464 .\templates\listing\link.html:520
+#: .\templates\listing\linkshow.html:144 .\templates\listing\purchases.html:73
+#: .\templates\listing\purchases.html:75 .\templates\listing\purchases.html:148
+#: .\templates\listing\sales.html:72 .\templates\listing\sales.html:74
+#: .\templates\listing\sales.html:148 .\templates\masterdata\halls.html:67
+msgid "Customer"
+msgstr "取引先"
+
+#: .\accounting\views.py:201 .\templates\accounting\purchases.html:126
+#: .\templates\accounting\sales.html:126
+msgid "Income"
+msgstr "収入"
+
+#: .\accounting\views.py:322 .\accounting\views.py:337
+#: .\templates\accounting\purchases.html:4
+#: .\templates\accounting\purchases.html:18
+#: .\templates\accounting\purchases.html:26
+#: .\templates\accounting\purchases.html:37 .\templates\layout\sidebar.html:67
+msgid "Purchase"
+msgstr "購入"
+
+#: .\accounting\views.py:380
+msgid "Expense"
+msgstr "支出"
+
+#: .\contracts\invoice_views.py:141 .\contracts\invoice_views.py:667
+#: .\contracts\invoice_views.py:1320 .\contracts\invoice_views.py:1380
+#: .\contracts\invoice_views.py:1912
+#: .\templates\contracts\hall_purchases.html:56
+#: .\templates\contracts\hall_sales.html:56
+msgid "Sales contract"
+msgstr "売買契求書"
+
+#: .\contracts\invoice_views.py:141 .\contracts\invoice_views.py:667
+#: .\contracts\invoice_views.py:1320 .\templates\contracts\trader_sales.html:6
+#: .\templates\contracts\trader_sales.html:21
+#: .\templates\contracts\trader_sales.html:29
+#: .\templates\layout\sidebar.html:44
+msgid "Trader sales"
+msgstr "業者売"
+
+#: .\contracts\invoice_views.py:238 .\contracts\invoice_views.py:754
+#: .\contracts\invoice_views.py:1408
+#: .\templates\contracts\trader_purchases.html:96
+#: .\templates\contracts\trader_sales.html:94
+msgid "CO."
+msgstr "御中"
+
+#: .\contracts\invoice_views.py:418 .\contracts\invoice_views.py:765
+#: .\contracts\invoice_views.py:1419
+#: .\templates\contracts\trader_purchases.html:168
+#: .\templates\contracts\trader_sales.html:166
+msgid "Member ID"
+msgstr "会員番号"
+
+#: .\contracts\invoice_views.py:761 .\contracts\invoice_views.py:1415
+#: .\templates\contracts\trader_purchases.html:106
+#: .\templates\contracts\trader_sales.html:105
+msgid "Mr."
+msgstr "様"
+
+#: .\contracts\invoice_views.py:1380
+#: .\templates\contracts\trader_purchases.html:5
+#: .\templates\contracts\trader_purchases.html:20
+#: .\templates\contracts\trader_purchases.html:28
+#: .\templates\layout\sidebar.html:45
+msgid "Trader purchases"
+msgstr "業者買"
+
+#: .\contracts\invoice_views.py:1912 .\templates\contracts\hall_sales.html:5
+#: .\templates\contracts\hall_sales.html:20
+#: .\templates\contracts\hall_sales.html:28 .\templates\layout\sidebar.html:46
+msgid "Hall sales"
+msgstr "ホール売"
+
+#: .\contracts\invoice_views.py:2392
+#, fuzzy
+#| msgid "Purchases (contract)"
+msgid "Purchase contract"
+msgstr "仕入（売買契求書）"
+
+#: .\contracts\invoice_views.py:2392
+#, fuzzy
+#| msgid "Hall purchases"
+msgid "Hall purchase"
+msgstr "ホール買"
+
+#: .\contracts\utilities.py:45
+msgid "Receipt date"
+msgstr "機械引取日"
+
+#: .\contracts\utilities.py:45
+msgid "Receipt label"
+msgstr "商品引取先"
+
+#: .\contracts\utilities.py:47
+msgid "ID Change date"
+msgstr "機械ID変更日"
+
+#: .\contracts\utilities.py:47
+msgid "ID Change label"
+msgstr "商品保管先"
+
+#: .\contracts\utilities.py:48 .\templates\contracts\trader_purchases.html:510
+#: .\templates\contracts\trader_sales.html:539
+msgid "Delivery date"
+msgstr "機械発送日"
+
+#: .\contracts\utilities.py:48 .\templates\contracts\trader_purchases.html:629
+#: .\templates\contracts\trader_sales.html:647
+msgid "Product sender"
+msgstr "商品発送先"
+
+#: .\listing\views.py:124 .\listing\views.py:129 .\listing\views.py:287
+#: .\listing\views.py:293 .\listing\views.py:643 .\listing\views.py:649
+#: .\listing\views.py:1110 .\listing\views.py:1122
+#: .\templates\layout\sidebar.html:52 .\templates\listing\deleted.html:18
+#: .\templates\listing\deleted.html:25 .\templates\listing\history.html:18
+#: .\templates\listing\history.html:25 .\templates\listing\inventory.html:18
+#: .\templates\listing\inventory.html:25 .\templates\listing\link.html:18
+#: .\templates\listing\linkshow.html:25 .\templates\listing\purchases.html:18
+#: .\templates\listing\purchases.html:25 .\templates\listing\sales.html:18
+#: .\templates\listing\sales.html:25
+msgid "List"
+msgstr "一覧表"
+
+#: .\listing\views.py:124 .\listing\views.py:129
+#: .\templates\layout\sidebar.html:54 .\templates\listing\sales.html:4
+msgid "Sales"
+msgstr "売上"
+
+#: .\listing\views.py:144 .\listing\views.py:308 .\listing\views.py:664
+#: .\listing\views.py:1137 .\templates\listing\deleted.html:148
+#: .\templates\listing\link.html:238 .\templates\listing\link.html:521
+#: .\templates\listing\linkshow.html:145 .\templates\listing\purchases.html:149
+#: .\templates\listing\sales.html:149
+msgid "Delivered place"
+msgstr "納品先"
+
+#: .\listing\views.py:145 .\listing\views.py:309 .\listing\views.py:665
+#: .\listing\views.py:1138 .\templates\contracts\hall_purchases.html:812
+#: .\templates\contracts\hall_sales.html:756
+#: .\templates\contracts\trader_purchases.html:177
+#: .\templates\contracts\trader_sales.html:174
+#: .\templates\layout\sidebar.html:37 .\templates\listing\deleted.html:109
+#: .\templates\listing\deleted.html:111 .\templates\listing\deleted.html:149
+#: .\templates\listing\inventory.html:73 .\templates\listing\inventory.html:109
+#: .\templates\listing\inventory.html:212
+#: .\templates\listing\inventory.html:214
+#: .\templates\listing\inventory.html:309
+#: .\templates\listing\inventory.html:311 .\templates\listing\link.html:60
+#: .\templates\listing\link.html:62 .\templates\listing\link.html:192
+#: .\templates\listing\link.html:194 .\templates\listing\link.html:239
+#: .\templates\listing\link.html:476 .\templates\listing\link.html:478
+#: .\templates\listing\link.html:522 .\templates\listing\linkshow.html:54
+#: .\templates\listing\linkshow.html:56 .\templates\listing\linkshow.html:146
+#: .\templates\listing\purchases.html:110
+#: .\templates\listing\purchases.html:112
+#: .\templates\listing\purchases.html:150 .\templates\listing\sales.html:110
+#: .\templates\listing\sales.html:112 .\templates\listing\sales.html:150
+#: .\templates\masterdata\people_in_charge.html:4
+#: .\templates\masterdata\people_in_charge.html:17
+#: .\templates\masterdata\people_in_charge.html:25
+#: .\templates\masterdata\people_in_charge.html:36
+#: .\templates\masterdata\products.html:72
+#: .\templates\masterdata\products.html:176
+#: .\templates\masterdata\products.html:271
+msgid "Person in charge"
+msgstr "担当名"
+
+#: .\listing\views.py:146 .\listing\views.py:310 .\listing\views.py:666
+#: .\listing\views.py:1139 .\templates\listing\deleted.html:150
+#: .\templates\listing\linkshow.html:147 .\templates\listing\purchases.html:151
+#: .\templates\listing\sales.html:151
+msgid "Payment date"
+msgstr "入金日"
+
+#: .\listing\views.py:147 .\listing\views.py:311 .\listing\views.py:667
+#: .\listing\views.py:1140 .\templates\listing\deleted.html:82
+#: .\templates\listing\deleted.html:84 .\templates\listing\deleted.html:151
+#: .\templates\listing\deleted.html:245 .\templates\listing\deleted.html:248
+#: .\templates\listing\inventory.html:45 .\templates\listing\inventory.html:46
+#: .\templates\listing\inventory.html:105
+#: .\templates\listing\inventory.html:181
+#: .\templates\listing\inventory.html:183
+#: .\templates\listing\inventory.html:278
+#: .\templates\listing\inventory.html:280 .\templates\listing\link.html:52
+#: .\templates\listing\link.html:54 .\templates\listing\link.html:184
+#: .\templates\listing\link.html:186 .\templates\listing\link.html:241
+#: .\templates\listing\link.html:328 .\templates\listing\link.html:331
+#: .\templates\listing\link.html:469 .\templates\listing\link.html:471
+#: .\templates\listing\link.html:524 .\templates\listing\link.html:622
+#: .\templates\listing\link.html:625 .\templates\listing\linkshow.html:148
+#: .\templates\listing\linkshow.html:247 .\templates\listing\linkshow.html:250
+#: .\templates\listing\purchases.html:83 .\templates\listing\purchases.html:85
+#: .\templates\listing\purchases.html:152
+#: .\templates\listing\purchases.html:245
+#: .\templates\listing\purchases.html:248 .\templates\listing\sales.html:82
+#: .\templates\listing\sales.html:84 .\templates\listing\sales.html:152
+#: .\templates\listing\sales.html:247 .\templates\listing\sales.html:250
+#: .\templates\masterdata\products.html:67
+msgid "Product name"
+msgstr "商品名"
+
+#: .\listing\views.py:148 .\listing\views.py:312 .\listing\views.py:668
+#: .\listing\views.py:1141 .\templates\contracts\hall_purchases.html:528
+#: .\templates\contracts\hall_sales.html:487
+#: .\templates\listing\deleted.html:152 .\templates\listing\inventory.html:110
+#: .\templates\listing\inventory.html:219
+#: .\templates\listing\inventory.html:221
+#: .\templates\listing\inventory.html:316
+#: .\templates\listing\inventory.html:318 .\templates\listing\link.html:242
+#: .\templates\listing\link.html:525 .\templates\listing\purchases.html:153
+#: .\templates\listing\sales.html:153
+msgid "Unit count"
+msgstr "台数"
+
+#: .\listing\views.py:150 .\listing\views.py:314 .\listing\views.py:670
+#: .\listing\views.py:1143 .\templates\listing\deleted.html:117
+#: .\templates\listing\deleted.html:154 .\templates\listing\deleted.html:253
+#: .\templates\listing\link.html:68 .\templates\listing\link.html:200
+#: .\templates\listing\link.html:244 .\templates\listing\link.html:336
+#: .\templates\listing\link.html:483 .\templates\listing\link.html:527
+#: .\templates\listing\link.html:630 .\templates\listing\linkshow.html:114
+#: .\templates\listing\linkshow.html:150 .\templates\listing\linkshow.html:255
+#: .\templates\listing\purchases.html:118
+#: .\templates\listing\purchases.html:155
+#: .\templates\listing\purchases.html:253 .\templates\listing\sales.html:118
+#: .\templates\listing\sales.html:155 .\templates\listing\sales.html:255
+msgid "Inventory status"
+msgstr "在庫消込"
+
+#: .\listing\views.py:287 .\listing\views.py:293
+#: .\templates\layout\sidebar.html:55 .\templates\listing\linkshow.html:4
+#: .\templates\listing\purchases.html:4
+msgid "Purchases"
+msgstr "仕入"
+
+#: .\listing\views.py:643 .\listing\views.py:649 .\listing\views.py:1110
+#: .\listing\views.py:1122
+#, fuzzy
+#| msgid "Link"
+msgid "Links"
+msgstr "紐付け"
+
+#: .\listing\views.py:671 .\listing\views.py:1144
+#: .\templates\listing\link.html:245 .\templates\listing\link.html:528
+#: .\templates\listing\linkshow.html:102 .\templates\listing\linkshow.html:151
+msgid "Report Date"
+msgstr "報告日"
+
+#: .\masterdata\models.py:23
+msgid "Delivery"
+msgstr "発送"
+
+#: .\masterdata\models.py:24 .\templates\contracts\trader_purchases.html:549
+msgid "Receipt"
+msgstr "引取"
+
+#: .\masterdata\models.py:25
+msgid "ID Change"
+msgstr "ID変更"
+
+#: .\masterdata\models.py:26
+msgid "* Blank"
+msgstr "* 空白"
+
+#: .\masterdata\models.py:30
+msgid "Transfer"
+msgstr "振込"
+
+#: .\masterdata\models.py:31
+msgid "Check"
+msgstr "小切手"
+
+#: .\masterdata\models.py:32
+msgid "Bill"
+msgstr "手形"
+
+#: .\masterdata\models.py:33
+msgid "Cash"
+msgstr "現金"
+
+#: .\masterdata\models.py:37 .\templates\contracts\hall_purchases.html:289
+#: .\templates\contracts\hall_sales.html:277
+#: .\templates\contracts\trader_purchases.html:311
+#: .\templates\contracts\trader_sales.html:318
+msgid "Main body"
+msgstr "本体"
+
+#: .\masterdata\models.py:38 .\templates\contracts\hall_purchases.html:290
+#: .\templates\contracts\hall_sales.html:278
+#: .\templates\contracts\trader_purchases.html:312
+#: .\templates\contracts\trader_sales.html:319
+msgid "Frame"
+msgstr "枠"
+
+#: .\masterdata\models.py:39 .\templates\contracts\hall_purchases.html:291
+#: .\templates\contracts\hall_sales.html:279
+#: .\templates\contracts\trader_purchases.html:313
+#: .\templates\contracts\trader_sales.html:320
+msgid "Cell"
+msgstr "セル"
+
+#: .\masterdata\models.py:40 .\templates\contracts\hall_purchases.html:292
+#: .\templates\contracts\hall_sales.html:280
+#: .\templates\contracts\trader_purchases.html:314
+#: .\templates\contracts\trader_sales.html:321
+msgid "Nail sheet"
+msgstr "釘シート"
+
+#: .\masterdata\models.py:44 .\templates\contracts\hall_purchases.html:167
+#: .\templates\contracts\hall_sales.html:168
+#: .\templates\contracts\trader_purchases.html:200
+#: .\templates\contracts\trader_sales.html:196
+#: .\templates\layout\sidebar.html:35 .\templates\masterdata\products.html:4
+#: .\templates\masterdata\products.html:17
+#: .\templates\masterdata\products.html:25
+#: .\templates\masterdata\products.html:36
+msgid "Product"
+msgstr "商品名"
+
+#: .\masterdata\models.py:45 .\templates\contracts\hall_purchases.html:369
+#: .\templates\contracts\hall_sales.html:345
+#: .\templates\contracts\trader_purchases.html:379
+#: .\templates\contracts\trader_sales.html:398
+msgid "Document"
+msgstr "書類"
+
+#: .\masterdata\models.py:49 .\templates\listing\deleted.html:120
+#: .\templates\listing\deleted.html:256 .\templates\listing\link.html:71
+#: .\templates\listing\link.html:203 .\templates\listing\link.html:339
+#: .\templates\listing\link.html:487 .\templates\listing\link.html:633
+#: .\templates\listing\linkshow.html:117 .\templates\listing\linkshow.html:258
+#: .\templates\listing\purchases.html:121
+#: .\templates\listing\purchases.html:256 .\templates\listing\sales.html:121
+#: .\templates\listing\sales.html:258
+msgid "Done"
+msgstr "済"
+
+#: .\masterdata\models.py:50 .\templates\listing\deleted.html:121
+#: .\templates\listing\deleted.html:257 .\templates\listing\link.html:73
+#: .\templates\listing\link.html:205 .\templates\listing\link.html:340
+#: .\templates\listing\link.html:489 .\templates\listing\link.html:634
+#: .\templates\listing\linkshow.html:118 .\templates\listing\linkshow.html:259
+#: .\templates\listing\purchases.html:122
+#: .\templates\listing\purchases.html:257 .\templates\listing\sales.html:122
+#: .\templates\listing\sales.html:259
+msgid "Pending"
+msgstr "未"
+
+#: .\masterdata\models.py:54 .\templates\masterdata\products.html:145
+#: .\templates\masterdata\products.html:240
+msgid "Pachinko"
+msgstr "パチンコ"
+
+#: .\masterdata\models.py:55 .\templates\masterdata\products.html:146
+#: .\templates\masterdata\products.html:241
+msgid "Slot"
+msgstr "スロット"
+
+#: .\templates\accounting\purchases.html:53
+#: .\templates\accounting\sales.html:53
+#: .\templates\contracts\trader_purchases.html:61
+#: .\templates\contracts\trader_sales.html:61
+#: .\templates\listing\deleted.html:53 .\templates\listing\link.html:138
+#: .\templates\listing\link.html:157 .\templates\listing\link.html:424
+#: .\templates\listing\linkshow.html:62 .\templates\listing\purchases.html:53
+#: .\templates\listing\sales.html:53
+msgid "Created date"
+msgstr "契約日"
+
+#: .\templates\accounting\purchases.html:80
+#: .\templates\accounting\purchases.html:116
+#: .\templates\accounting\sales.html:80 .\templates\accounting\sales.html:116
+msgid "Last Excel Output Date"
+msgstr "最終エクセル出力日"
+
+#: .\templates\accounting\purchases.html:82
+#: .\templates\accounting\sales.html:82 .\templates\listing\deleted.html:119
+#: .\templates\listing\link.html:70 .\templates\listing\link.html:202
+#: .\templates\listing\link.html:486 .\templates\listing\linkshow.html:116
+#: .\templates\listing\purchases.html:120 .\templates\listing\sales.html:120
+msgid "All"
+msgstr "全て"
+
+#: .\templates\accounting\purchases.html:83
+#: .\templates\accounting\sales.html:83
+msgid "Enable"
+msgstr "出力済"
+
+#: .\templates\accounting\purchases.html:85
+#: .\templates\accounting\sales.html:84
+msgid "Disable"
+msgstr "none"
+
+#: .\templates\accounting\purchases.html:95
+#: .\templates\accounting\sales.html:95 .\templates\listing\deleted.html:131
+#: .\templates\listing\inventory.html:89 .\templates\listing\link.html:83
+#: .\templates\listing\link.html:218 .\templates\listing\link.html:502
+#: .\templates\listing\linkshow.html:127 .\templates\listing\purchases.html:132
+#: .\templates\listing\sales.html:132 .\templates\masterdata\customers.html:51
+#: .\templates\masterdata\halls.html:52 .\templates\masterdata\products.html:52
+#: .\templates\masterdata\senders.html:52
+msgid "Search"
+msgstr "検索"
+
+#: .\templates\accounting\purchases.html:97
+#: .\templates\accounting\sales.html:97 .\templates\listing\deleted.html:133
+#: .\templates\listing\inventory.html:91 .\templates\listing\link.html:92
+#: .\templates\listing\link.html:220 .\templates\listing\link.html:504
+#: .\templates\listing\linkshow.html:129 .\templates\listing\purchases.html:134
+#: .\templates\listing\sales.html:134 .\templates\masterdata\customers.html:53
+#: .\templates\masterdata\halls.html:54 .\templates\masterdata\products.html:54
+#: .\templates\masterdata\senders.html:54
+msgid "Clear"
+msgstr "取除"
+
+#: .\templates\accounting\purchases.html:105
+#: .\templates\accounting\sales.html:105 .\templates\listing\inventory.html:100
+msgid "Search results"
+msgstr "検索結果"
+
+#: .\templates\accounting\purchases.html:177
+#: .\templates\accounting\sales.html:173
+#: .\templates\contracts\hall_purchases.html:849
+#: .\templates\contracts\hall_sales.html:785
+#: .\templates\contracts\trader_purchases.html:878
+#: .\templates\contracts\trader_sales.html:791
+#: .\templates\listing\deleted.html:211 .\templates\listing\inventory.html:155
+#: .\templates\listing\link.html:589 .\templates\listing\linkshow.html:213
+#: .\templates\listing\purchases.html:211 .\templates\listing\sales.html:213
+msgid "Export to excel"
+msgstr "エクセル出力"
+
+#: .\templates\contracts\hall_purchases.html:5
+#: .\templates\contracts\hall_purchases.html:20
+#: .\templates\contracts\hall_purchases.html:28
+#: .\templates\layout\sidebar.html:47
+msgid "Hall purchases"
+msgstr "ホール買"
+
+#: .\templates\contracts\hall_purchases.html:20
+#: .\templates\contracts\hall_purchases.html:27
+#: .\templates\contracts\hall_sales.html:20
+#: .\templates\contracts\hall_sales.html:27
+#: .\templates\contracts\trader_purchases.html:20
+#: .\templates\contracts\trader_purchases.html:27
+#: .\templates\contracts\trader_sales.html:21
+#: .\templates\contracts\trader_sales.html:28
+#: .\templates\layout\sidebar.html:42
+msgid "Contract"
+msgstr "売買契約の作成"
+
+#: .\templates\contracts\hall_purchases.html:75
+#: .\templates\contracts\hall_sales.html:75
+#: .\templates\contracts\trader_purchases.html:737
+msgid "Buyer"
+msgstr "買主"
+
+#: .\templates\contracts\hall_purchases.html:75
+#: .\templates\contracts\hall_sales.html:75
+msgid "A"
+msgstr "甲"
+
+#: .\templates\contracts\hall_purchases.html:79
+#: .\templates\contracts\hall_sales.html:79
+#: .\templates\masterdata\customers.html:46
+#: .\templates\masterdata\halls.html:47 .\templates\masterdata\products.html:47
+#: .\templates\masterdata\senders.html:47
+msgid "Keyword search"
+msgstr "キーワード検索"
+
+#: .\templates\contracts\hall_purchases.html:82
+#: .\templates\contracts\hall_sales.html:82
+#: .\templates\contracts\trader_purchases.html:92
+#: .\templates\contracts\trader_sales.html:91
+msgid "Search by customer, frigana, tel or fax"
+msgstr "取引先名、フリガナ、TEL、FAXで検索してください"
+
+#: .\templates\contracts\hall_purchases.html:91
+#: .\templates\contracts\hall_sales.html:91
+#: .\templates\contracts\trader_purchases.html:757
+msgid "Seller"
+msgstr "売主"
+
+#: .\templates\contracts\hall_purchases.html:91
+#: .\templates\contracts\hall_sales.html:91
+msgid "B"
+msgstr "乙"
+
+#: .\templates\contracts\hall_purchases.html:95
+#: .\templates\contracts\hall_sales.html:96
+#: .\templates\contracts\trader_purchases.html:88
+#: .\templates\contracts\trader_purchases.html:631
+#: .\templates\contracts\trader_purchases.html:684
+#: .\templates\contracts\trader_sales.html:88
+#: .\templates\contracts\trader_sales.html:649
+#: .\templates\contracts\trader_sales.html:695
+msgid "Company"
+msgstr "会社名"
+
+#: .\templates\contracts\hall_purchases.html:101
+#: .\templates\contracts\hall_purchases.html:140
+#: .\templates\contracts\hall_sales.html:102
+#: .\templates\contracts\hall_sales.html:141
+#: .\templates\contracts\trader_purchases.html:136
+#: .\templates\contracts\trader_purchases.html:639
+#: .\templates\contracts\trader_purchases.html:692
+#: .\templates\contracts\trader_sales.html:135
+#: .\templates\contracts\trader_sales.html:658
+#: .\templates\contracts\trader_sales.html:703
+#: .\templates\masterdata\customers.html:69
+#: .\templates\masterdata\customers.html:151
+#: .\templates\masterdata\customers.html:231
+#: .\templates\masterdata\halls.html:72 .\templates\masterdata\halls.html:175
+#: .\templates\masterdata\halls.html:275 .\templates\masterdata\senders.html:70
+#: .\templates\masterdata\senders.html:150
+#: .\templates\masterdata\senders.html:221
+msgid "Address"
+msgstr "住所"
+
+#: .\templates\contracts\hall_purchases.html:108
+#: .\templates\contracts\hall_purchases.html:148
+#: .\templates\contracts\hall_sales.html:109
+#: .\templates\contracts\hall_sales.html:149
+#: .\templates\contracts\trader_purchases.html:147
+#: .\templates\contracts\trader_purchases.html:648
+#: .\templates\contracts\trader_purchases.html:701
+#: .\templates\contracts\trader_sales.html:146
+#: .\templates\contracts\trader_sales.html:664
+#: .\templates\contracts\trader_sales.html:709
+#: .\templates\masterdata\customers.html:70
+#: .\templates\masterdata\customers.html:158
+#: .\templates\masterdata\customers.html:238
+#: .\templates\masterdata\halls.html:73 .\templates\masterdata\halls.html:183
+#: .\templates\masterdata\halls.html:283 .\templates\masterdata\senders.html:71
+#: .\templates\masterdata\senders.html:157
+#: .\templates\masterdata\senders.html:228
+msgid "TEL"
+msgstr "TEL"
+
+#: .\templates\contracts\hall_purchases.html:114
+#: .\templates\contracts\hall_sales.html:115
+#: .\templates\contracts\trader_purchases.html:155
+#: .\templates\contracts\trader_sales.html:154
+#: .\templates\contracts\trader_sales.html:673
+#: .\templates\contracts\trader_sales.html:718
+#: .\templates\contracts\trader_sales.html:776
+#: .\templates\masterdata\customers.html:71
+#: .\templates\masterdata\customers.html:165
+#: .\templates\masterdata\customers.html:245
+#: .\templates\masterdata\halls.html:74 .\templates\masterdata\halls.html:190
+#: .\templates\masterdata\halls.html:290 .\templates\masterdata\senders.html:72
+#: .\templates\masterdata\senders.html:164
+#: .\templates\masterdata\senders.html:235
+msgid "FAX"
+msgstr "FAX"
+
+#: .\templates\contracts\hall_purchases.html:125
+#: .\templates\contracts\hall_sales.html:126
+msgid "Installation location"
+msgstr "設置場所"
+
+#: .\templates\contracts\hall_purchases.html:131
+#: .\templates\contracts\hall_sales.html:132
+#: .\templates\masterdata\halls.html:69 .\templates\masterdata\halls.html:151
+#: .\templates\masterdata\halls.html:251
+msgid "Hall name"
+msgstr "ホール名"
+
+#: .\templates\contracts\hall_purchases.html:135
+#: .\templates\contracts\hall_sales.html:136
+msgid "Search by name, frigana, tel or fax"
+msgstr "ホール名、フリガナ、TEL、FAXで検索してください"
+
+#: .\templates\contracts\hall_purchases.html:156
+#: .\templates\contracts\hall_sales.html:157
+msgid ""
+"The buyer (hereinafter referred to as A) and the seller (hereinafter "
+"referred to as B) have entered into a sales contract including the "
+"transaction contract stated on the back of the following products "
+"(hereinafter referred to as properties)."
+msgstr ""
+"買主（以下甲という）と売主（以下乙という）は以下の商品（以下物件という）裏面"
+"記載取引約定を含み売買契約を締結いたしました。"
+
+#: .\templates\contracts\hall_purchases.html:170
+#: .\templates\contracts\hall_sales.html:171
+#: .\templates\contracts\trader_purchases.html:203
+#: .\templates\contracts\trader_sales.html:199
+msgid "Search by model name"
+msgstr "機種名で検索してください"
+
+#: .\templates\contracts\hall_purchases.html:173
+#: .\templates\contracts\hall_purchases.html:360
+#: .\templates\contracts\hall_purchases.html:517
+#: .\templates\contracts\hall_sales.html:174
+#: .\templates\contracts\hall_sales.html:336
+#: .\templates\contracts\hall_sales.html:476
+#: .\templates\contracts\trader_purchases.html:207
+#: .\templates\contracts\trader_purchases.html:370
+#: .\templates\contracts\trader_sales.html:202
+#: .\templates\contracts\trader_sales.html:389
+#: .\templates\listing\inventory.html:249
+#: .\templates\masterdata\customers.html:181
+#: .\templates\masterdata\documents.html:118
+#: .\templates\masterdata\halls.html:207
+#: .\templates\masterdata\people_in_charge.html:101
+#: .\templates\masterdata\products.html:203
+#: .\templates\masterdata\senders.html:172
+msgid "Add"
+msgstr "追加"
+
+#: .\templates\contracts\hall_purchases.html:182
+#: .\templates\contracts\hall_sales.html:183
+#: .\templates\contracts\trader_purchases.html:216
+#: .\templates\contracts\trader_sales.html:211
+#: .\templates\masterdata\products.html:135
+#: .\templates\masterdata\products.html:230
+msgid "Model name"
+msgstr "機種名"
+
+#: .\templates\contracts\hall_purchases.html:183
+#: .\templates\contracts\hall_purchases.html:526
+#: .\templates\contracts\hall_sales.html:184
+#: .\templates\contracts\hall_sales.html:485
+#: .\templates\contracts\trader_purchases.html:217
+#: .\templates\contracts\trader_sales.html:212
+msgid "Product type"
+msgstr "中分類"
+
+#: .\templates\contracts\hall_purchases.html:184
+#: .\templates\contracts\hall_purchases.html:370
+#: .\templates\contracts\hall_sales.html:185
+#: .\templates\contracts\hall_sales.html:346
+#: .\templates\contracts\trader_purchases.html:218
+#: .\templates\contracts\trader_purchases.html:380
+#: .\templates\contracts\trader_sales.html:213
+#: .\templates\contracts\trader_sales.html:399
+msgid "Quantity"
+msgstr "数量"
+
+#: .\templates\contracts\hall_purchases.html:185
+#: .\templates\contracts\hall_purchases.html:371
+#: .\templates\contracts\hall_sales.html:186
+#: .\templates\contracts\hall_sales.html:347
+#: .\templates\contracts\trader_purchases.html:219
+#: .\templates\contracts\trader_purchases.html:381
+#: .\templates\contracts\trader_sales.html:214
+#: .\templates\contracts\trader_sales.html:400
+#: .\templates\listing\inventory.html:111
+#: .\templates\listing\inventory.html:226
+#: .\templates\listing\inventory.html:228
+#: .\templates\listing\inventory.html:323
+#: .\templates\listing\inventory.html:325 .\templates\listing\link.html:243
+#: .\templates\listing\link.html:526 .\templates\listing\purchases.html:154
+#: .\templates\listing\sales.html:154 .\templates\masterdata\products.html:73
+#: .\templates\masterdata\products.html:188
+#: .\templates\masterdata\products.html:190
+#: .\templates\masterdata\products.html:283
+#: .\templates\masterdata\products.html:285
+msgid "Price"
+msgstr "単価"
+
+#: .\templates\contracts\hall_purchases.html:187
+#: .\templates\contracts\hall_purchases.html:373
+#: .\templates\contracts\hall_purchases.html:530
+#: .\templates\contracts\hall_sales.html:188
+#: .\templates\contracts\hall_sales.html:349
+#: .\templates\contracts\hall_sales.html:489
+#: .\templates\contracts\trader_purchases.html:221
+#: .\templates\contracts\trader_purchases.html:383
+#: .\templates\contracts\trader_sales.html:216
+#: .\templates\contracts\trader_sales.html:402
+#: .\templates\listing\deleted.html:155 .\templates\listing\inventory.html:114
+#: .\templates\listing\link.html:246 .\templates\listing\link.html:529
+#: .\templates\listing\linkshow.html:152 .\templates\listing\purchases.html:156
+#: .\templates\listing\sales.html:156 .\templates\masterdata\customers.html:73
+#: .\templates\masterdata\documents.html:48
+#: .\templates\masterdata\halls.html:76
+#: .\templates\masterdata\people_in_charge.html:46
+#: .\templates\masterdata\products.html:76
+#: .\templates\masterdata\senders.html:73
+msgid "Action"
+msgstr "操作"
+
+#: .\templates\contracts\hall_purchases.html:250
+#: .\templates\contracts\hall_sales.html:251
+#: .\templates\contracts\trader_purchases.html:285
+#: .\templates\contracts\trader_sales.html:279
+msgid "No product has been added."
+msgstr "商品が追加されていません。"
+
+#: .\templates\contracts\hall_purchases.html:351
+#: .\templates\contracts\hall_sales.html:327
+#: .\templates\contracts\trader_purchases.html:361
+#: .\templates\contracts\trader_sales.html:380
+#: .\templates\layout\sidebar.html:36 .\templates\masterdata\documents.html:4
+#: .\templates\masterdata\documents.html:17
+#: .\templates\masterdata\documents.html:25
+#: .\templates\masterdata\documents.html:36
+msgid "Other"
+msgstr "商品名そのほか"
+
+#: .\templates\contracts\hall_purchases.html:354
+#: .\templates\contracts\hall_sales.html:330
+#: .\templates\contracts\trader_purchases.html:364
+#: .\templates\contracts\trader_sales.html:383
+msgid "Select document"
+msgstr "その他売上を選択してください"
+
+#: .\templates\contracts\hall_purchases.html:428
+#: .\templates\contracts\hall_sales.html:404
+#: .\templates\contracts\trader_purchases.html:439
+#: .\templates\contracts\trader_sales.html:457
+msgid "No document has been added."
+msgstr "書類が追加されていません。"
+
+#: .\templates\contracts\hall_purchases.html:508
+#: .\templates\contracts\hall_sales.html:467
+msgid "Document fee"
+msgstr "書類代"
+
+#: .\templates\contracts\hall_purchases.html:511
+#: .\templates\contracts\hall_sales.html:470
+msgid "Select document fee"
+msgstr "書類代を選択してください"
+
+#: .\templates\contracts\hall_purchases.html:527
+#: .\templates\contracts\hall_sales.html:486
+msgid "Model count"
+msgstr "機種数"
+
+#: .\templates\contracts\hall_purchases.html:585
+#: .\templates\contracts\hall_sales.html:544
+msgid "No document fee has been added."
+msgstr "書類代が追加されていません。"
+
+#: .\templates\contracts\hall_purchases.html:674
+#: .\templates\contracts\hall_purchases.html:838
+#: .\templates\contracts\hall_sales.html:613
+#: .\templates\contracts\trader_purchases.html:568
+#: .\templates\contracts\trader_purchases.html:670
+#: .\templates\contracts\trader_purchases.html:723
+#: .\templates\contracts\trader_sales.html:553
+msgid "Remarks"
+msgstr "備考"
+
+#: .\templates\contracts\hall_purchases.html:682
+#: .\templates\contracts\hall_sales.html:621
+#: .\templates\contracts\trader_purchases.html:580
+#: .\templates\contracts\trader_sales.html:564
+msgid "Sum"
+msgstr "小計"
+
+#: .\templates\contracts\hall_purchases.html:686
+#: .\templates\contracts\hall_sales.html:625
+#: .\templates\contracts\trader_purchases.html:584
+#: .\templates\contracts\trader_sales.html:568
+msgid "Consumption tax"
+msgstr "消費税"
+
+#: .\templates\contracts\hall_purchases.html:694
+#: .\templates\contracts\hall_sales.html:633
+#: .\templates\contracts\trader_purchases.html:592
+#: .\templates\contracts\trader_sales.html:576
+msgid "Insurance fee"
+msgstr "保険代"
+
+#: .\templates\contracts\hall_purchases.html:694
+#: .\templates\contracts\hall_sales.html:633
+#: .\templates\contracts\trader_purchases.html:592
+#: .\templates\contracts\trader_sales.html:576
+msgid "No tax"
+msgstr "非課税"
+
+#: .\templates\contracts\hall_purchases.html:703
+#: .\templates\contracts\hall_sales.html:642
+msgid "Total amount"
+msgstr "合計"
+
+#: .\templates\contracts\hall_purchases.html:714
+#: .\templates\contracts\hall_sales.html:653
+msgid "We will charge you as follows."
+msgstr "下記の通りご請求申し上げます。"
+
+#: .\templates\contracts\hall_purchases.html:723
+#: .\templates\contracts\hall_sales.html:662
+msgid "Shipping date"
+msgstr "納品日"
+
+#: .\templates\contracts\hall_purchases.html:734
+#: .\templates\contracts\hall_sales.html:673
+msgid "Opening date"
+msgstr "開店日"
+
+#: .\templates\contracts\hall_purchases.html:746
+#: .\templates\contracts\hall_sales.html:685
+#: .\templates\contracts\trader_sales.html:603
+msgid "Payment method"
+msgstr "お支払方法"
+
+#: .\templates\contracts\hall_purchases.html:757
+#: .\templates\contracts\hall_sales.html:696
+msgid "Payment breakdown"
+msgstr "お支払内訳"
+
+#: .\templates\contracts\hall_purchases.html:806
+#: .\templates\contracts\hall_sales.html:749
+#: .\templates\contracts\trader_purchases.html:806
+#: .\templates\contracts\trader_sales.html:771
+msgid "Transfer account"
+msgstr "振込先口座"
+
+#: .\templates\contracts\hall_purchases.html:815
+#: .\templates\contracts\hall_sales.html:759
+#: .\templates\contracts\trader_purchases.html:180
+#: .\templates\contracts\trader_sales.html:177
+#: .\templates\masterdata\products.html:179
+#: .\templates\masterdata\products.html:274
+msgid "Select person in charge"
+msgstr "担当名を選択してください"
+
+#: .\templates\contracts\hall_purchases.html:828
+#: .\templates\contracts\hall_sales.html:772
+msgid "Confirmor"
+msgstr "確認印"
+
+#: .\templates\contracts\hall_purchases.html:848
+#: .\templates\contracts\hall_sales.html:783
+#: .\templates\contracts\trader_purchases.html:875
+#: .\templates\contracts\trader_sales.html:790
+#: .\templates\listing\deleted.html:265 .\templates\listing\inventory.html:346
+#: .\templates\listing\link.html:348 .\templates\listing\link.html:644
+#: .\templates\listing\linkshow.html:269 .\templates\listing\purchases.html:265
+#: .\templates\listing\sales.html:267 .\templates\masterdata\customers.html:261
+#: .\templates\masterdata\documents.html:168
+#: .\templates\masterdata\halls.html:307
+#: .\templates\masterdata\people_in_charge.html:138
+#: .\templates\masterdata\products.html:305
+#: .\templates\masterdata\senders.html:243
+msgid "Save"
+msgstr "保存"
+
+#: .\templates\contracts\hall_purchases.html:868
+#: .\templates\contracts\hall_sales.html:803
+#: .\templates\contracts\trader_purchases.html:897
+#: .\templates\contracts\trader_sales.html:812
+msgid "You can not save without one or more products"
+msgstr "商品を1つ以上登録してください"
+
+#: .\templates\contracts\hall_sales.html:743
+msgid "Please bear the transfer fee at your expense."
+msgstr "お振込み手数料は貴社ご負担でお願いします。"
+
+#: .\templates\contracts\trader_purchases.html:56
+#: .\templates\contracts\trader_sales.html:57
+msgid "Contract and invoice"
+msgstr "売買契約 兼 請求書"
+
+#: .\templates\contracts\trader_purchases.html:70
+#: .\templates\contracts\trader_sales.html:70
+msgid "Updated date"
+msgstr "更新日"
+
+#: .\templates\contracts\trader_purchases.html:114
+#: .\templates\contracts\trader_sales.html:113
+#: .\templates\masterdata\customers.html:67
+#: .\templates\masterdata\customers.html:137
+#: .\templates\masterdata\customers.html:217
+#: .\templates\masterdata\halls.html:70 .\templates\masterdata\halls.html:159
+#: .\templates\masterdata\halls.html:259 .\templates\masterdata\senders.html:68
+#: .\templates\masterdata\senders.html:136
+#: .\templates\masterdata\senders.html:207
+msgid "Frigana"
+msgstr "フリガナ"
+
+#: .\templates\contracts\trader_purchases.html:125
+#: .\templates\contracts\trader_sales.html:124
+#: .\templates\masterdata\customers.html:68
+#: .\templates\masterdata\customers.html:144
+#: .\templates\masterdata\customers.html:224
+#: .\templates\masterdata\halls.html:71 .\templates\masterdata\halls.html:167
+#: .\templates\masterdata\halls.html:267 .\templates\masterdata\senders.html:69
+#: .\templates\masterdata\senders.html:143
+#: .\templates\masterdata\senders.html:214
+msgid "Postal code"
+msgstr "郵便番号"
+
+#: .\templates\contracts\trader_purchases.html:504
+msgid "Removal date"
+msgstr "撤去日"
+
+#: .\templates\contracts\trader_purchases.html:523
+msgid "Frame color"
+msgstr "枠色"
+
+#: .\templates\contracts\trader_purchases.html:530
+#: .\templates\listing\deleted.html:90 .\templates\listing\link.html:240
+#: .\templates\listing\link.html:443 .\templates\listing\link.html:523
+#: .\templates\listing\linkshow.html:82 .\templates\listing\purchases.html:91
+#: .\templates\listing\sales.html:90
+msgid "Date of shipment"
+msgstr "発送日"
+
+#: .\templates\contracts\trader_purchases.html:541
+#: .\templates\contracts\trader_sales.html:597
+msgid "Shipping method"
+msgstr "運送方法"
+
+#: .\templates\contracts\trader_purchases.html:555
+#: .\templates\contracts\trader_sales.html:617
+msgid "Payment due date"
+msgstr "お支払期限"
+
+#: .\templates\contracts\trader_purchases.html:601
+#: .\templates\contracts\trader_sales.html:585
+msgid "Total"
+msgstr "合計"
+
+#: .\templates\contracts\trader_purchases.html:613
+msgid ""
+"It is assumed that the contract has been concluded with the arrival of our "
+"certificate of sale."
+msgstr "売却証明書の弊社到着をもちまして契約が成立したものとします。"
+
+#: .\templates\contracts\trader_purchases.html:616
+#, python-format
+msgid ""
+"If you cancel after sending the proof of purchase, you will be compensated "
+"for 100%% of the closing price."
+msgstr ""
+"購入証明書送付後、キャンセルした場合には売買成立代金の100%%を賠償するものとし"
+"ます。"
+
+#: .\templates\contracts\trader_purchases.html:619
+msgid ""
+"We will notify you of any missing items or damage within 3 days after the "
+"item arrives. No further returns or exchanges will be accepted."
+msgstr ""
+"欠品、破損などのご連絡は商品到着後3日以内とします。以降の返品、交換は一切出来"
+"かねます。"
+
+#: .\templates\contracts\trader_purchases.html:633
+#: .\templates\contracts\trader_sales.html:651
+msgid "Select product sender"
+msgstr "商品発送先を選択してください"
+
+#: .\templates\contracts\trader_purchases.html:654
+#: .\templates\contracts\trader_purchases.html:707
+msgid "Desired arrival date"
+msgstr "到着希望日"
+
+#: .\templates\contracts\trader_purchases.html:664
+#: .\templates\contracts\trader_purchases.html:717
+msgid "Shipping company"
+msgstr "運送会社"
+
+#: .\templates\contracts\trader_purchases.html:682
+#: .\templates\contracts\trader_sales.html:693
+msgid "Document sender"
+msgstr "書類発送先"
+
+#: .\templates\contracts\trader_purchases.html:686
+#: .\templates\contracts\trader_sales.html:697
+msgid "Select document sender"
+msgstr "書類発送先を選択してください"
+
+#: .\templates\contracts\trader_purchases.html:732
+msgid "Please check the contents, seal it, and fax it to us."
+msgstr "内容をご確認の上、ご捺印後弊社までリファックス願います。"
+
+#: .\templates\contracts\trader_purchases.html:733
+msgid "Return address"
+msgstr "返送先"
+
+#: .\templates\contracts\trader_purchases.html:789
+msgid "Transfer deadline"
+msgstr "振込期限日"
+
+#: .\templates\contracts\trader_purchases.html:811
+msgid "Bank name"
+msgstr "銀行名"
+
+#: .\templates\contracts\trader_purchases.html:821
+msgid "Account number"
+msgstr "口座番号"
+
+#: .\templates\contracts\trader_purchases.html:836
+msgid "Original invoice"
+msgstr "請求書原本"
+
+#: .\templates\contracts\trader_purchases.html:839
+#: .\templates\contracts\trader_sales.html:778
+msgid "Required"
+msgstr "必要"
+
+#: .\templates\contracts\trader_purchases.html:841
+#: .\templates\contracts\trader_sales.html:778
+msgid "Not required"
+msgstr "不要"
+
+#: .\templates\contracts\trader_purchases.html:846
+msgid "Branch name"
+msgstr "支店名"
+
+#: .\templates\contracts\trader_purchases.html:856
+msgid "Account holder"
+msgstr "口座名義"
+
+#: .\templates\contracts\trader_purchases.html:868
+msgid "Please describe the transfer destination."
+msgstr "お振込み先の記載をお願いします。"
+
+#: .\templates\contracts\trader_sales.html:611
+msgid "Billing amount"
+msgstr "御請求金額"
+
+#: .\templates\contracts\trader_sales.html:631
+msgid ""
+"The contract will be effective when both seller and buyer sign and seal."
+msgstr "売主、買主、双方の署名・捺印が揃った時点で契約が成立したものとします。"
+
+#: .\templates\contracts\trader_sales.html:632
+msgid "As a general rule, the contract cannot be canceled once signed."
+msgstr "契約が成立後、原則として売買契約を解除できないものとします。"
+
+#: .\templates\contracts\trader_sales.html:633
+msgid ""
+"3 days warranty after delivery will be provided just in case of defects or "
+"malfunctions in the products."
+msgstr "当該商品に不備及び故障がある場合の保障は、納品後3日以内とします。"
+
+#: .\templates\contracts\trader_sales.html:634
+msgid ""
+"The seller will keep the ownership of the products until the buyer makes the "
+"full payment."
+msgstr ""
+"買主が代金全額支払いを完了するまでは、売買物件の所有権は売主において留保す"
+"る。"
+
+#: .\templates\contracts\trader_sales.html:635
+msgid ""
+"The Ownership of the products shall be transferred to the buyer when product "
+"delivery is completed and full payment is made."
+msgstr ""
+"売買物件の所有権は、引渡しが終了し、支払いが完了した時点で買主」に移行するも"
+"のとする。"
+
+#: .\templates\contracts\trader_sales.html:636
+msgid ""
+"In the following cases, the seller may, without any procedure, request the "
+"immediate payment of the remaining balance, or cancel the contract and take "
+"back the products."
+msgstr ""
+"下記の場合の売主は、何らかの手続きを経ずして、その選択により期の利益を喪失せ"
+"しめて残代金の即時支払いを求めるか、又は本契約を解除して売買物件を引き上げる"
+"事が出来る。"
+
+#: .\templates\contracts\trader_sales.html:637
+msgid "When the buyer fail to make the payment even once."
+msgstr "代金の支払いを1回でも怠った場合。"
+
+#: .\templates\contracts\trader_sales.html:638
+msgid ""
+"When the products were forfeited or disposed temporarily, or the request for "
+"arrangement, reconciliation, damage etc is received."
+msgstr ""
+"仮差押え、仮処分等の執行を受け、整理・和議・破損等の申立てを受けた場合。"
+
+#: .\templates\contracts\trader_sales.html:679
+#: .\templates\contracts\trader_sales.html:724
+msgid "Expected arrival date"
+msgstr "到着予定日"
+
+#: .\templates\contracts\trader_sales.html:737
+msgid "Buyer seal"
+msgstr "買主捺印欄"
+
+#: .\templates\contracts\trader_sales.html:752
+msgid "Seller seal"
+msgstr "売主捺印欄"
+
+#: .\templates\contracts\trader_sales.html:769
+msgid "Please be noted that the transfer fee will be at your company expense."
+msgstr "お振込み手数料は貴社ご負担でお願いします。"
+
+#: .\templates\contracts\trader_sales.html:775
+msgid "Please check the contents. After seal, kindly revert back to us."
+msgstr "内容をご確認の上、捺印後弊社まで返信お願いします。"
+
+#: .\templates\contracts\trader_sales.html:778
+msgid ""
+"If you need the original invoice, please make sure to tick the checkbox."
+msgstr "請求書原本が必要な場合は必ずチェックしてください。"
+
+#: .\templates\contracts\trader_sales.html:782
+msgid "Memo"
+msgstr "メモ"
+
+#: .\templates\contracts\trader_sales.html:792
+msgid "Export Invoice to excel"
+msgstr "請求書をExcelにエクスポート"
+
+#: .\templates\error\404.html:13 .\templates\error\500.html:13
+#: .\templates\layout\error_modal.html:8 .\templates\layout\error_modal.html:35
+#: .\templates\layout\error_modal.html:68
+#: .\templates\layout\error_modal.html:100
+#: .\templates\layout\error_modal.html:132
+#: .\templates\layout\error_modal.html:147
+#: .\templates\layout\error_modal.html:162
+msgid "Error"
+msgstr "エラー"
+
+#: .\templates\error\404.html:17
+msgid "Page not found"
+msgstr "ページが見つかりません"
+
+#: .\templates\error\404.html:17 .\templates\error\500.html:17
+msgid "Home"
+msgstr "ホーム"
+
+#: .\templates\error\500.html:13
+msgid "Oups!"
+msgstr "おっと!"
+
+#: .\templates\error\500.html:17
+msgid "Server error, please contact support"
+msgstr "サーバーエラー、サポートに連絡してください"
+
+#: .\templates\layout\base.html:11 .\templates\layout\base_not_logged.html:10
+#: .\templates\layout\base_not_logged.html:42 .\templates\layout\navbar.html:6
+msgid "Inventory System"
+msgstr "在庫システム"
+
+#: .\templates\layout\error_modal.html:13
+msgid "Customer must be selected."
+msgstr "取引先のフィールドは必須です。"
+
+#: .\templates\layout\error_modal.html:14
+#: .\templates\layout\error_modal.html:41
+#: .\templates\layout\error_modal.html:83
+#: .\templates\layout\error_modal.html:115
+msgid "Person in charge field must be provided."
+msgstr "担当名のフィールドは必須です。"
+
+#: .\templates\layout\error_modal.html:15
+#: .\templates\layout\error_modal.html:42
+#: .\templates\layout\error_modal.html:75
+#: .\templates\layout\error_modal.html:107
+msgid "At least one product must be added."
+msgstr "少なくとも1つの商品名を追加する必要があります。"
+
+#: .\templates\layout\error_modal.html:16
+#: .\templates\layout\error_modal.html:43
+#: .\templates\layout\error_modal.html:76
+#: .\templates\layout\error_modal.html:108
+msgid "Price and quantity for each product must be positive integer."
+msgstr "商品の単価と数量は正の整数でなければなりません。"
+
+#: .\templates\layout\error_modal.html:17
+#: .\templates\layout\error_modal.html:44
+#: .\templates\layout\error_modal.html:77
+#: .\templates\layout\error_modal.html:109
+msgid "At least one document must be added."
+msgstr "少なくとも1つの書類を追加する必要があります。"
+
+#: .\templates\layout\error_modal.html:18
+#: .\templates\layout\error_modal.html:45
+#: .\templates\layout\error_modal.html:78
+#: .\templates\layout\error_modal.html:110
+msgid "Price and quantity for each document must be positive integer."
+msgstr "書類の単価と数量は正の整数でなければなりません。"
+
+#: .\templates\layout\error_modal.html:19
+msgid ""
+"When the shipping method is delivery, product sender and document sender "
+"must be selected."
+msgstr ""
+"運送方法が引取の場合は、商品発送先と書類発送先を選択する必要があります。"
+
+#: .\templates\layout\error_modal.html:24
+#: .\templates\layout\error_modal.html:57
+#: .\templates\layout\error_modal.html:89
+#: .\templates\layout\error_modal.html:121 .\templates\listing\deleted.html:266
+#: .\templates\listing\inventory.html:250
+#: .\templates\listing\inventory.html:347
+#: .\templates\listing\inventory.html:373 .\templates\listing\link.html:349
+#: .\templates\listing\link.html:645 .\templates\listing\linkshow.html:270
+#: .\templates\listing\purchases.html:266 .\templates\listing\sales.html:268
+#: .\templates\masterdata\customers.html:182
+#: .\templates\masterdata\customers.html:262
+#: .\templates\masterdata\customers.html:288
+#: .\templates\masterdata\documents.html:119
+#: .\templates\masterdata\documents.html:169
+#: .\templates\masterdata\documents.html:195
+#: .\templates\masterdata\halls.html:208 .\templates\masterdata\halls.html:308
+#: .\templates\masterdata\halls.html:335
+#: .\templates\masterdata\people_in_charge.html:102
+#: .\templates\masterdata\people_in_charge.html:139
+#: .\templates\masterdata\people_in_charge.html:165
+#: .\templates\masterdata\products.html:204
+#: .\templates\masterdata\products.html:306
+#: .\templates\masterdata\products.html:332
+#: .\templates\masterdata\senders.html:173
+#: .\templates\masterdata\senders.html:244
+#: .\templates\masterdata\senders.html:270
+msgid "Close"
+msgstr "閉じる"
+
+#: .\templates\layout\error_modal.html:40
+#: .\templates\layout\error_modal.html:73
+#: .\templates\layout\error_modal.html:105
+msgid "Customer field must be selected."
+msgstr "取引先のフィールドは必須です。"
+
+#: .\templates\layout\error_modal.html:46
+msgid ""
+"Sender and shipping company for product sender and document sender forms "
+"must be given."
+msgstr "商品発送先と書類発送先で会社名と運送会社を指定する必要があります。"
+
+#: .\templates\layout\error_modal.html:47
+msgid "Frame color field must be selected."
+msgstr "枠色のフィールドは必須です。"
+
+#: .\templates\layout\error_modal.html:48
+msgid "Receipt field must be selected."
+msgstr "引取のフィールドは必須です。"
+
+#: .\templates\layout\error_modal.html:49
+msgid "Bank name field must be selected."
+msgstr "銀行名のフィールドは必須です。"
+
+#: .\templates\layout\error_modal.html:50
+msgid "Account number field must be selected."
+msgstr "口座番号のフィールドは必須です。"
+
+#: .\templates\layout\error_modal.html:51
+msgid "Branch name field must be selected."
+msgstr "支店名のフィールドは必須です。"
+
+#: .\templates\layout\error_modal.html:52
+msgid "Account holder field must be selected."
+msgstr "口座名義のフィールドは必須です。"
+
+#: .\templates\layout\error_modal.html:74
+#: .\templates\layout\error_modal.html:106
+msgid "Hall field must be selected."
+msgstr "ホール名のフィールドは必須です。"
+
+#: .\templates\layout\error_modal.html:79
+#: .\templates\layout\error_modal.html:111
+msgid "At least one document fee must be added."
+msgstr "少なくとも1つの書類代を追加する必要があります。"
+
+#: .\templates\layout\error_modal.html:80
+#: .\templates\layout\error_modal.html:112
+msgid ""
+"Model count and quantity for each document fee must be positive integer."
+msgstr "書類代の機種数と台数は正の整数でなければなりません。"
+
+#: .\templates\layout\error_modal.html:81
+#: .\templates\layout\error_modal.html:113
+msgid "At least one milestone must be added."
+msgstr "少なくとも1つのお支払内訳を追加する必要があります。"
+
+#: .\templates\layout\error_modal.html:82
+#: .\templates\layout\error_modal.html:114
+msgid "Transfer account field must be provided."
+msgstr "振込先口座のフィールドは必須です。"
+
+#: .\templates\layout\error_modal.html:84
+#: .\templates\layout\error_modal.html:116
+msgid "Confirmor field must be provided."
+msgstr "確認印のフィールドは必須です。"
+
+#: .\templates\layout\error_modal.html:136
+msgid "Select the product before adding to the table."
+msgstr "追加する前に商品名を選択してください。"
+
+#: .\templates\layout\error_modal.html:151
+msgid "Select the document before adding to the table."
+msgstr "追加する前に書類を選択してください。"
+
+#: .\templates\layout\error_modal.html:166
+msgid "Select the document fee before adding to the table."
+msgstr "追加する前に書類代を選択してください。"
+
+#: .\templates\layout\navbar.html:48
+msgid "My profile"
+msgstr "私のプロフィール"
+
+#: .\templates\layout\navbar.html:49
+msgid "Logout"
+msgstr "ログアウト"
+
+#: .\templates\layout\sidebar.html:31 .\templates\masterdata\customers.html:17
+#: .\templates\masterdata\customers.html:24
+#: .\templates\masterdata\documents.html:17
+#: .\templates\masterdata\documents.html:24
+#: .\templates\masterdata\halls.html:17 .\templates\masterdata\halls.html:24
+#: .\templates\masterdata\people_in_charge.html:17
+#: .\templates\masterdata\people_in_charge.html:24
+#: .\templates\masterdata\products.html:17
+#: .\templates\masterdata\products.html:24
+#: .\templates\masterdata\senders.html:17
+#: .\templates\masterdata\senders.html:24
+msgid "Master data"
+msgstr "マスタデータ"
+
+#: .\templates\layout\sidebar.html:33 .\templates\masterdata\customers.html:4
+#: .\templates\masterdata\customers.html:17
+#: .\templates\masterdata\customers.html:25
+#: .\templates\masterdata\customers.html:36
+msgid "Customer master"
+msgstr "顧客マスタ"
+
+#: .\templates\layout\sidebar.html:34 .\templates\masterdata\halls.html:4
+#: .\templates\masterdata\halls.html:17 .\templates\masterdata\halls.html:25
+#: .\templates\masterdata\halls.html:36
+msgid "Hall"
+msgstr "ホール"
+
+#: .\templates\layout\sidebar.html:56 .\templates\listing\link.html:11
+#: .\templates\listing\link.html:234 .\templates\listing\link.html:517
+msgid "Link"
+msgstr "紐付け"
+
+#: .\templates\layout\sidebar.html:57 .\templates\listing\linkshow.html:18
+#: .\templates\listing\linkshow.html:26 .\templates\listing\linkshow.html:37
+msgid "LinkView"
+msgstr "紐付け済み"
+
+#: .\templates\layout\sidebar.html:58 .\templates\listing\history.html:18
+#: .\templates\listing\history.html:26 .\templates\listing\history.html:37
+msgid "Export history"
+msgstr "エクセル履歴"
+
+#: .\templates\layout\sidebar.html:59 .\templates\listing\deleted.html:4
+msgid "Deleted"
+msgstr "削除（β版）"
+
+#: .\templates\listing\deleted.html:18 .\templates\listing\deleted.html:26
+#: .\templates\listing\deleted.html:37
+msgid "Deleted (contract)"
+msgstr "削除（売買契求書）"
+
+#: .\templates\listing\deleted.html:224 .\templates\listing\link.html:306
+#: .\templates\listing\link.html:601 .\templates\listing\linkshow.html:226
+#: .\templates\listing\purchases.html:224 .\templates\listing\sales.html:226
+msgid "Edit"
+msgstr "編集"
+
+#: .\templates\listing\deleted.html:332 .\templates\listing\inventory.html:366
+#: .\templates\listing\purchases.html:332 .\templates\listing\sales.html:334
+#: .\templates\masterdata\customers.html:281
+#: .\templates\masterdata\documents.html:188
+#: .\templates\masterdata\halls.html:327
+#: .\templates\masterdata\people_in_charge.html:158
+#: .\templates\masterdata\products.html:325
+#: .\templates\masterdata\senders.html:263
+msgid "Are you sure you want to remove this data?"
+msgstr "このデータを削除してもよろしいですか？"
+
+#: .\templates\listing\deleted.html:377
+msgid "May I delete this data in the comments? I can not restore it again."
+msgstr "コメントこのデータを削除してもよろしいですか？ 二度と復元できません。"
+
+#: .\templates\listing\history.html:4 .\templates\listing\inventory.html:4
+#: .\templates\listing\inventory.html:18 .\templates\listing\inventory.html:26
+#: .\templates\listing\inventory.html:37
+msgid "Inventory"
+msgstr "在庫"
+
+#: .\templates\listing\history.html:46 .\templates\registration\login.html:17
+msgid "Username"
+msgstr "ユーザー名"
+
+#: .\templates\listing\history.html:47
+msgid "Export"
+msgstr "保存内容"
+
+#: .\templates\listing\history.html:48
+msgid "Exported at"
+msgstr "保存時間"
+
+#: .\templates\listing\inventory.html:53 .\templates\listing\inventory.html:107
+#: .\templates\listing\inventory.html:195
+#: .\templates\listing\inventory.html:292
+#: .\templates\masterdata\products.html:70
+#: .\templates\masterdata\products.html:159
+#: .\templates\masterdata\products.html:254
+msgid "Purchase date"
+msgstr "仕入日"
+
+#: .\templates\listing\inventory.html:64 .\templates\listing\inventory.html:108
+#: .\templates\listing\inventory.html:205
+#: .\templates\listing\inventory.html:207
+#: .\templates\listing\inventory.html:302
+#: .\templates\listing\inventory.html:304
+#: .\templates\masterdata\products.html:71
+#: .\templates\masterdata\products.html:169
+#: .\templates\masterdata\products.html:171
+#: .\templates\masterdata\products.html:264
+#: .\templates\masterdata\products.html:266
+msgid "Supplier"
+msgstr "仕入先"
+
+#: .\templates\listing\inventory.html:80 .\templates\listing\inventory.html:112
+#: .\templates\listing\inventory.html:233
+#: .\templates\listing\inventory.html:235
+#: .\templates\listing\inventory.html:330
+#: .\templates\listing\inventory.html:332
+#: .\templates\masterdata\products.html:74
+#: .\templates\masterdata\products.html:195
+#: .\templates\masterdata\products.html:197
+#: .\templates\masterdata\products.html:290
+#: .\templates\masterdata\products.html:292
+#: .\templates\masterdata\products.html:297
+#: .\templates\masterdata\products.html:299
+msgid "Stock"
+msgstr "在庫"
+
+#: .\templates\listing\inventory.html:106
+#: .\templates\listing\inventory.html:188
+#: .\templates\listing\inventory.html:190
+#: .\templates\listing\inventory.html:285
+#: .\templates\listing\inventory.html:287
+msgid "Control number"
+msgstr "管理番号"
+
+#: .\templates\listing\inventory.html:113
+#: .\templates\listing\inventory.html:240
+#: .\templates\listing\inventory.html:242
+#: .\templates\listing\inventory.html:337
+#: .\templates\listing\inventory.html:339
+#: .\templates\masterdata\products.html:75
+msgid "Total price"
+msgstr "合計金額"
+
+#: .\templates\listing\inventory.html:152
+msgid "New product"
+msgstr "在庫に追加"
+
+#: .\templates\listing\inventory.html:169
+#: .\templates\masterdata\products.html:112
+#: .\templates\masterdata\products.html:124
+msgid "Add product"
+msgstr "新規商品名"
+
+#: .\templates\listing\inventory.html:265
+#: .\templates\masterdata\products.html:219
+msgid "Edit product"
+msgstr "商品名の更新"
+
+#: .\templates\listing\inventory.html:362
+#: .\templates\masterdata\products.html:321
+msgid "Delete product"
+msgstr "商品名の削除"
+
+#: .\templates\listing\inventory.html:372
+#: .\templates\masterdata\customers.html:287
+#: .\templates\masterdata\documents.html:194
+#: .\templates\masterdata\halls.html:334
+#: .\templates\masterdata\people_in_charge.html:164
+#: .\templates\masterdata\products.html:331
+#: .\templates\masterdata\senders.html:269
+msgid "Delete"
+msgstr "削除"
+
+#: .\templates\listing\link.html:1
+#, fuzzy
+#| msgid "List"
+msgid "Link List"
+msgstr "一覧表"
+
+#: .\templates\listing\link.html:11
+msgid "Links (contract)"
+msgstr "売上（売買契求書）"
+
+#: .\templates\listing\link.html:19 .\templates\listing\link.html:106
+#: .\templates\listing\purchases.html:18 .\templates\listing\purchases.html:26
+#: .\templates\listing\purchases.html:37
+msgid "Purchases (contract)"
+msgstr "仕入（売買契求書）"
+
+#: .\templates\listing\link.html:364
+msgid "Purchase Select"
+msgstr "仕入選択"
+
+#: .\templates\listing\link.html:373
+msgid "Sales Select"
+msgstr "売上選択"
+
+#: .\templates\listing\link.html:383
+msgid "Make Link"
+msgstr "紐付けする"
+
+#: .\templates\listing\link.html:394 .\templates\listing\sales.html:18
+#: .\templates\listing\sales.html:26 .\templates\listing\sales.html:37
+msgid "Sales (contract)"
+msgstr "売上（売買契求書）"
+
+#: .\templates\listing\link.html:961
+msgid "Please Fill the Fields!"
+msgstr "フィールドを埋めてください！"
+
+#: .\templates\listing\link.html:964
+msgid "Are you going to link these inventories?"
+msgstr "これらの在庫をリンクしますか?"
+
+#: .\templates\listing\linkshow.html:141
+msgid "Unlink"
+msgstr "リンクを解除"
+
+#: .\templates\listing\linkshow.html:313
+msgid "Are you going to unlink these items?"
+msgstr "これらのアイテムのリンクを解除しますか?"
+
+#: .\templates\masterdata\customers.html:66
+#: .\templates\masterdata\customers.html:130
+#: .\templates\masterdata\customers.html:210
+#: .\templates\masterdata\halls.html:135 .\templates\masterdata\halls.html:235
+#: .\templates\masterdata\halls.html:238
+msgid "Customer name"
+msgstr "顧客名"
+
+#: .\templates\masterdata\customers.html:72
+#: .\templates\masterdata\customers.html:172
+#: .\templates\masterdata\customers.html:252
+msgid "Excel"
+msgstr "エクセル"
+
+#: .\templates\masterdata\customers.html:106
+#: .\templates\masterdata\customers.html:118
+msgid "Add customer"
+msgstr "新規顧客マスタ"
+
+#: .\templates\masterdata\customers.html:132
+#: .\templates\masterdata\customers.html:212
+#: .\templates\masterdata\halls.html:138
+msgid "Enter customer name"
+msgstr "顧客名を入力してください"
+
+#: .\templates\masterdata\customers.html:139
+#: .\templates\masterdata\customers.html:219
+#: .\templates\masterdata\halls.html:161 .\templates\masterdata\halls.html:261
+#: .\templates\masterdata\senders.html:138
+#: .\templates\masterdata\senders.html:209
+msgid "Enter frigana"
+msgstr "フリガナを入力してください"
+
+#: .\templates\masterdata\customers.html:146
+#: .\templates\masterdata\customers.html:226
+#: .\templates\masterdata\halls.html:170 .\templates\masterdata\halls.html:270
+#: .\templates\masterdata\senders.html:145
+#: .\templates\masterdata\senders.html:216
+msgid "Enter postal code"
+msgstr "郵便番号を入力してください"
+
+#: .\templates\masterdata\customers.html:153
+#: .\templates\masterdata\customers.html:233
+#: .\templates\masterdata\halls.html:177 .\templates\masterdata\halls.html:277
+#: .\templates\masterdata\senders.html:152
+#: .\templates\masterdata\senders.html:223
+msgid "Enter address"
+msgstr "住所を入力してください"
+
+#: .\templates\masterdata\customers.html:160
+#: .\templates\masterdata\customers.html:240
+#: .\templates\masterdata\halls.html:185 .\templates\masterdata\halls.html:285
+#: .\templates\masterdata\senders.html:159
+#: .\templates\masterdata\senders.html:230
+msgid "Enter TEL"
+msgstr "TELを入力してください"
+
+#: .\templates\masterdata\customers.html:167
+#: .\templates\masterdata\customers.html:247
+#: .\templates\masterdata\halls.html:192 .\templates\masterdata\halls.html:292
+#: .\templates\masterdata\senders.html:166
+#: .\templates\masterdata\senders.html:237
+msgid "Enter FAX"
+msgstr "FAXを入力してください"
+
+#: .\templates\masterdata\customers.html:174
+#: .\templates\masterdata\customers.html:254
+msgid "Enter excel"
+msgstr "エクセル名を入力してください"
+
+#: .\templates\masterdata\customers.html:197
+msgid "Edit customer"
+msgstr "顧客マスタの更新"
+
+#: .\templates\masterdata\customers.html:277
+msgid "Delete customer"
+msgstr "顧客マスタの削除"
+
+#: .\templates\masterdata\documents.html:45
+#: .\templates\masterdata\documents.html:96
+#: .\templates\masterdata\documents.html:146
+#: .\templates\masterdata\people_in_charge.html:45
+#: .\templates\masterdata\people_in_charge.html:92
+#: .\templates\masterdata\people_in_charge.html:129
+msgid "Name"
+msgstr "名称"
+
+#: .\templates\masterdata\documents.html:46
+#: .\templates\masterdata\documents.html:103
+#: .\templates\masterdata\documents.html:153
+msgid "Term"
+msgstr "勘定科目"
+
+#: .\templates\masterdata\documents.html:73
+#: .\templates\masterdata\documents.html:85
+msgid "Add other"
+msgstr "新規商品名そのほか"
+
+#: .\templates\masterdata\documents.html:98
+#: .\templates\masterdata\documents.html:148
+#: .\templates\masterdata\people_in_charge.html:94
+#: .\templates\masterdata\people_in_charge.html:131
+msgid "Enter name"
+msgstr "名称を入力してください"
+
+#: .\templates\masterdata\documents.html:105
+#: .\templates\masterdata\documents.html:155
+msgid "Enter term"
+msgstr "勘定科目を入力してください"
+
+#: .\templates\masterdata\documents.html:112
+#: .\templates\masterdata\documents.html:162
+msgid "Enter taxation"
+msgstr "税区分を入力してください"
+
+#: .\templates\masterdata\documents.html:134
+msgid "Edit other"
+msgstr "商品名そのほかの更新"
+
+#: .\templates\masterdata\documents.html:184
+msgid "Delete other"
+msgstr "商品名そのほかの削除"
+
+#: .\templates\masterdata\halls.html:68 .\templates\masterdata\halls.html:143
+#: .\templates\masterdata\halls.html:146 .\templates\masterdata\halls.html:243
+#: .\templates\masterdata\halls.html:246
+msgid "Customer frigana"
+msgstr "取引先フリガナ"
+
+#: .\templates\masterdata\halls.html:75 .\templates\masterdata\halls.html:197
+#: .\templates\masterdata\halls.html:297
+msgid "Payee"
+msgstr "振込先"
+
+#: .\templates\masterdata\halls.html:112 .\templates\masterdata\halls.html:124
+msgid "Add hall"
+msgstr "新規ホール"
+
+#: .\templates\masterdata\halls.html:153 .\templates\masterdata\halls.html:253
+msgid "Enter hall name"
+msgstr "ホール名を入力してください"
+
+#: .\templates\masterdata\halls.html:199 .\templates\masterdata\halls.html:299
+msgid "Enter payee"
+msgstr "振込先を入力してください"
+
+#: .\templates\masterdata\halls.html:223
+msgid "Edit hall"
+msgstr "ホールの更新"
+
+#: .\templates\masterdata\halls.html:323
+msgid "Delete hall"
+msgstr "ホールの削除"
+
+#: .\templates\masterdata\halls.html:328
+msgid ""
+"Because this data already output in contract document, can't remove. Please "
+"remove contract document first."
+msgstr ""
+"このデータはすでに契約書に出力されているため削除できません。 先に契約書を削除"
+"してください。"
+
+#: .\templates\masterdata\people_in_charge.html:69
+#: .\templates\masterdata\people_in_charge.html:81
+msgid "Add person"
+msgstr "新規担当名"
+
+#: .\templates\masterdata\people_in_charge.html:117
+msgid "Edit person"
+msgstr "担当名の更新"
+
+#: .\templates\masterdata\people_in_charge.html:154
+msgid "Delete person"
+msgstr "担当名の削除"
+
+#: .\templates\masterdata\products.html:69
+#: .\templates\masterdata\products.html:152
+#: .\templates\masterdata\products.html:247
+msgid "Maker"
+msgstr "メーカー"
+
+#: .\templates\masterdata\products.html:137
+#: .\templates\masterdata\products.html:232
+msgid "Enter model name"
+msgstr "機種名を入力してください"
+
+#: .\templates\masterdata\products.html:154
+#: .\templates\masterdata\products.html:249
+msgid "Enter maker"
+msgstr "メーカーを入力してください"
+
+#: .\templates\masterdata\senders.html:4 .\templates\masterdata\senders.html:17
+#: .\templates\masterdata\senders.html:25
+#: .\templates\masterdata\senders.html:36
+msgid "Sender"
+msgstr "配送先"
+
+#: .\templates\masterdata\senders.html:67
+#: .\templates\masterdata\senders.html:129
+#: .\templates\masterdata\senders.html:200
+msgid "Sender name"
+msgstr "配送先名"
+
+#: .\templates\masterdata\senders.html:106
+#: .\templates\masterdata\senders.html:118
+msgid "Add sender"
+msgstr "新規配送先"
+
+#: .\templates\masterdata\senders.html:131
+#: .\templates\masterdata\senders.html:202
+msgid "Enter sender name"
+msgstr "配送先名を入力してください"
+
+#: .\templates\masterdata\senders.html:188
+msgid "Edit sender"
+msgstr "配送先の更新"
+
+#: .\templates\masterdata\senders.html:259
+msgid "Delete sender"
+msgstr "配送先の削除"
+
+#: .\templates\registration\login.html:13
+msgid "Login to your account"
+msgstr "アカウントにログイン"
+
+#: .\templates\registration\login.html:13
+msgid "Enter your username and password below"
+msgstr "以下にユーザー名とパスワードを入力してください。"
+
+#: .\templates\registration\login.html:24
+msgid "Password"
+msgstr "パスワード"
+
+#: .\templates\registration\login.html:37
+#: .\templates\registration\password_reset_complete.html:11
+msgid "Sign in"
+msgstr "ログイン"
+
+#: .\templates\registration\login.html:41
+msgid "Forgot password"
+msgstr "パスワードをお忘れですか"
+
+#: .\templates\registration\password_reset_complete.html:8
+msgid "Your password has been set. You may go ahead and sign in now."
+msgstr "パスワードが設定されました。 今すぐサインインしてください。"
+
+#: .\templates\registration\password_reset_confirm.html:13
+#: .\templates\registration\password_reset_confirm.html:37
+msgid "Change password"
+msgstr "パスワードの変更"
+
+#: .\templates\registration\password_reset_confirm.html:17
+msgid "New password"
+msgstr "新しいパスワード"
+
+#: .\templates\registration\password_reset_confirm.html:24
+msgid "New password confirmation"
+msgstr "新しいパスワード(確認用)"
+
+#: .\templates\registration\password_reset_confirm.html:44
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used."
+msgstr ""
+"パスワードリセットリンクが無効でした。おそらく、すでに使用されているためで"
+"す。"
+
+#: .\templates\registration\password_reset_confirm.html:45
+msgid "Please request a new password reset."
+msgstr "新しいパスワードのリセットをリクエストしてください。"
+
+#: .\templates\registration\password_reset_done.html:8
+msgid ""
+"We've emailed you instructions for setting your password, if an account "
+"exists with the email you entered."
+msgstr ""
+"入力したメールアドレスにアカウントが存在する場合は、パスワードの設定手順を"
+"メールで送信しました。"
+
+#: .\templates\registration\password_reset_done.html:9
+msgid "You should receive them shortly."
+msgstr "あなたはすぐにそれらを受け取るはずです。"
+
+#: .\templates\registration\password_reset_done.html:12
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you registered with, and check your spam folder."
+msgstr ""
+"メールが届かない場合は、登録したアドレスを入力していることを確認し、迷惑メー"
+"ルフォルダを確認してください。"
+
+#: .\templates\registration\password_reset_form.html:13
+msgid "Password recovery"
+msgstr "パスワードの復元"
+
+#: .\templates\registration\password_reset_form.html:13
+msgid "We'll send you instructions in email"
+msgstr "指示をメールでお送りします"
+
+#: .\templates\registration\password_reset_form.html:17
+msgid "Your email"
+msgstr "あなたのメール"
+
+#: .\templates\registration\password_reset_form.html:23
+msgid "Reset password"
+msgstr "パスワードを再設定する"
+
+#, fuzzy
+#~| msgid "Deleted"
+#~ msgid "Deleted List"
+#~ msgstr "削除"
+
+#~ msgid "Print Date"
+#~ msgstr "報告日"
+
+#~ msgid "Link Show"
+#~ msgstr "リンクショー"
+
+#~ msgid "1st"
+#~ msgstr "初回"
+
+#~ msgid "2nd"
+#~ msgstr "2回"
+
+#~ msgid "3rd"
+#~ msgstr "3回"
+
+#~ msgid "4th"
+#~ msgstr "4回"
+
+#~ msgid "5th"
+#~ msgstr "5回"

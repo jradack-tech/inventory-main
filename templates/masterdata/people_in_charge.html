@@ -1,0 +1,212 @@
+{% extends 'layout/base.html' %}
+{% load i18n %}
+
+{% block title %} {% trans "Person in charge" %} {% endblock title %}
+
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+	<div class="content-wrapper">
+
+		<!-- Page header -->
+		<div class="page-header">
+			<div class="page-header-content">
+				<div class="page-title">
+					<h4>
+						<i class="icon-arrow-left52 position-left"></i>
+						<span class="text-semibold">{% trans "Master data" %}</span> - {% trans "Person in charge" %}
+					</h4>
+				</div>
+			</div>
+
+			<div class="breadcrumb-line breadcrumb-line-component">
+				<ul class="breadcrumb">
+					<li><a><i class="icon-stack2 position-left"></i>{% trans "Master data" %}</a></li>
+					<li class="active">{% trans "Person in charge" %}</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /page header -->
+
+		<!-- Content area -->
+		<div class="content">
+
+			<div class="panel panel-flat">
+				<div class="panel-heading">
+					<h2 class="panel-title">{% trans "Person in charge" %}</h2>
+				</div>
+
+				<div class="panel-body no-table-header" style="padding-bottom: 0"></div>
+
+				<table class="table datatable-basic table-hover">
+					<thead>
+						<tr>
+							<th>{% trans "No" %}</th>
+							<th>{% trans "Name" %}</th>
+							<th>{% trans "Action" %}</th>
+						</tr>
+					</thead>
+					<tbody>
+
+						{% for person in people %}
+							<tr>
+								<td>{{ forloop.counter }}</td>
+								<td>{{ person.name }}</td>
+								<td>
+									<a href="#" data-id="{{person.id}}" class="edit-action"><i class="icon-pencil5 color-primary"></i></a>
+									<a href="#" data-id="{{person.id}}" class="remove-action"><i class="icon-minus-circle2 ml-3 color-danger"></i></a>
+								</td>
+							</tr>
+						{% endfor %}
+						
+					</tbody>
+				</table>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mb-5-s text-center">
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_add_new_data">
+								<i class="icon-plus2 position-left"></i>{% trans "Add person" %}</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Disabled backdrop Add New Master Data Modal -->
+			<div id="modal_add_new_data" class="modal fade" data-backdrop="false" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h5 class="modal-title">{% trans "Add person" %}</h5>
+						</div>
+
+						<div class="modal-body">
+							<hr/>
+
+							<form class="form-horizontal" action="" method="POST">
+								{% csrf_token %}
+								<fieldset class="content-group">
+
+									<div class="form-group">
+										<label class="control-label col-lg-3">{% trans "Name" %}:</label>
+										<div class="col-lg-9">
+											<input type="text" name="name" class="form-control" placeholder="{% trans 'Enter name' %}..." required>
+										</div>
+									</div>
+
+								</fieldset>
+
+								<div class="modal-footer">
+									<button type="submit" class="btn btn-primary">{% trans "Add" %}</button>
+									<button type="button" class="btn btn-link" data-dismiss="modal">{% trans "Close" %}</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /disabled backdrop -->
+
+			<!-- Disabled backdrop edit Master Data Modal -->
+			<div id="modal_edit_data" class="modal fade" data-backdrop="false" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h5 class="modal-title">{% trans "Edit person" %}</h5>
+						</div>
+
+						<div class="modal-body">
+							<hr/>
+
+							<form class="form-horizontal" method="POST" action="{% url 'masterdata:person-update' %}">
+								{% csrf_token %}
+								<fieldset class="content-group">
+									<input type="hidden" name="id">
+
+									<div class="form-group">
+										<label class="control-label col-lg-3">{% trans "Name" %}:</label>
+										<div class="col-lg-9">
+											<input type="text" name="name" class="form-control" placeholder="{% trans 'Enter name' %}..." required>
+										</div>
+									</div>
+
+								</fieldset>
+
+								<div class="modal-footer">
+									<button type="submit" class="btn btn-primary">{% trans "Save" %}</button>
+									<button type="button" class="btn btn-link" data-dismiss="modal">{% trans "Close" %}</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /disabled backdrop -->
+
+			<!-- Disabled backdrop delete master data modal -->
+			<div id="modal_delete_data" class="modal fade" data-backdrop="false" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header bg-danger">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h5 class="text-center modal-title">{% trans "Delete person" %}</h5>
+						</div>
+
+						<div class="modal-body">
+							<h6 class="text-center mb-delete">{% trans "Are you sure you want to remove this data?" %}</h6>
+							<hr/>
+							<form class="form-horizontal" method="POST" action="{% url 'masterdata:person-delete' %}">
+								{% csrf_token %}
+								<input type="hidden" name="id">
+								<div class="modal-footer">
+									<button type="submit" class="btn btn-danger">{% trans "Delete" %}</button>
+									<button type="button" class="btn btn-link" data-dismiss="modal">{% trans "Close" %}</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /disabled backdrop -->
+
+		</div>
+		<!-- /content area -->
+
+		<script>
+			$(function () {
+				$('a.edit-action').click( function (e) {
+					e.preventDefault();
+					var $this = $(this);
+					var id = $this.data('id');
+					$('#modal_edit_data input[name="id"]').val(id);
+					$.ajax({
+						type: 'POST',
+						url: "{% url 'masterdata:person-detail' %}",
+						data: {
+							id: id,
+						},
+						beforeSend: function(request) {
+							request.setRequestHeader('X-CSRFToken', csrftoken);
+						},
+						success: function (result) {
+							$('#modal_edit_data input[name="name"]').val(result.name);
+							$('#modal_edit_data').modal('toggle');
+						}
+					});
+					
+				});
+
+				$('a.remove-action').click( function (e) {
+					e.preventDefault();
+					var $this = $(this);
+					var id = $this.data('id');
+					$('#modal_delete_data input[name="id"]').val(id);
+					$('#modal_delete_data').modal('toggle');
+				});
+			});
+		</script>
+
+	</div>
+{% endblock %}

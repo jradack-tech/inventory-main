@@ -1,0 +1,75 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+        {% trans 'Inventory System' %} - {% block title %} {% endblock %}
+    </title>
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/core/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/core/core.min.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/core/components.min.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/icons/icomoon/styles.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="{% static 'js/core/libraries/jquery.min.js' %}"></script>
+	<script src="{% static 'js/core/libraries/bootstrap.min.js' %}"></script>
+	<script src="{% static 'js/core/libraries/jquery_ui/core.min.js' %}"></script>
+	<script src="{% static 'js/core/libraries/jquery_ui/interactions.min.js' %}"></script>
+	<script src="{% static 'js/core/libraries/jquery_ui/widgets.min.js' %}"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="{% static 'js/plugins/tables/datatables/datatables.min.js' %}"></script>
+	<script src="{% static 'js/plugins/forms/selects/selectboxit.min.js' %}"></script>
+	<script src="{% static 'js/plugins/forms/selects/select2.min.js' %}"></script>
+	<script src="{% static 'js/plugins/forms/styling/uniform.min.js' %}"></script>
+	<script src="{% static 'js/plugins/ui/moment/moment_locales.min.js' %}"></script>
+	<script src="{% static 'js/plugins/pickers/daterangepicker.js' %}"></script>
+	<script src="{% static 'js/plugins/pickers/datepicker.js' %}"></script>
+	<script src="{% static 'js/plugins/paginations/jquery.twbsPagination.min.js' %}"></script>
+	<!-- /theme JS files -->
+
+	<!-- Custom files -->
+	<script src="{% static 'js/customs/datatables_basic.js' %}"></script>
+	<script src="{% static 'js/customs/picker_date.js' %}"></script>
+	<script src="{% static 'js/customs/form_selectbox.js' %}"></script>
+	<script src="{% static 'js/customs/form_select2.js' %}"></script>
+	<script src="{% static 'js/customs/form_checkboxes_radios.js' %}"></script>
+	<script src="{% static 'js/customs/template.js' %}"></script>
+    <script src="{% static 'js/customs/app.js' %}"></script>
+	<!-- /custom files -->
+
+	{% csrf_token %}
+	<script>
+		const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+	</script>
+</head>
+
+<body>
+
+    {% include "layout/navbar.html" %}
+    
+	<div class="page-container">
+		<div class="page-content">
+
+            {% include "layout/sidebar.html" %}
+
+            {% block content %}
+            {% endblock %}
+
+        </div>
+	</div>
+
+</body>
+</html>
+
